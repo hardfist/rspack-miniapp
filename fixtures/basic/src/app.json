@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index1/index",
+    "pages/index2/index",
+    "pages/index3/index",
+    "pages/index4/index",
+    "pages/index5/index",
+    "pages/index6/index",
+    "pages/index7/index",
+    "pages/index8/index",
+    "pages/index9/index",
+    "pages/index10/index",
+    "pages/index11/index",
+    "pages/index12/index",
+    "pages/index13/index",
+    "pages/index14/index",
+    "pages/index15/index",
+    "pages/index16/index",
+    "pages/index17/index",
+    "pages/index18/index",
+    "pages/index19/index",
+    "pages/index20/index",
+    "pages/index21/index",
+    "pages/index22/index",
+    "pages/index23/index",
+    "pages/index24/index",
+    "pages/index25/index",
+    "pages/index26/index",
+    "pages/index27/index",
+    "pages/index28/index",
+    "pages/index29/index",
+    "pages/index30/index",
+    "pages/index31/index",
+    "pages/index32/index",
+    "pages/index33/index",
+    "pages/index34/index",
+    "pages/index35/index"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  },
+  "tabBar": {
+    "textColor": "#333333",
+    "selectedColor": "#3d7fff",
+    "backgroundColor": "#FFFFFF",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "./media/manage.png",
+        "activeIcon": "./media/manage_active.png",
+        "name": "index"
+      },
+      {
+        "pagePath": "pages/index1/index",
+        "icon": "./media/inspection.png",
+        "activeIcon": "./media/inspection_active.png",
+        "name": "index1"
+      },
+      {
+        "pagePath": "pages/index2/index",
+        "icon": "./media/reporter.png",
+        "activeIcon": "./media/reporter_active.png",
+        "name": "index2"
+      },
+      {
+        "pagePath": "pages/index3/index",
+        "icon": "./media/mine.png",
+        "activeIcon": "./media/mine_active.png",
+        "name": "index3"
+      }
+    ]
+  }
+}

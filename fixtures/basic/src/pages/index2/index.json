@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "index2",
+  "usingComponents": {
+    "dt-list": "../../components/list/index",
+    "calendar": "mini-ali-ui/es/calendar/index"
+  }
+}

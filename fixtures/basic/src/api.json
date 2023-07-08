@@ -1,0 +1,7 @@
+{
+    "college-video-list": {
+        "url": "@#COLLEGE_MOBILE_COURSE_LIST.url#@",
+        "alias": "@#COLLEGE_MOBILE_COURSE_LIST.alias#@",
+        "options": 12311999
+    }
+}

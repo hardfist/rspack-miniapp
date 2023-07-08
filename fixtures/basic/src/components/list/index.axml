@@ -1,0 +1,6 @@
+<view class="{{classPrefix}}">
+  <view class="{{classPrefix}}-item" a:for="{{list}}">
+    <view class="{{classPrefix}}-item-name">{{item.name}}</view>
+    <view class="{{classPrefix}}-item-content">{{item.content}}</view>
+  </view>
+</view>
