@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="mt-800"></view>
+  <view class="btn-area">
+    <button type="primary" bindtap="getNodeInfo" id="btn">示例按钮</button>
+  </view>
+  <view class="body" tt:if="{{nodes.scrollTop}}">
+    <view class="title">scrollTop: {{nodes.scrollTop}}</view>
+    <view class="title">scrollLeft: {{nodes.scrollLeft}}</view>
+  </view>
+  <view style="height: 200px;"></view>
+</view>

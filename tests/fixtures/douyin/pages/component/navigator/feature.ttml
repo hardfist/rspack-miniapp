@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="btn-area">
+      <navigator url="navigate?title=navigate" open-type="navigate" hover-class="navigator-hover" hover-start-time="50" hover-stay-time="400" hover-stop-propagation="{{false}}">
+        <button type="default">跳转到新页面(navigate 方式)</button>
+      </navigator>
+      <navigator url="navigate?title=redirect" open-type="redirect" hover-class="other-navigator-hover" hover-start-time="50" hover-stay-time="400" hover-stop-propagation="{{false}}">
+        <button type="default">跳转到新页面(redirect 方式)</button>
+      </navigator>
+      <navigator delta="1" open-type="navigateBack" hover-class="other-navigator-hover" hover-start-time="50" hover-stay-time="400" hover-stop-propagation="{{false}}">
+        <button type="default">返回上一页</button>
+      </navigator>
+      <navigator url="navigator" open-type="reLaunch" hover-class="other-navigator-hover" hover-start-time="50" hover-stay-time="400" hover-stop-propagation="{{false}}">
+        <button type="default">打开初始页(reLaunch 方式)</button>
+      </navigator>
+    </view>
+  </view>
+</view>

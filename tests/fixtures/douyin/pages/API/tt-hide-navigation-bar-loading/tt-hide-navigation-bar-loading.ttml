@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="btn">
+    <button type="primary" size="default" bindtap="hideBarLoading">隐藏导航条加载动画</button>
+  </view>
+</view>

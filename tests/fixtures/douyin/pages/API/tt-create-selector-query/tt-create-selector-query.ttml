@@ -1,0 +1,26 @@
+<view class="container" tt:if="{{!useComponent}}">
+  <view tt:if="{{scroll}}" style="height: 600px;"></view>
+  <view class="box"></view>
+  <view class="body">
+    <view class="title">width: {{nodes.width}}</view>
+    <view class="title">height: {{nodes.height}}</view>
+    <view class="title">top: {{nodes.top}}</view>
+    <view class="title">bottom: {{nodes.bottom}}</view>
+    <view class="title">left: {{nodes.left}}</view>
+    <view class="title">right: {{nodes.right}}</view>
+    <view class="title">scrollLeft: {{scrollInfo.scrollLeft}}</view>
+    <view class="title">scrollTop: {{scrollInfo.scrollTop}}</view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" size="mini" bindtap="getScroll">{{!scroll?'获取滚动位置':'清除'}}</button>
+    <button type="primary" size="mini" bindtap="getFields">{{!fields?'指定返回信息':'所有信息'}}</button>
+  </view>
+  <view class="btn-area">
+    <button type="primary" bindtap="getAllInfo">获取所有相同类名元素信息</button>
+  </view>
+</view>
+<my-component tt:if="{{useComponent}}"></my-component>
+<view class="btn-area">
+  <button type="primary" size="default" bindtap="useComponent">{{!useComponent?'在组件中使用':'返回页面'}}</button>
+</view>
+<view class="footer"></view>

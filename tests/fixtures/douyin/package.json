@@ -1,0 +1,14 @@
+{
+  "name": "tma-demo",
+  "version": "1.3.0",
+  "main": "index.js",
+  "repository": "git@code.byted.org:toutiao-fe/tma-demo.git",
+  "author": "xhappier <xianghaipei.0922@bytedance.com>",
+  "license": "MIT",
+  "scripts": {
+    "codeLink": "node script.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

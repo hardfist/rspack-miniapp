@@ -1,0 +1,9 @@
+<view class="btn-area">
+    <button type="primary" bindtap="goMyPage">跳转个人抖音号主页</button>
+</view>
+<view class="cont">
+    <text>注意：</text>
+    <text>1. 这个抖音号是小程序开发者在开发者平台绑定的抖音号</text>
+    <text>2. 暂时只支持在抖音和抖音 Lite App 上使用</text>
+</view>
+

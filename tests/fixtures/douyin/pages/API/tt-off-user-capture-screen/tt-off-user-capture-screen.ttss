@@ -1,0 +1,18 @@
+.page-body-text {
+  font-size: 40rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+.page-body-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 50rpx 0 150rpx 0;
+}
+.page-footer {
+  text-align: justify;
+  background-color: white;
+  padding: 20rpx 30rpx;
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+.page-body-info {
+  display: flex;
+  margin-top: 40rpx;
+  padding: 0;
+  height: 360rpx;
+  border-top: 1rpx solid #e8e8e8;
+  border-bottom: 1rpx solid #e8e8e8;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.all {
+  word-wrap:break-word;
+  word-break: break-all;
+  margin:20rpx 30rpx;
+  color:gray;
+}

@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="body">
+    <text class="text-space">剩余录音时间 {{ cd }}ms</text>
+    <view class="btn-area">
+      <button bindtap="start" tt:if="{{ !isRecording && !isPaused }}">start</button>
+      <button bindtap="pauseorresume" tt:if="{{ isRecording || isPaused }}">{{ isPaused ? 'resume' : 'pause' }}</button>
+      <button bindtap="stop" tt:if="{{ isRecording || isPaused }}">stop</button>
+    </view>
+  </view>
+</view>

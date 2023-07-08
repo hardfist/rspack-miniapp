@@ -1,0 +1,11 @@
+.fileList{
+    word-break:break-all;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+}
+.removeBtn{
+    text-align: right;
+    color: rgb(255, 24, 24);
+    cursor: pointer;
+}

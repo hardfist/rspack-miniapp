@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <text class="time-big">{{formatedCurrentTime}}</text>
+        <slider class="slider" min="0" max="{{duration}}" step="1" value="{{currentTime}}" bindchange="seek"
+          bindchanging="seeking" disabled></slider>
+        <view class="play-time">
+          <text>总时长 {{formatedDuration}}</text>
+        </view>
+      </view>
+      <view class="page-body-buttons">
+        <button tt:if="{{playing === false}}" type="primary" size="mini" bindtap="play"> 播放 </button>
+        <button tt:else type="default" size="mini" bindtap="pause"> 暂停 </button>
+        <button type="primary" size="mini" bindtap="seek"> 跳转到30秒处 </button>
+      </view>
+    </view>
+  </view>
+</view>

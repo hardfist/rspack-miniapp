@@ -1,0 +1,42 @@
+movable-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100rpx;
+    width: 100rpx;
+    background: #19ad8d;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  movable-area {
+    height: 400rpx;
+    width: 400rpx;
+    margin: 50rpx;
+    border-radius: 8px;
+    background-color: rgb(228, 216, 216);
+    overflow: hidden;
+  }
+  
+  .max {
+    width: 600rpx;
+    height: 600rpx;
+  }
+
+  .page-section{
+    width: 100%;
+    margin-bottom: 60rpx;
+  }
+  
+  .page-section:last-child{
+    margin-bottom: 0;
+  }
+  
+  .page-section-title{
+    font-size: 28rpx;
+    color: #999999;
+    margin-bottom: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+  }
+  

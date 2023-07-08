@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <view class="page-body-info">
+          <view class="page-body-text-small">胶囊信息</view>
+          <view class="page-body-text" tt:for='{{menuLen}}' tt:for-item="item" tt:for-index="index" tt:key="{{item}}">{{item}}: {{menuInfo[item]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="getMenuInfo">获取胶囊按钮信息</button>
+    </view>
+  </view>
+</view>

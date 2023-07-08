@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="{{imageUrl}}"></image>
+  <button type="default" size="default" class="image-action" bindtap="saveImageToAlbum">保存图片到相册</button>
+  <text>此api需要相册授权</text>
+</view>

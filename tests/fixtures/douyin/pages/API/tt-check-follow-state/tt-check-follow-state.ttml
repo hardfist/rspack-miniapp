@@ -1,0 +1,4 @@
+<view class="cont">
+  <button type="primary" bindtap="click">tt.checkFollowState</button>
+  <text>注：注意这个头条号是小程序开发者在开发者平台绑定的官方头条号，不能使用该 api 获取用户是否关注了另一个用户</text>
+</view>

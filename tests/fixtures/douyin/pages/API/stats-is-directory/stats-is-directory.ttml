@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section-space">
+      <view class="content-area">
+        <view tt:if="{{stats}}" class="statsAttrList">
+          <view class="btn-area">
+            <view class="body-view page-section">
+              <button type="primary" bindtap="isDirectory">判断当前文件是否为一个目录</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

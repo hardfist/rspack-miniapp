@@ -1,0 +1,20 @@
+<view class="content">
+    <view class="btn-area">
+        <button type="primary" size="default" bindtap="env"> 点击获取tt.env内容 </button>
+    </view>
+    
+    <view class="title">tt.env内容：{{env}}</view>
+    <view class="tips">
+        属性 VERSION 枚举值:<br/>production(正式版)/preview(预览版)/development(开发版)
+    </view>
+    <view class="tips">
+        属性 USER_DATA_PATH 示例：下载图片到本地
+    </view>
+    <view>
+        <progress percent="{{progress}}" />
+        <view class="btn-area">
+            <button type="primary" bindtap="downloadImage">下载图片到本地</button>
+        </view>
+        <image tt:if="{{filePath}}" src="{{filePath}}" mode="aspectFit"></image>
+      </view>
+</view>

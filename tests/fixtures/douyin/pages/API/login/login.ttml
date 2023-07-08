@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="body">
+            <view class="page-section">
+                <block tt:if="{{hasLogin === true}}">
+                    <text class="page-body-title">已登录</text>
+                    <text class="page-body-text">每个用户仅需登录 1 次，后续每次进入页面即可根据 ttid 自动拉取用户信息</text>
+                    <text class="page-body-text" tt:if="{{code !== ''}}">code: {{code}}</text>
+                </block>
+                <block tt:if="{{hasLogin === false}}">
+                    <text class="page-body-text">未登录 或 当前 session 已经失效，需要重新登录</text>
+                    <button class="page-body-button" type="primary" bindtap="login">登录</button>
+                </block>
+            </view>
+    </view>
+</view>

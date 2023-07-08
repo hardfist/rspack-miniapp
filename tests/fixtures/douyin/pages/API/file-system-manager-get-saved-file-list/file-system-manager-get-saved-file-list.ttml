@@ -1,0 +1,23 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="saveFile" >保存文件到本地</button>
+        <button type="primary" bindtap="getSaveFileList" >获取本地已保存的文件列表</button>
+      </view>
+    </view>
+    <view class="page-section-space">
+      <view class="content-area">
+        {{hintMsg}}
+      </view>
+      <view 
+      tt:if="{{fileList.length}}" tt:for="{{fileList}}" tt:for-item="item" tt:for-index="index">
+        <view class="fileList">
+         <view> {{"文件路径: "+item.filePath}}</view>
+         <view>{{"文件大小: "+item.size}}</view>
+         <view>{{"文件保存的时间戳: "+item.createTime}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

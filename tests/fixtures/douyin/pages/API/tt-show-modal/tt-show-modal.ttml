@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area">
+      <button type="default" bindtap="modalTap">有标题的modal</button>
+      <button type="default" bindtap="noTitlemodalTap">无标题的modal</button>
+      <button type="default" bindtap="custommodalTap">自定义按钮颜色的modal</button>
+      <button type="default" bindtap="inputmodalTap">带输入框的modal</button>
+    </view>
+  </view>
+</view>

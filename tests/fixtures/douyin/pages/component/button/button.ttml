@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="button-category">
+      <view class="category-title">type</view>
+        <button type="primary">页面主操作 Normal</button>
+        <button type="primary" loading="true">页面主操作 Loading</button>
+        <button type="primary" disabled="true">页面主操作 Disabled</button>
+        <button type="default">页面次要操作 Normal</button>
+        <button type="default" loading="true">页面次要操作 Loading</button>
+        <button type="default" disabled="true">页面次要操作 Disabled</button>
+    </view>
+    <view class="button-category">-
+      <view class="category-title">size</view>
+      <view class="mini-buttons">
+        <button class="mini-btn" type="primary" size="mini">按钮</button>
+        <button class="mini-btn" type="default" size="mini">按钮</button>
+      </view>
+    </view>
+    <view class="button-category">
+      <view class="category-title">form-type</view>
+      <form bindsubmit="submit" bindreset="reset">
+        <button form-type="submit" type="primary">submit</button>
+        <button form-type="reset" type="default">reset</button>
+      </form>
+    </view>
+    <view class="button-category">
+      <view class="category-title">open-type</view>
+      <button open-type="share" type="primary">share</button>
+      <button bindtap="login" disabled="{{isLogin}}">{{isLogin ? "已登录" : "登录"}}</button>
+      <view class="page-section-title page-section-title-space">
+        登录后获取手机号
+      </view>
+      <button open-type="getPhoneNumber" type="primary" bindgetphonenumber="getPhoneNumberHandler" disabled="{{!isLogin}}">getPhoneNumber</button>
+      <view class="page-section-title page-section-title-space">
+        提示: 点击获取用户绑定的手机号。仅可在登录后使用，仅企业主体小程序可使用，且需要申请审核。
+      </view>
+    </view>
+  </view>
+</view>

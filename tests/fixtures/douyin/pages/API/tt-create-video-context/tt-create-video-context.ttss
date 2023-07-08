@@ -1,0 +1,12 @@
+.wrap {
+    padding: 50rpx 30rpx;
+}
+
+.wrap video {
+    width: 100%;
+    margin-bottom: 30rpx;
+}
+
+.wrap button {
+    margin-bottom: 50rpx;
+}

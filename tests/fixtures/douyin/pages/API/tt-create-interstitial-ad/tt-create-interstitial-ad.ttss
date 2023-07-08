@@ -1,0 +1,16 @@
+.page-body-info {
+  background-color: #fff;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  
+}
+.page-body-info .page-body-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-indent: 0em;
+}
+.page-body-info>view {
+  text-indent: 2em;
+  margin: 20rpx 0;
+}

@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="page-section">
+    <view class="storage-title">本地缓存数据信息</view>
+    <view class="ttui-cells">
+      <view class="ttui-cell">
+        <view class="ttui-cell__hd">
+          <view class="ttui-label">key列表</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="ttui-input" disabled="{{true}}" value="{{storageKeys}}" bindinput="keyChange" placeholder="key列表" />
+        </view>
+      </view>
+      <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">已用空间</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="ttui-input" disabled value="{{currentSize}}" bindinput="valueChange" placeholder="已用空间" />
+          </view>
+      </view>
+      <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">总体容量</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="ttui-input" disabled value="{{limitSize}}" bindinput="valueChange" placeholder="总体容量" />
+          </view>
+      </view>
+    </view>
+    <view class="btn-area">
+        <button type="primary" bindtap="clearStorage">清理本地缓存数据(同步)</button>
+    </view>
+  </view>
+</view>

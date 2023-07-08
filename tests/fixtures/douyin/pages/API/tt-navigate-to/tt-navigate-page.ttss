@@ -1,0 +1,5 @@
+.title {
+  background-color: white;
+  padding: 20rpx 30rpx;
+  margin: 30rpx auto;
+}

@@ -1,0 +1,8 @@
+<view class="control-area">
+  <view class="btn-area">
+    <button bindtap="toggleTabBarStyle">{{hasCustomedStyle?'清除自定义样式':'设置 TabBar 的样式'}}</button>
+  </view>
+  <view class="btn-area">
+    <button type="primary" class="back-btn" bindtap="navigateBack">返回上一级</button>
+  </view>
+</view>

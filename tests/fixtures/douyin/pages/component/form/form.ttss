@@ -1,0 +1,15 @@
+form{
+    width: 100%;
+}
+.checkbox-space {
+    margin-right: 48rpx;
+}
+.button-block button{
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    min-width: 270rpx;
+    margin-right: 20rpx;
+}

@@ -1,0 +1,36 @@
+<import src="./inline-components.ttml" />
+<template tt:if="{{customView}}" is="{{customView}}"></template>
+<view class="container" tt:else>
+  <view class="header header-center">
+    <image class="index-logo" src="{{imageUrl+'logo.png'}}"></image>
+    <view class="index-desc">以下将展示小程序官方API能力</view>
+  </view>
+  <view class="body body-space">
+    <view class="category-list">
+      <view class="category-list__item {{item.open ? 'category-list__item--open': ''}}" tt:for="{{list}}">
+        <view class="ttui-flex item-title" data-index="{{index}}" bindtap="toggleSwitch">
+          <view class="ttui-flex__item">{{item.name}}</view>
+          <image class="item-list__img" src="{{imageUrl+'arrow.png'}}"></image>
+        </view>
+        <view class="item-list">
+          <view tt:for="{{item.pages}}" tt:for-item="page" class="item-list__page">
+            <navigator url="{{page.path}}" class="item-navigator" tt:if="{{!page.navigateCustom}}">
+              <view class="ttui-flex navigator-wraper">
+                <view class="ttui-flex__item">{{page.name}}</view>
+                <image class="item-list__img" src="{{imageUrl+'setting_arrow.png'}}"></image>
+              </view>
+            </navigator>
+            <view class="item-navigator" tt:else bind:tap="switchView" data-view="{{page.navigateCustom}}">
+              <view class="ttui-flex navigator-wraper">
+                <view class="ttui-flex__item">{{page.name}}</view>
+                <image class="item-list__img" src="{{imageUrl+'setting_arrow.png'}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer"></view>
+  <view bindtap="backHome" class="back-home">返回首页</view>
+</view>

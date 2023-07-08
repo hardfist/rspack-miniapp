@@ -1,0 +1,22 @@
+<view class="control-area">
+    <view class="btn-area">
+      <button bindtap="toggleTabBarBadge">
+        {{ !hasSetTabBarBadge ? '设置tab徽标' : '移除tab徽标' }}
+      </button>
+      <button bindtap="toggleTabBarRedDot">
+        {{ !hasShownTabBarRedDot ?  '显示红点' : '移除红点'}}
+      </button>
+      <button bindtap="toggleCustomStyle">
+        {{ !hasCustomedStyle ? '自定义Tab样式' : '移除自定义样式'}}
+      </button>
+      <button bindtap="toggleCustomItem">
+        {{ !hasCustomedItem ? '自定义Tab信息' : '移除自定义信息' }}
+      </button>
+      <button bindtap="toggleTabBarVisible">
+        {{ !hasHiddenTabBar ? '隐藏TabBar' : '显示TabBar' }}
+      </button>
+    </view>
+    <view class="btn-area">
+      <button type="primary" class="back-btn" bindtap="navigateBack">返回上一级</button>
+    </view>
+</view>

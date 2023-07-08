@@ -1,0 +1,16 @@
+
+<view class="btn-area">
+    指定 fields canvas 实例获取位置：
+    <button id="myButton" data-key="bytedance" type="primary" size="default" bindtap="getCanvas1">
+      示例1
+    </button>
+  </view>
+  
+  <view class="btn-area">
+    通过 node 方法获取
+    <button type="primary" size="default" bindtap="getCanvas2">示例2</button>
+  </view>
+
+<canvas id="myCanvas" type="2d"></canvas>
+
+<view class="nodeInfo">{{nodeInfo}}</view>

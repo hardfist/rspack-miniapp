@@ -1,0 +1,19 @@
+.section-title {
+  color: #333;
+  padding-bottom: 5px;
+  width: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mode-tip {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+.desc {
+  color: #333;
+  padding: 10px;
+  font-size: 14px;
+}

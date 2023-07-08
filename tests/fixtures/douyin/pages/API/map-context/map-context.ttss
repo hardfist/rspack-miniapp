@@ -1,0 +1,10 @@
+.body {
+  padding: 30rpx;
+  background: #fff;
+}
+.btn-area button {
+  margin-right: 20rpx;
+}
+.footer {
+  height: 50rpx;
+}

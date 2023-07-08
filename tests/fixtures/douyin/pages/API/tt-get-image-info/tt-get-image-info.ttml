@@ -1,0 +1,11 @@
+<view class="page">
+  <image src="{{imageUrl}}" mode="" />
+  <view id="box">
+    <view class="titleImgage">图片信息</view>
+    <view class="titlelist" tt:for="{{infoList}}">
+      <text>{{item.chinaName}}</text>
+      <text>{{item.value}}</text>
+    </view>
+  </view>
+  <button bindtap="getInfo">获取图片信息</button>
+</view>

@@ -1,0 +1,16 @@
+.content{
+    padding: 0 20rpx 50rpx 20rpx;
+}
+.title{
+    text-align: justify;
+    background-color: white;
+    padding: 20rpx 30rpx;
+    margin: 30rpx auto;
+}
+button{
+    margin-top: 30rpx;
+}
+.type{
+    color: gray;
+    margin: 20rpx 0;
+}

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="btn-area">
+    <button type="primary" id="btn">示例按钮</button>
+    <button type="primary" bindtap="getNodeInfo">点击执行并获取示例按钮信息</button>
+  </view>
+  <view class="body" tt:if="{{nodes.width}}">
+    <view>width: {{nodes.width}}</view>
+    <view>height: {{nodes.height}}</view>
+    <view>top: {{nodes.top}}</view>
+    <view>bottom: {{nodes.bottom}}</view>
+    <view>left: {{nodes.left}}</view>
+    <view>right: {{nodes.right}}</view>
+  </view>
+</view>

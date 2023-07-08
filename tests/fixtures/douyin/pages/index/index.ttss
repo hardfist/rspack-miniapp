@@ -1,0 +1,414 @@
+@import "animation.ttss";
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* swiper */
+
+.swiper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-list {
+  width: 80%;
+  height: 80%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  border-top-left-radius: 32rpx;
+  border-top-right-radius: 32rpx;
+  bottom: 0;
+  background: #fff;
+  padding-top: 240rpx;
+}
+
+.swiper-big-list {
+  width: 100%;
+  height: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+}
+
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 半屏下切换 */
+
+.small-left {
+  transition: all .5s ease;
+  transform: scale(0.8) translateY(10%);
+  ;
+  left: -67%;
+  bottom: 0;
+}
+
+.small-center {
+  left: 10%;
+  transition: all .5s ease;
+  transform: scale(1);
+}
+
+.small-right {
+  transition: all .5s ease;
+  transform: scale(0.8) translateY(10%);
+  left: 87%;
+}
+
+.small-rightNo {
+  transition: all .5s ease;
+  left: 150%;
+}
+
+.small-leftNo {
+  transition: all .5s ease;
+  left: -150%;
+}
+
+/* 全屏下切换 */
+
+.switch-big-left {
+  animation: swithLeftAnimation .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.switch-big-right {
+  animation: switchRightAnimation .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.big-left {
+  animation: leftAnimation .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.revise-animation {
+  animation-duration: 0s;
+}
+
+.big-center {
+  animation: centerLeft .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.big-center-left {
+  animation: centerLeft .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.big-center-right {
+  animation: centerRight .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.big-right {
+  animation: rightAnimation .5s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.big-leftNo, .switch-big-leftNo {
+  transition: all .5s ease;
+  left: -200%;
+  opacity: 0;
+}
+
+.big-rightNo, .switch-big-rightNo {
+  transition: all .5s ease;
+  left: 200%;
+  opacity: 0;
+}
+
+/* 消除右边动画对当前动画的影响 */
+
+.big-center+.big-right {
+  animation: clearRightAnimation .0s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* 全屏 */
+
+.full-screen {
+  animation: move-screen .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* 半屏 */
+
+.default-screen {
+  animation: defaultScreen .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.head {
+  position: absolute;
+  width: 480rpx;
+  height: 480rpx;
+  top: -240rpx;
+  left: 50%;
+  margin-left: -240rpx;
+  /* z-index: 2000; */
+  opacity: 0.5;
+}
+
+.head-box {
+  width: 150px;
+  height: 160px;
+  margin: 10px auto 0;
+  position: relative;
+}
+
+/* 旋转动画位置 */
+
+.swiper-list:nth-child(1) .head-box {
+  transform: rotate(-32deg) translateX(-10rpx);
+}
+
+.swiper-list:nth-child(2) .head-box {
+  transform: rotate(-12deg) translateX(-20rpx);
+}
+
+.head-animation {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-list:nth-child(1) .head-animation {
+  left: 46%;
+  top: 80%;
+}
+
+.hidden-extend-head {
+  animation: hidden-extend-head .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.hidden-component-head {
+  animation: hidden-component-head .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.hidden-api-head {
+  animation: hidden-api-head .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.show-head {
+  animation: show-head .3s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* box start */
+
+.title {
+  height: 116rpx;
+  line-height: 116rpx;
+  font-size: 32rpx;
+  color: #000;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.top-border {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.list-show {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation: listShow .2s ease;
+}
+
+.children-body {
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+}
+
+.children-icon {
+  flex: 0 0 48rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.min-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.min-icon text {
+  display: inline-block;
+  width: 6rpx;
+  height: 6rpx;
+  background: #000;
+  opacity: .2;
+  border-radius: 50%;
+}
+
+.children-name {
+  margin-left: 20rpx;
+  margin-right: auto;
+  font-size: 32rpx;
+  color: #000;
+  opacity: 0.8;
+}
+
+.min-name {
+  font-size: 28rpx;
+}
+
+.children-arrow {
+  flex: 0 0 48rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.box-arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.children-arrow-active {
+  animation: trangle-rotate .2s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.children-arrow-default {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation: trangle-default .2s ease;
+}
+
+/* tabs start */
+
+.tabs {
+  position: fixed;
+  bottom: 50rpx;
+  width: 550rpx;
+  height: 120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1rpx solid #EAEAEA;
+  box-sizing: border-box;
+  box-shadow: 0rpx 8rpx 20rpx rgba(0, 0, 0, 0.04);
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+  overflow: hidden;
+  backdrop-filter: blur(135.914px);
+}
+
+.vdom-tab-box {
+  position: absolute;
+  bottom: 50rpx;
+  width: 550rpx;
+  height: 120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1999;
+  border-radius: 60rpx;
+  overflow: hidden;
+}
+
+.vdom-tab {
+  width: 550rpx;
+  height: 120rpx;
+  filter: blur(30px) brightness(75%);
+  background: #fff;
+  /* background: rgba(255, 255, 255,0.8); */
+}
+
+.tab {
+  margin-top: 12rpx;
+  flex: 1;
+  width: 150rpx;
+  position: relative;
+}
+
+.tab-default {
+  position: absolute;
+  left: 62%;
+  height: 20rpx;
+  background: red;
+  font-size: 14rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 20rpx;
+}
+
+.tab-redDot {
+  width: 20rpx;
+  border-radius: 50%;
+}
+
+.tab-badge {
+  padding: 0 5rpx;
+  max-width: 50rpx;
+  border-radius: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tab-icon {
+  display: block;
+  margin: 0 auto;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tab-text {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  text-align: center;
+}
+
+.tab-text-inactive {
+  color: #000;
+  opacity: .4;
+}
+
+.tab-text-active {
+  color: #3C88FF;
+}
+
+.bottom-line {
+  height: 170rpx;
+}

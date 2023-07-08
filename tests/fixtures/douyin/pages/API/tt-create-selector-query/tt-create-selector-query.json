@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "返回selectorQuery对象实例",
+  "usingComponents": {
+    "my-component": "createSelectQueryComponent"
+  }
+}

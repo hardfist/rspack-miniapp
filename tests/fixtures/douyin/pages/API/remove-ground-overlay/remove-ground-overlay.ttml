@@ -1,0 +1,7 @@
+<map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" style="width:100%; height: 300px;"></map>
+<view class="page-section-title page-section-title-space">
+    描述: 调用 mapContext.removeGroundOverlay 方法, 移除自定义图片图层
+  </view>
+<view class="btn-area">
+  <button type="primary" bindtap="removeGroundOverlay">removeGroundOverlay</button>
+</view>

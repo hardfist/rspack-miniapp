@@ -1,0 +1,13 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" open-type="share" data-channel="video" >使用贴纸拍抖音</button>
+      </view>
+    </view>
+    <view class="page-section-title page-section-title-space">
+      <view>贴纸案例：纸箱小恐龙</view>
+      <view class="desc">简介：抖音拍摄器结合创意贴纸，贴纸可根据小程序自身场景生成。带了贴纸的拍摄器，激发用户拍摄更有趣的视频，提高视频分发质量，还可以辅助开发者做营销活动宣传，属于抖音拍摄器的拓展能力。（该能力目前内测中）</view>
+    </view>
+  </view>
+</view>

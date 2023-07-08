@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="btn-area">
+    <button type="primary" data-item="data" bindtap="getNodeInfo" id="btn">示例按钮</button>
+  </view>
+  <view class="body" tt:if="{{nodes.width}}">
+    <view class="title">id: {{nodes.id}}</view>
+    <view class="title">dataset: {{nodes.dataset}}</view>
+    <view class="title">width: {{nodes.width}}</view>
+    <view class="title">height: {{nodes.height}}</view>
+    <view class="title">top: {{nodes.top}}</view>
+    <view class="title">bottom: {{nodes.bottom}}</view>
+    <view class="title">left: {{nodes.left}}</view>
+    <view class="title">right: {{nodes.right}}</view>
+  </view>
+</view>

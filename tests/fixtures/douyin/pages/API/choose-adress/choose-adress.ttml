@@ -1,0 +1,10 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="chooseAdress">选择收货地址</button>
+      </view>
+      <view>{{result}}</view>
+    </view>
+  </view>
+</view>

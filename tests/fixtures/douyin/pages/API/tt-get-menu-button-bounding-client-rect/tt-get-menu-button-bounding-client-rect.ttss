@@ -1,0 +1,7 @@
+.page-section {
+  background: #fff;
+  padding: 30rpx;
+}
+.page-body-text-small {
+  display: block;
+}

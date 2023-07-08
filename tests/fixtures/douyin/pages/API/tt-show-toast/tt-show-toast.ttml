@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <view class="body-view">
+        <button type="default" bindtap="toast1Tap">点击弹出默认 Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast2Tap">点击弹出带 duration Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast3Tap" data-icon="loading">点击弹出带 loading icon Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast3Tap" data-icon="success">点击弹出带 success icon Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast3Tap" data-icon="none">点击弹出带 none icon Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast3Tap" data-icon="fail">点击弹出带 fail icon Toast</button>
+      </view>
+      <view class="body-view">
+        <button type="default" bindtap="toast4Tap" data-icon="fail">点击弹出带 image Toast</button>
+      </view>
+    </view>
+  </view>
+</view>

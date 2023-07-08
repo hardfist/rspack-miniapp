@@ -1,0 +1,28 @@
+.content{
+  padding: 0 20rpx 50rpx 20rpx;
+}
+.title {
+  font-weight: bold;
+}
+.attr-wrap{
+  background-color: white;
+  padding: 20rpx 20rpx;
+  margin: 30rpx auto;
+}
+.attr{
+  display: block;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+  padding: 0 15px;
+}
+.desc{
+  display: block;
+  font-size: 14px;
+  color: #999999;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.clear-btn {
+  margin-bottom: 20rpx;
+}

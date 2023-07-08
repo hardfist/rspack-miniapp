@@ -1,0 +1,15 @@
+<view class="container">
+	<view class="body">
+    <view class="page-section-title page-section-title-space">
+      调起用户编辑/新增收货地址原生界面，，并在编辑完成后返回用户选择的地址。
+      <view>
+        提示: 该 API 需要用户授权方可调用
+      </view>
+    </view>
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="chooseAdress">选择收货地址</button>
+      </view>
+    </view>
+  </view>
+</view>

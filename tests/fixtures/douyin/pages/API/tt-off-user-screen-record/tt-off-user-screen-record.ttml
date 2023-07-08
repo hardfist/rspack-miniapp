@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-info">
+      <text class="page-body-text">录屏事件{{ record ? "已" : "未" }}注册</text>
+    </view>
+  </view>
+  <view class="page-footer">
+    <button type="primary" size="default" bindtap="offUserScreenRecord">取消监听（只有iOS支持）</button>
+  </view>
+</view>

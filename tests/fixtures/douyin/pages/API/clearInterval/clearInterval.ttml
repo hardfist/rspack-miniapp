@@ -1,0 +1,5 @@
+<view class="content">
+    <view class="title">定时时间，回调函数每隔 1s 执行一次。</view>
+    <button type="primary" size="default" bindtap="clearInterval"> 清除定时器 </button>
+    <view class="footer">{{timer}}</view>
+</view>

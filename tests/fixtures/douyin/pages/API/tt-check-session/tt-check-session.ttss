@@ -1,0 +1,8 @@
+.page-body-text {
+  color: #bbb;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  padding: 0 15px;
+}

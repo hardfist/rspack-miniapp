@@ -1,0 +1,9 @@
+<map id="myMap" style="width: 100%; height: 300px;" show-location></map>
+<view class="page-section-title page-section-title-space">
+  <view>描述: 调用 mapContext.moveToLocation 方法, 将地图中心移至当前定位点</view>
+  <view>注意: 需申请定位权限, 并设置map组件的 show-location 属性为 true</view>
+</view>
+<view class="btn-area">
+  <button type="primary" bindtap="moveToLocationCurrent">移动到当前定位点</button>
+  <button type="primary" bindtap="moveToLocation">经度: 116.397493,纬度: 39.907957</button>
+</view>

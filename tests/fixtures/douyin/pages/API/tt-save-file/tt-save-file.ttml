@@ -1,0 +1,3 @@
+<view class="btn-area">
+  <button type="primary" bindtap="saveFile">保存临时文件到本地永久目录</button>
+</view>

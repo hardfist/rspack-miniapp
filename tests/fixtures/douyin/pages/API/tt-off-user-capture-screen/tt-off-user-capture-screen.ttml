@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-info">
+      <text class="page-body-text">截屏事件{{ captured ? "已" : "未" }}注册</text>
+    </view>
+  </view>
+  <view class="page-footer">
+    <button type="primary" size="default" bindtap="offUserCaptureScreen">取消监听小程序截屏屏事件</button>
+  </view>
+</view>

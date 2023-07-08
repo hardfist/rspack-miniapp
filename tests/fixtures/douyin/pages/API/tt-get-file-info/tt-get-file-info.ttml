@@ -1,0 +1,4 @@
+  <view class="btn-area">
+    <button type="primary" bindtap="saveFile">保存文件到本地</button>
+    <button type="primary" bindtap="getFile">获取文件信息</button>
+  </view>

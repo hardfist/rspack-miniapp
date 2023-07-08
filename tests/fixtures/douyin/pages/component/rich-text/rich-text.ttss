@@ -1,0 +1,17 @@
+.page-content {
+  width: auto;
+  margin: 30rpx 0;
+  padding: 0 50rpx;
+}
+scroll-view {
+  height: 350rpx;
+  white-space: pre;
+  box-sizing: border-box;
+  border: 1rpx solid #1AAD19;
+}
+.show-code {
+  overflow-x: scroll;
+  white-space: pre;
+  box-sizing: border-box;
+  border: 1rpx solid #1AAD19;
+}

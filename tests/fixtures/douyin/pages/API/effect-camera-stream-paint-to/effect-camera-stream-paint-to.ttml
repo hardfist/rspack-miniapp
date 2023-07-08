@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="body">
+        <view class="page-section-title page-section-title-space">提示：点击「打开相机」canvas 区域将绘制相机画面。点击「暂停相机」，将暂停绘制。</view>
+        <view class="btn-area">
+            <view class="body-view page-section">
+                <canvas type="webgl" id="myCanvas"></canvas>
+                <button type="primary" bindtap="requestEffectCamera">创建相机</button>
+                <button type="primary" bindtap="play">打开相机</button>
+                <button type="primary" bindtap="stop">暂停相机</button>
+                <button type="primary" bindtap="disposeEffectCamera">释放相机资源</button>
+            </view>
+        </view>
+        <view class="page-section-space">
+        </view>
+    </view>
+</view>

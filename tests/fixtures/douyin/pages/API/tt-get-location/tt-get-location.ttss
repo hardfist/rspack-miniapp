@@ -1,0 +1,13 @@
+.page-body-info-get-location {
+  height: 316rpx;
+  padding-top: 76rpx;
+  background-color: #ffffff;
+  text-align: center;
+}
+.page-body-text-small {
+  display: block;
+}
+.page-body-text-location {
+  font-size: 50rpx;
+  text-align: center;
+}

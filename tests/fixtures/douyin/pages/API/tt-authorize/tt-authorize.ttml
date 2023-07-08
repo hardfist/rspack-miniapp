@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="btn-area">
+        <block>
+          <view tt:for="{{settings}}" tt:for-item="setting" tt:for-index="authName">
+            <view class="ttui-cell">
+              <view class="ttui-cell__hd">
+                <view class="ttui-label">{{setting.title}}</view>
+              </view>
+              <view class="ttui-cell__bd">
+                <text tt:if="{{setting.hasAuth}}">已获取</text>
+                <text tt:else>未获取</text>
+              </view>
+            </view>
+            <button type="default" data-auth="{{authName}}" bindtap="authAction">{{setting.btnTxt}}</button>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

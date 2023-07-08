@@ -1,0 +1,85 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">手机品牌</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.brand}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">手机型号</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.model}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">可使用窗口宽 × 高</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.windowWidth}} × {{systemInfo.windowHeight}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">屏幕宽 × 高</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.screenWidth}} × {{systemInfo.screenHeight}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell" style="display: none;">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">设备像素比</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.pixelRatio}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">今日头条App版本</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.version}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">操作系统版本</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.system}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">操作系统类型</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.platform}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">SDK版本</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.SDKVersion}}"></input>
+          </view>
+        </view>
+      </view>
+			<view>{{txt}}</view>
+      <view class="btn-area">
+        <button type="primary" bindtap="getSystemInfo">获取手机系统信息</button>
+        <button bindtap="clear">清空</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+.nodeInfo{
+    padding: 0 20px;
+    word-wrap:break-word;
+}

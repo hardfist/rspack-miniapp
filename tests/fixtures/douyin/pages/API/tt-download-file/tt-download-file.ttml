@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="body">
+    <image tt:if="{{imageSrc}}" src="{{imageSrc}}" mode="center" />
+    <video tt:if="{{videoSrc}}" src="{{videoSrc}}"></video>
+    <view class="btn-area">
+      <button bindtap="downloadImage" type="primary">下载图片</button>
+      <button bindtap="saveImageToPhotosAlbum" type="default">保存图片到本地相册</button>
+    </view>
+  </view>
+</view>

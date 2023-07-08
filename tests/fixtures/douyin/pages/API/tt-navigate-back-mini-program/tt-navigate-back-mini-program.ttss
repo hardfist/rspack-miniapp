@@ -1,0 +1,4 @@
+.hint-area {
+  padding: 20rpx;
+  color: #888;
+}

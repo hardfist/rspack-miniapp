@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-section-title">默认样式</view>
+      <label class="checkbox">
+        <checkbox value="cb" checked="true" />选中
+      </label>
+      <label class="checkbox">
+        <checkbox value="cb" disabled="{{false}}" />未选中
+      </label>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">推荐展示样式</view>
+      <view class="ttui-cells">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="ttui-cell" tt:for="{{items}}" tt:key="{{item.value}}">
+            <view class="ttui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}" color="{{item.color ? 'purple' : '#F85959'}}"/>
+            </view>
+            <view class="ttui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+</view>

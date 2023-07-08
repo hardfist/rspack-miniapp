@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-body-buttons">
+        <block tt:if="{{playing === false}}">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="play">
+            <image src="{{imageUrl+'play.png'}}"></image>
+          </view>
+        </block>
+        <block tt:if="{{playing === true}}">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="pause">
+            <image src="{{imageUrl+'pause.png'}}"></image>
+          </view>
+        </block>
+        <view class="page-body-button"></view>
+      </view>
+      <view class="page-section-title page-section-title-space">
+        正在监听音频暂停事件: 音频<text style="font-size:15px; font-weight: bold; color: black;">{{paused ? "已" : "未"}}</text>暂停 
+      </view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,11 @@
+.body {
+  width: 95%;
+  margin: 0 auto;
+}
+.checkbox { 
+  margin-right: 20rpx;
+}
+.ttui-cells {
+  border-radius: 10px;
+}
+

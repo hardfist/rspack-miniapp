@@ -1,0 +1,2 @@
+<button type="primary" bindtap="setStorage" disabled="{{hasStore}}" >设置缓存</button>
+<button type="primary" bindtap="getStorage" disabled="{{!hasStore}}">获取缓存</button>

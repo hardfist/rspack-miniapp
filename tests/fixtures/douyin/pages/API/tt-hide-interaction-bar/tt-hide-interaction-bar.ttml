@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="page-section-title-space page-section-title">注意这个 API 仅供 feed 中的小程序调用。</view>
+  <view class="btn">
+    <button type="primary" size="default" bindtap="hideInteractionBar">
+      隐藏互动组件
+    </button>
+  </view>
+</view>

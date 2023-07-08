@@ -1,0 +1,15 @@
+<view class="container">
+	<view class="body">
+		<view class="page-section">
+			<block tt:if="{{hasLogin}}">
+				<text class="page-body-title">已登录</text>
+				<text class="page-body-text">调用 tt.login 可以获取用户临时登录凭证 code ，有效期 3 分钟。开发者可以通过在服务器端调用 登录凭证校验接口 换取 openid 和 session_key 等信息。</text>
+				<text class="page-body-text" tt:if="{{code !== ''}}">code: {{code}}</text>
+			</block>
+			<block tt:else>
+				<text class="page-body-text">未登录 或 当前 session 已经失效，需要重新登录</text>
+				<button class="page-body-button" type="primary" bindtap="login">登录</button>
+      </block>
+    </view>
+  </view>
+</view>

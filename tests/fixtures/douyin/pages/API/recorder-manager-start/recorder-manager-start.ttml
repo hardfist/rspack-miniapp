@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="body">
+    <text class="text-space">剩余录音时间 {{ cd }}ms</text>
+    <view class="btn-area">
+      <button type="primary" bindtap="start" tt:if="{{ !isStart }}">start</button>
+      <button bindtap="stop" tt:else>stop</button>
+    </view>
+  </view>
+</view>

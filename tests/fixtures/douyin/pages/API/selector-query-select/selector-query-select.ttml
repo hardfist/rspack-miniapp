@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="page-body-title header-center">获取示例按钮的节点信息</view>
+  <view class="btn-area">
+    <button id="btn" type="primary">示例按钮</button>
+  </view>
+  <view class="body">
+    <view class="title">width: {{nodes.width}}</view>
+    <view class="title">height: {{nodes.height}}</view>
+    <view class="title">top: {{nodes.top}}</view>
+    <view class="title">bottom: {{nodes.bottom}}</view>
+    <view class="title">left: {{nodes.left}}</view>
+    <view class="title">right: {{nodes.right}}</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <button type="primary" open-type="share" bindtap="shareVideo">点击分享视频</button>
+      <button type="primary" bindtap="toVideo" disabled="{{!videoId}}">点击跳转到分享的视频播放页面</button>
+    </view>
+  </view>
+</view>

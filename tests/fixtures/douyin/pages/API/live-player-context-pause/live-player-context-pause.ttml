@@ -1,0 +1,4 @@
+<view class="live-play">
+  <live-player class="my-live" src="https://sf3-ttcdn-tos.pstatp.com/obj/developer/bytdance.flv" autoplay="{{true}}" id="livePlayer"/>
+  <button type="primary" bindtap="pause">{{livePlay ? 'Pause' : 'Resume'}}</button>
+</view>

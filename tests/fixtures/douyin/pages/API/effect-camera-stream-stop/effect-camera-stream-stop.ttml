@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="body">
+        <view class="page-section-title page-section-title-space">提示：打开相机后，点击「关闭相机」后相机关闭但不会释放相机资源，「释放相机资源」后才能重新打开相机。</view>
+         <view class="page-section-space">
+            <view>相机状态：{{stateArr[state]}}</view>
+        </view>
+        <view class="btn-area">
+            <view class="body-view page-section">
+                <button type="primary" bindtap="requestEffectCamera">打开相机</button>
+                <button type="primary" bindtap="stopEffectCamera">关闭相机</button>
+                <button type="primary" bindtap="disposeEffectCamera">释放相机资源</button>
+            </view>
+        </view>
+    </view>
+</view>

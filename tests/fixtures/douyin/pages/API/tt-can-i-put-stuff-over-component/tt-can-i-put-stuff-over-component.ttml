@@ -1,0 +1,11 @@
+<view class="content" bindtap="canIPut">
+    <view class="title">是否支持由客户端实现的组件。</view>
+    <button type="primary" size="default" data-data="video"> video </button>
+    <button type="primary" size="default" data-data="image"> image </button>
+    <button type="primary" size="default" data-data="live-player"> live-player </button>
+    <button type="primary" size="default" data-data="map"> map </button>
+    <button type="primary" size="default" data-data="ad"> ad </button>
+    <button type="primary" size="default" data-data="swiper"> swiper </button>
+    <button type="primary" size="default" data-data="canvas"> 旧方案canvas</button>
+    <button type="primary" size="default" data-data="canvas[type='2d']"> 新方案canvas[type="2d"]</button>
+</view>

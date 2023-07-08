@@ -1,0 +1,23 @@
+.display-area {
+  background: #fff;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px 8px;
+}
+.tip-week {
+  margin: 18rpx 16rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 2rpx;
+  text-align: center;
+}
+.result-area-default {
+  font-size: 48rpx;
+  width: 240rpx;
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+}

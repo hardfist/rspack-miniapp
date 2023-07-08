@@ -1,0 +1,7 @@
+<!-- 一个全屏宽高的元素，使得下方的 #target 节点的初始位置位于手机屏幕之外-->
+<view class="container" style="height: 100vh;">
+  <view class="page-section-title-space page-section-title">指定页面显示区域作为参照区域之一，例如：参照区域为整个屏幕可视范围, 向下滚动至目标元素进入参照区域可以看见效果</view>
+  <view style="position:fixed; top:50%; width: 100%; text-align: center; font-size: 14px; color: #000;"> {{isShow ? "target visible" : "target Invisible"}} </view>
+</view>
+<!-- 待观测的节点 -->
+<view id="target" style="margin: 300px auto 0; width: 150px; height: 150px; background: lightblue;"> </view>

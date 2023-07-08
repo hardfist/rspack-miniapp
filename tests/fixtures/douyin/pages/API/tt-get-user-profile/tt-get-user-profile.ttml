@@ -1,0 +1,28 @@
+<view>
+  <view class="page-section page-section-space">
+    <view class="main">
+      <view class="title">用户信息</view>
+
+      <view tt:if="{{!userInfo}}" class="info-wrap">
+        <text class="empty">未获取</text>
+      </view>
+
+      <view tt:if="{{!!userInfo}}" class="user-info">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" />
+        <text class="text-info">{{userInfo.nickName}}</text>
+        <text class="text-info">
+          性别： {{ userInfo.gender === 0 ? '未知' : (userInfo.gender === 1 ? '男' : '女') }}
+        </text>
+        <text class="text-info">
+          地区： {{userInfo.country || '--国'}}/{{userInfo.province || '--省'}}/{{userInfo.city || '--市'}}
+        </text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="btn-area">
+    <button type="primary" bindtap="getUserProfile">获取用户信息</button>
+    <button bindtap="clear">清空</button>
+    <button bindtap="login">登录</button>
+  </view>
+</view>

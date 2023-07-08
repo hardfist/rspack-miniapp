@@ -1,0 +1,8 @@
+<!-- 一个全屏宽高的元素，使得下方的 #target 节点的初始位置位于手机屏幕之外-->
+<view class="container" style="height: 100vh;">
+  <view class="page-section-title-space page-section-title">调用 disconnect 方法，通过 IntersectionObserver.observe 方法注册的回调函数将不再触发</view>
+  <button bindtap="disconnect">IntersectionObserver.disconnect</button>
+  <view style="position:fixed; top:50%; width: 100%; text-align: center; font-size: 14px; color: #000;"> {{isShow ? "target visible" : "target Invisible"}} </view>
+</view>
+<!-- 待观测的节点 -->
+<view id="target" style="margin: 300px auto 0; width: 150px; height: 150px; background: lightblue;"> </view>

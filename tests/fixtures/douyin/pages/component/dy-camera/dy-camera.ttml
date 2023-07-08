@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" open-type="share" data-channel="video" >拍抖音</button>
+      </view>
+    </view>
+    <view class="page-section-title page-section-title-space">
+      <view>简介：该能力需要申请（详见字节小程序文档），申请开通后，用户可通过“拍抖音”功能拍摄视频，发布后的视频会带上相应的小程序入口，该入口是抖音最大流量入口之一，配合抖音高质量推荐算法，精准触达目标用户。</view>
+    </view>
+  </view>
+</view>

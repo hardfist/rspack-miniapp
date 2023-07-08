@@ -1,0 +1,9 @@
+<view class="container">
+	<view class="body">
+		<view class="btn-area">
+      <button type="primary" size="default" bindtap="getBrightness"> 点击获取当前屏幕亮度值 </button> 
+    </view>
+    <view class="page-section-title page-section-title-space">屏幕亮度值，范围 0 ～ 1。0 最暗，1 最亮。</view>
+    <view class="page-section-title page-section-title-space">当前屏幕亮度值为: {{value}}</view>
+	</view>
+</view>

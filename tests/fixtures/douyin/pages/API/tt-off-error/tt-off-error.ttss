@@ -1,0 +1,20 @@
+.content{
+    padding: 0 20rpx 50rpx 20rpx;
+    word-break:break-all;
+}
+.title{
+    font-weight: bold;
+}
+.result-wrap {
+    display: block;
+    box-sizing: border-box;
+    padding: 20rpx;
+    width: 100%;
+}
+.result {
+    font-size: 15px;
+    color: #999999;
+}
+.clear-btn {
+    margin: 20rpx 0;
+}

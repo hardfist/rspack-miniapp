@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">本地图片</view>
+      <view class="page-section-ctn">
+        <image class="image" src="{{imageUrl}}" />
+      </view>
+    </view>
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">网络图片</view>
+      <view class="page-section-ctn">
+        <image class="image" src="{{url}}" binderror="binderror" bindload="bindload" lazy-load />
+      </view>
+    </view>
+    <view class="modeTitle">缩放模式</view>
+    <view class="page-section" tt:for="{{list.zoomMode}}" tt:for-item="item" tt:for-index="index">
+      <view class="page-section-title">{{item.mode}}: {{item.desc}}</view>
+      <view class="page-section-ctn">
+        <image class="{{item.class}}" lazy-load="true" mode="{{item.mode}}" src="{{url}}" />
+      </view>
+    </view>
+    <view class="modeTitle">裁剪模式</view>
+    <view class="page-section" tt:for="{{list.clippingMode}}" tt:for-item="item" tt:for-index="index">
+      <view class="page-section-title">{{item.mode}}: {{item.desc}}</view>
+      <view class="page-section-ctn">
+        <image class="{{item.class}}" lazy-load="true" mode="{{item.mode}}" src="{{url}}" />
+      </view>
+    </view>
+  </view>
+</view>

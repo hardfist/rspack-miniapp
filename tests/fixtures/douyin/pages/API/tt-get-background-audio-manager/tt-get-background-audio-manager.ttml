@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="{{imageUrl}}{{playImage?'play':'pause'}}.png" alt="" bindtap="play" />
+  <text>注：点击获取全局音频并{{playFont}}</text>
+  <text>离开当前页面后，背景音乐将保持播放，但退出小程序将停止。</text>
+</view>

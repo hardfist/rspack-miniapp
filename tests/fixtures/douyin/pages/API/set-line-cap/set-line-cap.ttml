@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <canvas class="canvas-element" canvas-id="myCanvas"></canvas>
+      <view class="content">
+        箭头样式示例，样式顺序：
+        <block tt:for="{{lineJoinTypes}}">
+          <view>{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

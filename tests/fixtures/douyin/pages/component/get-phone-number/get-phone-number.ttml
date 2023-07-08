@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <text class="page-body-title">
+        点击获取用户手机号
+      </text>
+      <view class="page-body-line">
+        <button tt:if="hasLogin" open-type="getPhoneNumber" size="default" bindgetphonenumber="getPhoneNumber"> 获取手机号 </button>
+        <button tt:else size="default" bindgetphonenumber="login"> 请先登录才可以获取 </button>
+      </view>
+    </view>
+  </view>
+</view>

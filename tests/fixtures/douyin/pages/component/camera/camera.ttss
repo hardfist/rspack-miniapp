@@ -1,0 +1,6 @@
+button {
+  margin-top: 30rpx;
+}
+view {
+  margin: 30rpx;
+}

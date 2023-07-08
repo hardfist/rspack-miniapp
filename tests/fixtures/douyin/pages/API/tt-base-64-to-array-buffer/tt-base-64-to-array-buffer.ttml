@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section-title page-section-title-space">
+      点击将 字符串"bytedance" 的 base64编码字符串 转成 ArrayBuffer 对象
+    </view>
+    <view class="btn-area">
+      <button type="primary" size="default" bindtap="base64ToArrayBuffer"> 将Base64字符串转成ArrayBuffer对象 </button> 
+    </view> 
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="body body-space">
+    <button bindtap="previewPureNetworkImage">Preview纯网络图片</button>
+  </view>
+</view>

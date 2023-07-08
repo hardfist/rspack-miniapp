@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="title">当前页面的路由层级：{{length}}</view>
+  <view class="btn-area">
+    <button type="primary" bindtap="navigateBack">navigateBack返回上一页</button>
+  </view>
+</view>

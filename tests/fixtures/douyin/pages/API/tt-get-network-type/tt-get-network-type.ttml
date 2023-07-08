@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+        <view class="page-section-title page-section-title-space">网络状态</view>
+        <block tt:if="{{hasNetworkType === false}}">
+          <text class="page-body-text text-space">未获取</text>
+          <text class="page-body-text text-space">点击红色按钮可获取网络状态</text>
+        </block>
+        <block tt:if="{{hasNetworkType === true}}">
+          <text class="page-body-text-network-type text-space">{{networkType}}</text>
+        </block>
+        <view class="btn-area">
+          <button type="primary" bindtap="getNetworkType">获取手机网络状态</button>
+          <button bindtap="clear">清空</button>
+        </view>
+    </view>
+  </view>
+</view>

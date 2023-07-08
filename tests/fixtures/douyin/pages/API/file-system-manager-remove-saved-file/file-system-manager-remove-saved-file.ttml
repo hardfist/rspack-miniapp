@@ -1,0 +1,3 @@
+<view class="btn-area">
+  <button type="primary" bindtap="removeFiles" disabled="{{!tempFilePath}}"> 删除已保存的本地缓存文件 </button>
+</view>

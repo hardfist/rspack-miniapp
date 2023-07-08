@@ -1,0 +1,19 @@
+.switch-space {
+    margin-right: 48rpx;
+}
+.ttui-cell-switch {
+   padding-top: 8px;
+   padding-bottom: 8px; 
+}
+.page-section {
+    margin: 0 auto 60rpx auto;
+    width: 95%;
+    height: 180rpx;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.page-section-title {
+    color: black;
+    height: 80rpx;
+    line-height: 80rpx;
+}

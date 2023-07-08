@@ -1,0 +1,5 @@
+<view class="content" bindtap="getLaunch">
+    <view class="title">获取小程序启动时的参数。其值与App.onLaunch方法传入的参数一致，并且不会随着小程序使用而发生变化。</view>
+    <button type="primary" size="default"> 点击获取小程序启动时的参数 </button>
+    <view class="footer">{{options}}</view>
+</view>

@@ -1,0 +1,17 @@
+.page-body-text-screen-brightness {
+  font-size: 80rpx;
+  font-family: -apple-system-font, Helvetica Neue,Helvetica,sans-serif;
+}
+
+.page-section-gap {
+  padding: 30rpx;
+}
+
+.page-body-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 50rpx 0 150rpx 0;
+}

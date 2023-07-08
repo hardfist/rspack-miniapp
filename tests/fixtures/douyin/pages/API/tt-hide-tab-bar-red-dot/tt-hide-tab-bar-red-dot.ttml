@@ -1,0 +1,8 @@
+<view class="control-area">
+  <view class="btn-area">
+    <button bindtap="hideTabBarRedDot">{{showDot?"隐藏红点":"显示红点"}}</button>
+  </view>
+  <view class="btn-area">
+    <button type="primary" class="back-btn" bindtap="navigateBack">返回上一级</button>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="btn-area">
+        <button type="primary" bindtap="getWifiList">获取 WIFI 列表</button>
+      </view>
+      <view class="ttui-cells">
+        <view class="ttui-cell" tt:for="{{list}}" tt:key="{{index}}">
+          <view>{{item.SSID}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

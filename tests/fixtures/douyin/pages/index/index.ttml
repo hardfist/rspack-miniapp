@@ -1,0 +1,54 @@
+<view class='content'>
+  <view class='swiper' bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchend='touchend'>
+    <view class='{{screen==="small" ? "swiper-list" : "swiper-big-list"}} {{screen==="small"? item.swpClass : !switchBig ? "switch-"+item.bigClass : item.bigClass}} {{item.screenClass}} {{current===1 && prevCurrent && switchBig && index === 0 ? "revise-animation":""}}' tt:for="{{swiperList}}" tt:for-index="index" bindtap="swpBtn" data-index="{{index}}">
+      <view class="head {{item.screenClass || screen === 'big' ? index === 0 ? 'hidden-extend-head' : index === 1 ? 'hidden-component-head' :  'hidden-api-head': 'show-head'}}">
+        <view tt:if='{{index === 0}}' class="head-box ">
+          <frame-animation class="head-animation" url="https://sf3-ttcdn-tos.pstatp.com/obj/developer/ide/demo/instant-page/image/category/1.png" width='600' height='600' count='12' duration='0.5' playNumber="1" bindend="end" direction="{{current>prevCurrent?'right': current < prevCurrent && current < 1 ? 'left' : ''}}"></frame-animation>
+        </view>
+        <view tt:if='{{index === 1}}' class="head-box ">
+          <frame-animation class="head-animation" url="https://sf3-ttcdn-tos.pstatp.com/obj/developer/ide/demo/instant-page/image/category/2.png" width='480' height='480' count='13' duration='0.5' playNumber="1" bindend="end" direction="{{current>prevCurrent?'right': current < prevCurrent ? 'left' : ''}}"></frame-animation>
+        </view>
+        <view tt:if='{{index === 2}}' class="head-box ">
+          <frame-animation class="head-animation" url="https://sf3-ttcdn-tos.pstatp.com/obj/developer/ide/demo/instant-page/image/category/3.png" width='500' height='500' count='13' duration='0.5' playNumber="1" bindend="end" direction="{{current>prevCurrent && current > 1?'right': current < prevCurrent ? 'left' : ''}}"></frame-animation>
+        </view>
+      </view>
+      <scroll-view class="body" scroll-y="{{screen != 'small'}}" scroll-with-animation data-index="{{index}}" bindscroll="bindscroll" scroll-top="{{scrollTop}}" scroll-into-view="{{view}}">
+        <view class="section">
+          <view class="title">{{data[index].title}}</view>
+          <view tt:for="{{data[index].list}}" tt:for-item="iv" tt:for-index="num">
+            <view class="children-body" bindtap="showChildren" data-index="{{index}}" data-num="{{num}}" data-open="{{iv.open}}">
+              <image src="{{iv.icon}}" mode="aspectFit" class="children-icon" />
+              <view class="children-name">{{iv.name}}</view>
+              <image src="{{imageUrl+'arrow.png'}}" class=' children-arrow box-arrow {{iv.open ? "children-arrow-default" : "children-arrow-active"}}' />
+            </view>
+            <view tt:if='{{iv.open}}' class='{{iv.pages.length !== 0 && "top-border list-show"}}'>
+              <view class='children-body ' tt:for="{{iv.pages}}" tt:for-item="i" tt:for-index="n" data-path="{{i.path}}" bindtap="toRouter" data-view="{{i.navigateCustom}}" id="{{i.navigateCustom?i.navigateCustom:'x'+num+n}}">
+                <view class="children-icon min-icon">
+                  <text></text>
+                </view>
+                <view class="children-name min-name">{{i.name}}</view>
+                <image src="{{imageUrl+'setting_arrow.png'}}" class='children-arrow' />
+              </view>
+            </view>
+          </view>
+          <view class="bottom-line"></view>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 高斯模糊处理tab的背景 -->
+    <view class="vdom-tab-box" tt:if='{{!isIos}}'>
+      <view class="vdom-tab"></view>
+    </view>
+  </view>
+</view>
+<!-- tab -->
+<view class="tabs">
+  <view class="tab" tt:for="{{tabs}}" tt:for-item="item" tt:for-index="index" bindtap="switchTab" data-index="{{index}}">
+    <view class="tab-default tab-badge " tt:if='{{item.badge}}'>{{item.badge}}</view>
+    <view class="tab-default tab-redDot" tt:if='{{item.redDot && !tem.badge}}'></view>
+    <image class="tab-icon" src="{{current === index ? item.select : item.icon}}"></image>
+    <view class="tab-text {{current === index ? 'tab-text-active': 'tab-text-inactive'}}">
+      {{item.text}}
+    </view>
+  </view>
+</view>

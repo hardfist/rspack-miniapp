@@ -1,0 +1,9 @@
+<button bindtap="compressImage">点击选择压缩图片</button>
+<view class="beforCompress">
+  <text>压缩前图片</text>
+  <image src="{{beforCompressImage}}"></image>
+</view>
+<view class="beforCompress">
+  <text>压缩后图片</text>
+  <image src="{{afterCompressImage}}"></image>
+</view>

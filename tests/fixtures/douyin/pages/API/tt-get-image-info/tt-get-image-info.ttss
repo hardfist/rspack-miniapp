@@ -1,0 +1,39 @@
+image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 30rpx;
+}
+
+.titleImgage {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+}
+
+.titlelist {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  padding-bottom: 20rpx;
+}
+
+.titlelist>text {
+  display: block;
+}
+
+.titlelist>text:nth-child(1) {
+  width: 30%;
+}
+
+.titlelist>text:nth-child(2) {
+  word-break: break-all;
+  width: 70%;
+}
+
+#box {
+  margin-top: 30rpx;
+  width: 600rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}

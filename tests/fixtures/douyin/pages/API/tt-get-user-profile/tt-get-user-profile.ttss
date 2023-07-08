@@ -1,0 +1,36 @@
+.main {
+  height: 260px;
+  padding-top: 20rpx;
+  background-color: #fff;
+  text-align: center;
+}
+
+.main text {
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.empty {
+  color: #bbb;
+  font-size: 28rpx;
+}
+
+.user-info {
+  margin-top: 30rpx;
+}
+
+.avatar {
+  display: inline-block;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 128rpx;
+}
+
+.text-info {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+  line-height: 1;
+}

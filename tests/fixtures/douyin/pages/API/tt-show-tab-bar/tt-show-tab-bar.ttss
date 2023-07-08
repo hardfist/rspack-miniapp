@@ -1,0 +1,29 @@
+button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000000;
+  background-color: #F8F8F8;
+}
+.back-btn {
+  color: #FFFFFF;
+  background-color: rgba(248, 89, 89, 1);
+}
+.btn-area {
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}

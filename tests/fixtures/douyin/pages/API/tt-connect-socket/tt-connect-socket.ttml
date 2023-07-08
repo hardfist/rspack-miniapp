@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__bd">Socket状态</view>
+          <view class="ttui-cell__ft">
+            <switch bindchange="toggleSocket" checked="{{socketStatus == 'connected'}}" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" size="40" bindtap="sendMessage" disabled="{{socketStatus != 'connected'}}">点我发送字符串</button>
+			<button type="primary" size="40" bindtap="sendMessageAB" disabled="{{socketStatus != 'connected'}}">点我发送ArrayBuffer</button>
+    </view>
+		<view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text>{{text}}</text>
+      </view>
+  </view>
+</view>

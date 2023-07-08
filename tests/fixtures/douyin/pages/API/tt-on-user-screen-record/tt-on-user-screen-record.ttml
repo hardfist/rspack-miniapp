@@ -1,0 +1,20 @@
+<view class="container">
+	<view class="body-space">
+		<view class="page-section">
+			<view class="section-title">使用方式</view>
+			<view class="btn-area">
+				<button type="primary" size="default" bindtap="onRecord">
+          开启监听（只有iOS支持）
+        </button>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="section-title">实践场景</view>
+      <view class="desc">推荐在需要禁止录屏页面的 onShow 中开启监听，onHide 中取消监听。</view>
+      <view class="desc">防止录屏的逻辑，可以参考下面的例子：开启录屏时（前置操作需要开启监听），视频无法播放，停止录屏时，视频可以播放。</view>
+      <view class="container">
+        <video id="myVideo" src={{src}} style="width: 100%;" autoplay ></video>  
+      </view>
+    </view>
+  </view>
+</view>

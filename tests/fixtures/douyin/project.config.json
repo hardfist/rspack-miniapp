@@ -1,0 +1,1680 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.1.1",
+  "appid": "tt07e3715e98c9aac0",
+  "projectname": "tma-demo",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "setting": {
+      "es6": true,
+      "minified": false,
+      "mockUpdate": false,
+      "newFeature": false,
+      "postcss": false,
+      "urlCheck": false
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.1.1",
+    "appid": "tt07e3715e98c9aac0",
+    "projectname": "tma-demo",
+    "condition": {
+      "search": {
+        "current": -1,
+        "list": []
+      },
+      "conversation": {
+        "current": -1,
+        "list": []
+      },
+      "game": {
+        "currentL": -1,
+        "list": []
+      },
+      "miniprogram": {
+        "current": -1,
+        "list": [
+          {
+            "id": 0,
+            "name": "page-scroll",
+            "pathName": "pages/API/page-scroll/page-scroll",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 1,
+            "name": "canvas",
+            "pathName": "pages/API/canvas/canvas",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 2,
+            "name": "favor-guide",
+            "pathName": "pages/API/favor-guide/favor-guide",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 3,
+            "name": "set-navigation-color",
+            "pathName": "pages/API/set-navigation-color/set-navigation-color",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 4,
+            "name": "set-navigation-bar-color",
+            "pathName": "pages/API/set-navigation-bar-color/set-navigation-bar-color",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 5,
+            "name": "set-navigation-bar-loading",
+            "pathName": "pages/API/set-navigation-bar-loading/set-navigation-bar-loading",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 6,
+            "name": "capture-screen",
+            "pathName": "pages/API/capture-screen/capture-screen",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 7,
+            "name": "screen-brightness",
+            "pathName": "pages/API/screen-brightness/screen-brightness",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 8,
+            "name": "on-network-status-change",
+            "pathName": "pages/API/on-network-status-change/on-network-status-change",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 9,
+            "name": "storage",
+            "pathName": "pages/API/storage/storage",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 10,
+            "name": "file-process",
+            "pathName": "pages/API/file-process/file-process",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 11,
+            "name": "authorize",
+            "pathName": "pages/API/authorize/authorize",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 12,
+            "name": "payment",
+            "pathName": "pages/API/payment/payment",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 13,
+            "name": "custom-message",
+            "pathName": "pages/component/custom-message/custom-message",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 14,
+            "name": "get-phone-number",
+            "pathName": "pages/component/get-phone-number/get-phone-number",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 15,
+            "name": "live-player",
+            "pathName": "pages/component/live-player/live-player",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 16,
+            "name": "image",
+            "pathName": "pages/component/image/image",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 17,
+            "name": "video",
+            "pathName": "pages/component/video/video",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 18,
+            "name": "imagessss",
+            "pathName": "pages/API/image/image",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 19,
+            "name": "-change",
+            "pathName": "pages/API/on-compass-change/on-compass-change",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 20,
+            "name": "video-api",
+            "pathName": "pages/API/video/video",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 21,
+            "name": "set-navigation-bar",
+            "pathName": "pages/API/set-navigation-bar/set-navigation-bar",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 22,
+            "name": "socket",
+            "pathName": "pages/API/web-socket/web-socket",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 23,
+            "name": "filesystem",
+            "pathName": "pages/API/filesystem/filesystem",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 24,
+            "name": "socket",
+            "pathName": "pages/API/web-socket/web-socket",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 25,
+            "name": "live-player",
+            "pathName": "pages/component/live-player/live-player",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 26,
+            "name": "ad",
+            "pathName": "pages/component/ad/ad",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 27,
+            "name": "on-memory-warning",
+            "pathName": "pages/API/on-memory-warning/on-memory-warning",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 28,
+            "name": "radio",
+            "pathName": "pages/component/radio/radio",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 29,
+            "name": "live-player",
+            "pathName": "pages/component/live-player/live-player",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 30,
+            "name": "canvas",
+            "pathName": "pages/component/canvas/canvas",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 31,
+            "name": "ad",
+            "pathName": "pages/component/ad/ad",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 32,
+            "name": "form",
+            "pathName": "pages/component/form/form",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 33,
+            "name": "video",
+            "pathName": "pages/component/video/video",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 34,
+            "name": "textarea",
+            "pathName": "pages/component/textarea/textarea",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 35,
+            "name": "file-process",
+            "pathName": "pages/API/file-process/file-process",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 36,
+            "name": "tabbar-setting",
+            "pathName": "pages/API/tabbar-setting/tabbar-setting",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 37,
+            "name": "favor-guide",
+            "pathName": "pages/API/favor-guide/favor-guide",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 38,
+            "name": "canvas",
+            "pathName": "pages/API/canvas/canvas",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 39,
+            "name": "filesystem",
+            "pathName": "pages/API/filesystem/filesystem",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 40,
+            "name": "storage",
+            "pathName": "pages/API/storage/storage",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 41,
+            "name": "ad",
+            "pathName": "pages/component/ad/ad",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 42,
+            "name": "live-player",
+            "pathName": "pages/component/live-player/live-player",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 43,
+            "name": "hideInteractionBar",
+            "pathName": "pages/API/tt-hide-interaction-bar/tt-hide-interaction-bar",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 44,
+            "name": "hideHomeButton",
+            "pathName": "pages/API/tt-hide-home-button/tt-hide-home-button",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 45,
+            "name": "getMenuButtonLayout",
+            "pathName": "pages/API/tt-get-menu-button-layout/tt-get-menu-button-layout",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 46,
+            "name": "指定当前画布内容生成图片",
+            "pathName": "pages/API/tt-canvas-to-temp-file-path/tt-canvas-to-temp-file-path",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 47,
+            "name": "tt-upload-file",
+            "pathName": "pages/API/tt-upload-file/tt-upload-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 48,
+            "name": "tt.request",
+            "pathName": "pages/API/tt-request/tt-request",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 49,
+            "name": "tt.downloadFile",
+            "pathName": "pages/API/tt-download-file/tt-download-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 50,
+            "name": "create-rewarded-video-ad",
+            "pathName": "pages/API/tt-create-rewarded-video-ad/tt-create-rewarded-video-ad",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 51,
+            "name": "tt-create-interstitial-ad",
+            "pathName": "pages/API/tt-create-interstitial-ad/tt-create-interstitial-ad",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 52,
+            "name": "tt-navigate-to-mini-program",
+            "pathName": "pages/API/tt-navigate-to-mini-program/tt-navigate-to-mini-program",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 53,
+            "name": "tt-navigate-back-mini-program",
+            "pathName": "pages/API/tt-navigate-back-mini-program/tt-navigate-back-mini-program",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 54,
+            "name": "clear-storage",
+            "pathName": "pages/API/tt-clear-storage/tt-clear-storage",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 55,
+            "name": "text",
+            "pathName": "pages/component/text/text",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 56,
+            "name": "rich-text",
+            "pathName": "pages/component/rich-text/rich-text",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 57,
+            "name": "checkbox",
+            "pathName": "pages/component/checkbox/checkbox",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 58,
+            "name": "input",
+            "pathName": "pages/component/input/input",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 59,
+            "name": "swiper",
+            "pathName": "pages/component/swiper/swiper",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 60,
+            "name": "picker",
+            "pathName": "pages/component/picker/picker",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 61,
+            "name": "picker-view",
+            "pathName": "pages/component/picker-view/picker-view",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 62,
+            "name": "FileSystemManager.access",
+            "pathName": "pages/API/file-system-manager-access/file-system-manager-access",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 63,
+            "name": "FileSystemManager.saveFile",
+            "pathName": "pages/API/file-system-manager-save-file/file-system-manager-save-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 64,
+            "name": "getSavedFileList",
+            "pathName": "pages/API/file-system-manager-get-saved-file-list/file-system-manager-get-saved-file-list",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 65,
+            "name": "removeSavedFile",
+            "pathName": "pages/API/file-system-manager-remove-saved-file/file-system-manager-remove-saved-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 66,
+            "name": "FileSystemManager.copyFile",
+            "pathName": "pages/API/file-system-manager-copy-file/file-system-manager-copy-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 67,
+            "name": "getFileInfo",
+            "pathName": "pages/API/file-system-manager-get-file-info/file-system-manager-get-file-info",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 68,
+            "name": "FileSystemManager.mkdir",
+            "pathName": "pages/API/file-system-manager-mkdir/file-system-manager-mkdir",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 69,
+            "name": "FileSystemManager.readdir",
+            "pathName": "pages/API/file-system-manager-readdir/file-system-manager-readdir",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 70,
+            "name": "FileSystemManager.readFile",
+            "pathName": "pages/API/file-system-manager-read-file/file-system-manager-read-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 71,
+            "name": "rename",
+            "pathName": "pages/API/file-system-manager-rename/file-system-manager-rename",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 72,
+            "name": "rmdir",
+            "pathName": "pages/API/file-system-manager-rmdir/file-system-manager-rmdir",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 73,
+            "name": "stat",
+            "pathName": "pages/API/file-system-manager-stat/file-system-manager-stat",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 74,
+            "name": "unlink",
+            "pathName": "pages/API/file-system-manager-unlink/file-system-manager-unlink",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 75,
+            "name": "writeFile",
+            "pathName": "pages/API/file-system-manager-write-file/file-system-manager-write-file",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          },
+          {
+            "id": 76,
+            "name": "unzip",
+            "pathName": "pages/API/file-system-manager-unzip/file-system-manager-unzip",
+            "query": "",
+            "scene": null,
+            "referrerInfo": {
+              "appId": "",
+              "extraData": ""
+            }
+          }
+        ]
+      }
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": 1179950,
+          "name": "page-scroll",
+          "pathName": "pages/API/page-scroll/page-scroll",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 2,
+          "name": "favor-guide",
+          "pathName": "pages/API/favor-guide/favor-guide",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 3,
+          "name": "set-navigation-color",
+          "pathName": "pages/API/set-navigation-color/set-navigation-color",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 4,
+          "name": "set-navigation-bar-color",
+          "pathName": "pages/API/set-navigation-bar-color/set-navigation-bar-color",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 5,
+          "name": "set-navigation-bar-loading",
+          "pathName": "pages/API/set-navigation-bar-loading/set-navigation-bar-loading",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 6,
+          "name": "capture-screen",
+          "pathName": "pages/API/capture-screen/capture-screen",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 7,
+          "name": "screen-brightness",
+          "pathName": "pages/API/screen-brightness/screen-brightness",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 8,
+          "name": "on-network-status-change",
+          "pathName": "pages/API/on-network-status-change/on-network-status-change",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 9,
+          "name": "storage",
+          "pathName": "pages/API/storage/storage",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 10,
+          "name": "file-process",
+          "pathName": "pages/API/file-process/file-process",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 11,
+          "name": "authorize",
+          "pathName": "pages/API/authorize/authorize",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 12,
+          "name": "payment",
+          "pathName": "pages/API/payment/payment",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 13,
+          "name": "custom-message",
+          "pathName": "pages/component/custom-message/custom-message",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 14,
+          "name": "get-phone-number",
+          "pathName": "pages/component/get-phone-number/get-phone-number",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 15,
+          "name": "live-player",
+          "pathName": "pages/component/live-player/live-player",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 16,
+          "name": "image",
+          "pathName": "pages/component/image/image",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 17,
+          "name": "video",
+          "pathName": "pages/component/video/video",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 18,
+          "name": "imagessss",
+          "pathName": "pages/API/image/image",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 19,
+          "name": "-change",
+          "pathName": "pages/API/on-compass-change/on-compass-change",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 20,
+          "name": "video-api",
+          "pathName": "pages/API/video/video",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 21,
+          "name": "set-navigation-bar",
+          "pathName": "pages/API/set-navigation-bar/set-navigation-bar",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 22,
+          "name": "socket",
+          "pathName": "pages/API/web-socket/web-socket",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 23,
+          "name": "filesystem",
+          "pathName": "pages/API/filesystem/filesystem",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 24,
+          "name": "socket",
+          "pathName": "pages/API/web-socket/web-socket",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 25,
+          "name": "live-player",
+          "pathName": "pages/component/live-player/live-player",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 26,
+          "name": "ad",
+          "pathName": "pages/component/ad/ad",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 27,
+          "name": "on-memory-warning",
+          "pathName": "pages/API/on-memory-warning/on-memory-warning",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 28,
+          "name": "radio",
+          "pathName": "pages/component/radio/radio",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 29,
+          "name": "live-player",
+          "pathName": "pages/component/live-player/live-player",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 31,
+          "name": "ad",
+          "pathName": "pages/component/ad/ad",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 32,
+          "name": "form",
+          "pathName": "pages/component/form/form",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 33,
+          "name": "video",
+          "pathName": "pages/component/video/video",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 34,
+          "name": "textarea",
+          "pathName": "pages/component/textarea/textarea",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 35,
+          "name": "file-process",
+          "pathName": "pages/API/file-process/file-process",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 36,
+          "name": "tabbar-setting",
+          "pathName": "pages/API/tabbar-setting/tabbar-setting",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 37,
+          "name": "favor-guide",
+          "pathName": "pages/API/favor-guide/favor-guide",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 38,
+          "name": "canvas",
+          "pathName": "pages/API/canvas/canvas",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 39,
+          "name": "filesystem",
+          "pathName": "pages/API/filesystem/filesystem",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 40,
+          "name": "storage",
+          "pathName": "pages/API/storage/storage",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 41,
+          "name": "ad",
+          "pathName": "pages/component/ad/ad",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 42,
+          "name": "live-player",
+          "pathName": "pages/component/live-player/live-player",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 43,
+          "name": "hideInteractionBar",
+          "pathName": "pages/API/tt-hide-interaction-bar/tt-hide-interaction-bar",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 44,
+          "name": "hideHomeButton",
+          "pathName": "pages/API/tt-hide-home-button/tt-hide-home-button",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 45,
+          "name": "getMenuButtonLayout",
+          "pathName": "pages/API/tt-get-menu-button-layout/tt-get-menu-button-layout",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 46,
+          "name": "指定当前画布内容生成图片",
+          "pathName": "pages/API/tt-canvas-to-temp-file-path/tt-canvas-to-temp-file-path",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 47,
+          "name": "tt-upload-file",
+          "pathName": "pages/API/tt-upload-file/tt-upload-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 48,
+          "name": "tt.request",
+          "pathName": "pages/API/tt-request/tt-request",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 49,
+          "name": "tt.downloadFile",
+          "pathName": "pages/API/tt-download-file/tt-download-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 50,
+          "name": "create-rewarded-video-ad",
+          "pathName": "pages/API/tt-create-rewarded-video-ad/tt-create-rewarded-video-ad",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 51,
+          "name": "tt-create-interstitial-ad",
+          "pathName": "pages/API/tt-create-interstitial-ad/tt-create-interstitial-ad",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 52,
+          "name": "tt-navigate-to-mini-program",
+          "pathName": "pages/API/tt-navigate-to-mini-program/tt-navigate-to-mini-program",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 53,
+          "name": "tt-navigate-back-mini-program",
+          "pathName": "pages/API/tt-navigate-back-mini-program/tt-navigate-back-mini-program",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 54,
+          "name": "clear-storage",
+          "pathName": "pages/API/tt-clear-storage/tt-clear-storage",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 55,
+          "name": "text",
+          "pathName": "pages/component/text/text",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 56,
+          "name": "rich-text",
+          "pathName": "pages/component/rich-text/rich-text",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 57,
+          "name": "checkbox",
+          "pathName": "pages/component/checkbox/checkbox",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 58,
+          "name": "input",
+          "pathName": "pages/component/input/input",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 59,
+          "name": "swiper",
+          "pathName": "pages/component/swiper/swiper",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 60,
+          "name": "picker",
+          "pathName": "pages/component/picker/picker",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 61,
+          "name": "picker-view",
+          "pathName": "pages/component/picker-view/picker-view",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 62,
+          "name": "FileSystemManager.access",
+          "pathName": "pages/API/file-system-manager-access/file-system-manager-access",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 63,
+          "name": "FileSystemManager.saveFile",
+          "pathName": "pages/API/file-system-manager-save-file/file-system-manager-save-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 64,
+          "name": "getSavedFileList",
+          "pathName": "pages/API/file-system-manager-get-saved-file-list/file-system-manager-get-saved-file-list",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 65,
+          "name": "removeSavedFile",
+          "pathName": "pages/API/file-system-manager-remove-saved-file/file-system-manager-remove-saved-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 66,
+          "name": "FileSystemManager.copyFile",
+          "pathName": "pages/API/file-system-manager-copy-file/file-system-manager-copy-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 67,
+          "name": "getFileInfo",
+          "pathName": "pages/API/file-system-manager-get-file-info/file-system-manager-get-file-info",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 68,
+          "name": "FileSystemManager.mkdir",
+          "pathName": "pages/API/file-system-manager-mkdir/file-system-manager-mkdir",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 69,
+          "name": "FileSystemManager.readdir",
+          "pathName": "pages/API/file-system-manager-readdir/file-system-manager-readdir",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 70,
+          "name": "FileSystemManager.readFile",
+          "pathName": "pages/API/file-system-manager-read-file/file-system-manager-read-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 71,
+          "name": "rename",
+          "pathName": "pages/API/file-system-manager-rename/file-system-manager-rename",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 72,
+          "name": "rmdir",
+          "pathName": "pages/API/file-system-manager-rmdir/file-system-manager-rmdir",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 73,
+          "name": "stat",
+          "pathName": "pages/API/file-system-manager-stat/file-system-manager-stat",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 74,
+          "name": "unlink",
+          "pathName": "pages/API/file-system-manager-unlink/file-system-manager-unlink",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 75,
+          "name": "writeFile",
+          "pathName": "pages/API/file-system-manager-write-file/file-system-manager-write-file",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 76,
+          "name": "unzip",
+          "pathName": "pages/API/file-system-manager-unzip/file-system-manager-unzip",
+          "query": "",
+          "scene": "",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 77,
+          "name": "native",
+          "pathName": "pages/native/index",
+          "query": "",
+          "scene": "011001",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 78,
+          "name": "native component",
+          "pathName": "pages/native/component/index",
+          "query": "",
+          "scene": "011001",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 79,
+          "name": "native-text",
+          "pathName": "pages/native/component/text/text",
+          "query": "",
+          "scene": "011001",
+          "launchFrom": "",
+          "location": ""
+        },
+        {
+          "id": 1630396363599,
+          "name": "open-button",
+          "pathName": "pages/native/component/open-button/open-button",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1,
+          "name": "canvas-api",
+          "pathName": "pages/API/canvas/canvas",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 30,
+          "name": "canvas-component",
+          "pathName": "pages/component/canvas/canvas",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1631613445241,
+          "name": "movable-area",
+          "pathName": "pages/component/movable-area/movable-area",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1631614314002,
+          "name": "canRateAwemeOrders",
+          "pathName": "pages/API/tt-can-rate-aweme-orders/tt-can-rate-aweme-orders",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1631623222606,
+          "name": "rateOrder",
+          "pathName": "pages/API/tt-rate-aweme-order/tt-rate-aweme-order",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1632637406368,
+          "name": "getUserProfile",
+          "pathName": "pages/API/tt-get-user-profile/tt-get-user-profile",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        },
+        {
+          "id": 1632641592364,
+          "name": "open-data",
+          "pathName": "pages/component/open-data/open-data",
+          "query": "",
+          "scene": "990001",
+          "launchFrom": "scan",
+          "location": "qr_code"
+        }
+      ]
+    }
+  }
+}

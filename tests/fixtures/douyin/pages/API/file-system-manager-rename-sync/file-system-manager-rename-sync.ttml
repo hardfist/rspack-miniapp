@@ -1,0 +1,5 @@
+<view class="btn-area">
+  <button type="primary" bindtap="reName" disabled="{{!tempFilePath}}"> 重命名文件(同步) </button>
+</view>
+<view class="page-section-title-space page-section-title" style="word-warp: break-word;" tt:if='{{tempFilePath}}'>原路径：{{tempFilePath}}</view>
+<view class="page-section-title-space page-section-title" tt:if='{{path}}'>修改后路径：{{path}}</view>

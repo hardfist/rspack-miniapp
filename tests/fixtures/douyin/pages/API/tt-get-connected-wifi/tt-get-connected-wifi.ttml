@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+        <view class="ttui-cells">
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">SSID</view>
+            </view>
+            <view class="ttui-cell__bd">{{wifiInfo.SSID}}</view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">BSSID</view>
+            </view>
+            <view class="ttui-cell__bd">{{wifiInfo.BSSID}}</view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">secure</view>
+            </view>
+            <view class="ttui-cell__bd">{{wifiInfo.secure}}</view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">signalStrength</view>
+            </view>
+            <view class="ttui-cell__bd">{{wifiInfo.signalStrength}}</view>
+          </view>
+        </view>
+        <view class="btn-area">
+          <button type="primary" bindtap="getdWifiInfo">获取手机WiFi信息</button>
+        </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="content">
+    <text class="title">监听小程序切后台事件:</text>
+    <view class="result-wrap">
+        <text class="result" tt:if="{{isOffAppHide}}">已取消监听</text>
+        <text class="result" tt:else>{{result ? result : '事件监听中...'}}</text>
+    </view>
+    <button size="default" class="clear-btn" bindtap="clearResult" disabled="{{!result}}"> 重置监听结果 </button>
+    <button type="primary" size="default" bindtap="offAppHide"> 取消监听小程序切后台事件 </button>
+</view>

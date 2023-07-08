@@ -1,0 +1,5 @@
+<scroll-view id="sv" scroll-y style="background: #eee; height: 300px;">
+  <view class="page-section-title-space page-section-title">向下滑动出现 target 节点触发事件</view>
+  <view id="target" style="margin: 300px auto 0; width: 150px; height: 150px; background: lightblue;"></view>
+</scroll-view>
+<view style="text-align: center; margin-top: 10px; font-size: 14px; color: #000;"> {{isShow ? "target visible" : "target Invisible"}} </view>

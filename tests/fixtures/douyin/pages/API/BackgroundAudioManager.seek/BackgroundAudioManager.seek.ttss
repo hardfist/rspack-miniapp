@@ -1,0 +1,48 @@
+.body-bg {
+  border-radius: 18rpx;
+  background: #8c8c8c;
+  overflow: hidden;
+}
+
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.page-body-wrapper {
+  margin-top: 0;
+}
+
+
+.time-big {
+  font-size: 60rpx;
+  margin: 20rpx;
+}
+
+.slider {
+  width: 650rpx;
+}
+
+.play-time {
+  font-size: 28rpx;
+  width: 700rpx;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.page-body-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50rpx 0;
+}
+
+.page-body-button {
+  width: 250rpx;
+  text-align: center;
+}
+
+.page-section-title-space {
+  color: #eee;
+}

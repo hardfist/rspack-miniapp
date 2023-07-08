@@ -1,0 +1,35 @@
+.container {
+  padding-bottom: 20rpx;
+}
+
+.table-title {
+  margin-bottom: 24rpx;
+}
+
+.table {
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.table-tr {
+  display: table-row;
+  height: 92rpx;
+}
+
+.table-th {
+  display: table-cell;
+  font-weight: bold;
+  border: 1rpx solid gray;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-td {
+  display: table-cell;
+  border: 1rpx solid gray;
+  text-align: center;
+  vertical-align: middle;
+}

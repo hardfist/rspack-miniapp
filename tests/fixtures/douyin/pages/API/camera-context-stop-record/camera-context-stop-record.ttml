@@ -1,0 +1,12 @@
+<camera flash="off" style="width: 100%; height: 400rpx;"></camera>
+<button type="primary" bindtap="startRecord">开始录像</button>
+<button type="primary" bindtap="stopRecord">停止录像</button>
+<view style="text-align: center; font-size: 30rpx; padding-top: 20rpx;">
+    录像结果
+</view>
+<video
+    src="{{src}}"
+    autoplay="{{true}}"
+    style="width: 100%; height: 400rpx;"
+>
+</video>

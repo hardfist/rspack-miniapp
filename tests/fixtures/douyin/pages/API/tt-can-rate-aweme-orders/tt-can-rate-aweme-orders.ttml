@@ -1,0 +1,4 @@
+<button style="margin-top: 10px" type="primary" bindtap="click">调用 canRateAwemeOrders </button>
+<view class="container">
+    <view style="margin-top: 10px">结果在 vconsole 显示</view>
+</view>

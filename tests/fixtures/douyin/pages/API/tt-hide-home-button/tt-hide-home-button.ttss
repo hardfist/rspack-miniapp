@@ -1,0 +1,14 @@
+.container {
+  padding: 0 30rpx;
+  height: 100vh;
+}
+.tips {
+  background: #fff;
+  padding: 10rpx 20rpx;
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 50rpx;
+}
+.btn button {
+  margin-top: 50rpx;
+}

@@ -1,0 +1,11 @@
+<view class="btn-area">
+  <button id="myButton" data-key="bytedance" type="primary" size="default" bindtap="getButton">
+    获取当前button实例
+  </button>
+</view>
+<view class="btn-area">
+  <button type="primary" size="default" bindtap="getCanvas">获取 canvas实例</button>
+</view>
+
+<canvas type="2d" id="myCanvas"></canvas>
+<view>{{componentInfo}}</view>

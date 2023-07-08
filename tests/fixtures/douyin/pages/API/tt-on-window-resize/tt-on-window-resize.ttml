@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="btn-area">
+    <button type="primary" bindtap="windowResize">注册事件</button>
+  </view>
+</view>

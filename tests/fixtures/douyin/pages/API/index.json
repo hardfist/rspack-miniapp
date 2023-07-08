@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "tabbar-setting": "/pages/API/tabbar-setting/tabbar-setting",
+    "tabbar-show-red-dot": "/pages/API/tt-show-tab-bar-red-dot/tt-show-tab-bar-red-dot",
+    "tabbar-hide-red-dot": "/pages/API/tt-hide-tab-bar-red-dot/tt-hide-tab-bar-red-dot",
+    "show-tabbar": "/pages/API/tt-show-tab-bar/tt-show-tab-bar",
+    "hide-tabbar": "/pages/API/tt-hide-tab-bar/tt-hide-tab-bar",
+    "tabbar-set-style": "/pages/API/tt-set-tab-bar-style/tt-set-tab-bar-style",
+    "tabbar-set-item": "/pages/API/tt-set-tab-bar-item/tt-set-tab-bar-item",
+    "tabbar-set-badge": "/pages/API/tt-set-tab-bar-badge/tt-set-tab-bar-badge",
+    "tabbar-remove-badge": "/pages/API/tt-remove-tab-bar-badge/tt-remove-tab-bar-badge"
+  }
+}

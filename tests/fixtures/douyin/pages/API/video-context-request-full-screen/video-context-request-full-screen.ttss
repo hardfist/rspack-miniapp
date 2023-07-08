@@ -1,0 +1,23 @@
+.wrap {
+    padding: 50rpx 30rpx;
+}
+.wrap video {
+    width: 100%;
+    margin-bottom: 30rpx;
+}
+.wrap button {
+    margin-bottom: 50rpx;
+}
+.button {
+    background-color: rgb(255, 97, 97);
+    border-radius: 5px;
+    height: 90rpx;
+    width: 92%;
+    z-index: 1000;
+    position: fixed;
+    bottom: 150px;
+    left: 30rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #ffff;
+}

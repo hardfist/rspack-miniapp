@@ -1,0 +1,116 @@
+<view class="container">
+  <view class="body body-space-l">
+    <view class="page-section">
+      <video 
+        id="myVideo" 
+        style="width: 100%;" 
+        src="https://sf1-ttcdn-tos.pstatp.com/obj/developer/sdk/1534422848153.mp4" 
+        autoplay={{isAutoPlay}}
+        poster="{{poster}}" 
+        loop="{{isLoopPlay}}" 
+        show-fullscreen-btn="{{isFullscreen}}" 
+        show-play-btn="{{isShowPlayBtn}}" 
+        controls="{{isShowControls}}" 
+        object-fit="{{objectFitType}}" 
+        play-btn-position="{{playBtnPosition}}" 
+        pre-roll-unit-id="{{preRollUnitId}}" 
+        post-roll-unit-id="{{postRollUnitId}}" 
+        vslide-gesture="{{isVslideGesture}}"
+        vslide-gesture-in-fullscreen="{{isFullVslideGesture}}"
+        binderror="binderror" 
+        muted="{{isMuted}}"
+        show-mute-btn="{{isShowMute}}"
+        show-playback-rate-btn={{isShowPlaybackRate}}
+        enable-progress-gesture="{{isProgressGesture}}"
+        enable-play-gesture="{{isPlayGesture}}"
+        direction="{{direction}}"
+        enable-play-in-background="{{isPlayInBackground}}"
+        bindtimeupdate="bindtimeupdate" 
+        bindended="bindended" 
+        bindplay="bindplay" 
+        bindpause="bindpause" 
+        bindwaiting="bindwaiting"
+        bindfullscreenchange="bindfullscreenchange"
+        bindadstart="bindadstart" 
+        bindadended="bindadended"
+        bindadclose="bindadclose" 
+        bindaderror="bindaderror" 
+        bindadload="bindadload"
+        bindloadedmetadata="bindloadedmetadata"
+        bindseekcomplete="bindseekcomplete"
+        bindplaybackratechange="bindplaybackratechange"
+        bindmutechange="bindmutechange"
+        bindcontroltap="bindcontroltap"
+        bindenterbackground="bindenterbackground"
+        bindclosebackground="bindclosebackground"
+        bindleavebackground="bindleavebackground"
+        ></video>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchFullScreen" class="feat-btn">
+        {{isFullscreen ? '隐藏全屏按钮' : '显示全屏按钮'}}
+      </button>
+      <button type="mini" size="mini" bindtap="switchLoopPlay" class="feat-btn">
+        {{isLoopPlay ? '关闭循环播放' : '开启循环播放'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchPlayBtn" class="feat-btn">
+        {{isShowPlayBtn ? '隐藏播放按钮' : '显示播放按钮'}}
+      </button>
+      <button type="mini" size="mini" bindtap="switchControls" class="feat-btn">
+        {{isShowControls ? '隐藏全部控件' : '显示全部控件'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchPlayBtnPosition" class="feat-btn">
+        {{playBtnPosition === 'center' ? '播放按钮下移' : '播放按钮居中'}}
+      </button>
+      <button type="mini" size="mini" bindtap="switchFit" class="feat-btn">
+        裁剪模式切换
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchMuted" class="feat-btn">
+        {{isMuted ? '取消静音' : '视频静音'}}
+      </button>
+      <button type="mini" size="mini" bindtap="switchMuteShow" class="feat-btn">
+        {{isShowMute ? '隐藏音量icon' : '显示音量icon'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchShowPlaybackRate" class="feat-btn">
+        {{isShowPlaybackRate ? '隐藏倍速按钮' : '显示倍速按钮'}}
+      </button>
+      <button type="mini" size="mini" bindtap="switchPlayInBackground" class="feat-btn">
+        {{isPlayInBackground ? '关闭后台小窗' : '开启后台小窗'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchVslideGesture" class="feat-full-btn">
+        {{isVslideGesture ? '关闭亮度与音量调节手势(非全屏)' : '开启亮度与音量调节手势(非全屏)'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchFullVslideGesture" class="feat-full-btn">
+        {{isFullVslideGesture ? '关闭亮度与音量调节手势(全屏)' : '开启亮度与音量调节手势(全屏)'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchProgressGesture" class="feat-full-btn">
+        {{isProgressGesture ? '关闭控制进度的手势' : '开启控制进度的手势'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchPlayGesture" class="feat-full-btn">
+        {{isPlayGesture ? '关闭双击切换播放/暂停' : '开启双击切换播放/暂停'}}
+      </button>
+    </view>
+    <view class="btn-set-row">
+      <button type="mini" size="mini" bindtap="switchDirection" class="feat-full-btn">
+        切换全屏时视频方向
+      </button>
+    </view>
+    <view class="tip"> Tip: 后台小窗播放功能 iOS14 及以上版本支持。 </view>
+  </view>
+</view>

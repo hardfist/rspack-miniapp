@@ -1,0 +1,3 @@
+<view class="btn-area">
+  <button type="primary" bindtap="rmDir" disabled="{{disable}}"> 删除目录 </button>
+</view>

@@ -1,0 +1,11 @@
+<view class="container">
+  <button type="primary" size="default" bindtap="disable">
+    开启禁止录屏（只有安卓支持）
+  </button>
+  <button type="primary" size="default" bindtap="enable">
+    取消禁止录屏（只有安卓支持）
+  </button>
+  <video id="myVideo" src="https://sf1-ttcdn-tos.pstatp.com/obj/developer/sdk/1534422848153.mp4" style="width: 100%;" autoplay></video>
+  <view class="title">禁止录屏表现为：使录制的视频为黑屏</view>
+  <view class="title">推荐在需要禁止录屏页面的 onShow 中调用 disableUserScreenRecord，onHide 中调用 enableUserScreenRecord</view>
+</view>

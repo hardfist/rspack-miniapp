@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <text class="page-body-title">
+        点击打开客服消息界面
+      </text>
+      <view class="page-body-line">
+        <button open-type="contact" size="default" binderror="myerror"> 与我们联系 </button>
+      </view>
+    </view>
+  </view>
+</view>

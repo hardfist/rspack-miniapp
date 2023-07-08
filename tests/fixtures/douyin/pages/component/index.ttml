@@ -1,0 +1,28 @@
+<view class="container">
+    <view class="header header-center">
+        <image class="index-logo" src="{{imageUrl+'logo.png'}}"></image>
+        <view class="index-desc">以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见文档。</view>
+    </view>
+    <view class="body body-space">
+        <view class="category-list">
+            <view class="category-list__item {{item.open ? 'category-list__item--open': ''}}" tt:for="{{list}}">
+                <view class="ttui-flex item-title" data-index="{{index}}" bindtap="toggleSwitch">
+                    <view class="ttui-flex__item">{{item.name}}</view>
+                    <image class="item-list__img" src="{{imageUrl+'arrow.png'}}"></image>
+                </view>
+                <view class="item-list">
+                    <view tt:for="{{item.pages}}" tt:for-item="page" class="item-list__page">
+                        <navigator url="{{page.path}}" class="item-navigator">
+                            <view class="ttui-flex navigator-wraper">
+                                <view class="ttui-flex__item">{{page.name}}</view>
+                                <image class="item-list__img" src="{{imageUrl+'setting_arrow.png'}}"></image>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+    </view>
+</view>

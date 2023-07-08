@@ -1,0 +1,38 @@
+.page-section-ctn {
+    text-align: center;
+}
+
+.image {
+    margin-top: 10rpx;
+    width: 200rpx;
+    height: 54rpx;
+    border: 1px solid rgb(201, 200, 200);
+}
+
+.aspect-fit {
+    height: 108px;
+}
+
+.width-fix {
+    width: 216px;
+}
+
+.height-fix {
+    height: 80rpx;
+}
+
+.left-fix {
+    height: 108px;
+}
+
+.two-direction-fix {
+    height: 30px;
+    width: 50px;
+}
+
+.modeTitle {
+    padding: 5px 5px;
+    border-left: 4px solid rgb(238, 95, 95);
+    margin: 0 auto;
+    color: rgb(243, 7, 7);
+}

@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="saveFile" >保存文件到本地</button>
+      </view>
+    </view>
+    <view class="page-section-space">
+      <view class="content-area">
+        {{hintMsg}}
+      </view>
+      <view  tt:if="{{savedFileList.length}}" tt:for="{{savedFileList}}" tt:for-item="item" tt:for-index="index">
+        <view class="fileList">
+          <view class="removeBtn" data-item={{item.filePath}} bindtap="removeSavedFile">删除文件</view>
+         <view> {{"文件路径: "+item.filePath}}</view>
+         <view>{{"文件大小: "+item.size}}</view>
+         <view>{{"文件保存的时间戳: "+item.createTime}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+	<view class="body">
+		<camera
+      class="camera"
+      device-position="back"
+      flash="off"
+      binderror="onError"
+      style="height: 360px"
+    ></camera>
+		<view class="btn-area">
+			<button type="primary" bindtap="createContext">授权并创建cameraContext</button>
+    </view>
+  </view>
+</view>

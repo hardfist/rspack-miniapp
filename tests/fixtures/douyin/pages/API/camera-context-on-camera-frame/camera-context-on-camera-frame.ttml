@@ -1,0 +1,17 @@
+<view class="container">
+	<view class="body">
+		<camera
+      class="camera"
+      frame-size="medium"
+      device-position="back"
+      binderror="onError"
+      style="height: 360px"
+    ></camera>
+    <view class="page-body">
+      <view class="btn-area">
+        <button type="primary" bindtap="createContext">授权并创建 cameraContext</button>
+        <button type="primary" bindtap="onCameraFrame">创建监听器 CameraFrameListener </button>
+      </view>
+    </view>
+  </view>
+</view>

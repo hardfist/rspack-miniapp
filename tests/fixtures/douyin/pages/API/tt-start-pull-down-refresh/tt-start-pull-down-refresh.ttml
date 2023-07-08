@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <text class="page-body-text">下滑页面即可刷新，刷新时展示loading，默认10秒结束刷新</text>
+      </view>
+      <view class="btn-area">
+        <button bindtap="startPullDownRefresh">开始刷新</button>
+      </view>
+    </view>
+  </view>
+</view>

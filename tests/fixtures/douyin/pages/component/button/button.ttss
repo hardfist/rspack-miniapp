@@ -1,0 +1,24 @@
+button{
+  margin-bottom: 30rpx;
+}
+
+.mini-buttons {
+  text-align: center;
+}
+
+.mini-buttons .mini-btn:first-child{
+  margin-right: 20px;
+}
+
+.button-category{
+  background-color: #fff;
+  padding: 0 15px 15px;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.category-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}

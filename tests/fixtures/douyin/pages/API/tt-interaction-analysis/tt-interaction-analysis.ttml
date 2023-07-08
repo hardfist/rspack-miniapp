@@ -1,0 +1,5 @@
+<view class="cont">
+  <button type="primary" bindtap="click">触发InteractionAnalysis</button>
+  <text>注：该 API 目前只适用于头条，当用户从头条信息流进入小程序的首个页面发生点赞、收藏、评论动作时调用，上报特定行为数据至头条，头条收集到数据会对小程序进行推荐
+提示</text>
+</view>

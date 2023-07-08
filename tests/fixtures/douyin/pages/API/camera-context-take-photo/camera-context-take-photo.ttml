@@ -1,0 +1,3 @@
+<camera flash="off" style="width: 100%; height: 500rpx;"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<image class="img" mode="widthFix" src="{{src}}"></image>

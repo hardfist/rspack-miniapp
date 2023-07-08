@@ -1,0 +1,7 @@
+<map id="myMap" style="width: 100%; height: 300px;" show-location markers="{{markers}}"></map>
+<view class="page-section-title page-section-title-space">
+  <view>描述: 调用 mapContext.includePoints 方法, 缩放地图显示所有标记点</view>
+</view>
+<view class="btn-area">
+  <button type="primary" bindtap="includePoints">mapContext.includePoints</button>
+</view>

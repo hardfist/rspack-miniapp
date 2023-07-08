@@ -1,0 +1,6 @@
+<view class="wrap"> 
+  <video id="myVideo" enable-danmu="true" src="https://sf1-ttcdn-tos.pstatp.com/obj/developer/sdk/1534422848153.mp4"/>
+  <button  type="primary" bindtap="play">Play</button>
+  <button  type="primary" bindtap="pause">Pause</button>
+  <button  type="primary" bindtap="setWaterMark">setWaterMark</button>
+</view>

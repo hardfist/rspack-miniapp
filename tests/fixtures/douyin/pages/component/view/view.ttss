@@ -1,0 +1,26 @@
+.flex-wrapper {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 200rpx;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  color: #fff;
+}
+
+.flex-item.hover-item {
+  opacity: 0.6;
+}
+
+.flex-item-v {
+  align-self: center;
+  width: 300rpx;
+  height: 160rpx;
+  text-align: center;
+  line-height: 160rpx;
+  color: #fff;
+}

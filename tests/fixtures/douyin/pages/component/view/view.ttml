@@ -1,0 +1,24 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="page-section-title">
+      <text>flex-direction: row\n横向布局</text>
+    </view>
+    <view class="flex-wrapper" style="flex-direction:row;">
+      <view hover-class="hover-item" class="flex-item" style="background-color: #73d13d">A</view>
+      <view hover-class="hover-item" class="flex-item" style="background-color: #13c2c2">B</view>
+      <view hover-class="hover-item" class="flex-item" style="background-color: #40a9ff">C</view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">
+      <text>flex-direction: column\n纵向布局</text>
+    </view>
+    <view class="flex-wrapper" style="flex-direction:column;">
+      <view class="flex-item-v" style="background-color: #73d13d">A</view>
+      <view class="flex-item-v" style="background-color: #13c2c2">B</view>
+      <view class="flex-item-v" style="background-color: #40a9ff">C</view>
+    </view>
+  </view>
+</view>
+
+

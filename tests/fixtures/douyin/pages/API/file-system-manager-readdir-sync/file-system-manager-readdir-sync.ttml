@@ -1,0 +1,3 @@
+<view class="btn-area">
+  <button type="primary" bindtap="readDir">读取目录内文件列表(同步)</button>
+</view>

@@ -1,0 +1,77 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">输入区域高度自适应，不会出现滚动条</view>
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="输入框" value="{{value}}" bindinput="handleInput" />
+        <text>用户输入：{{value}}</text>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">这是一个可以自动聚焦的textarea</view>
+      <view class="textarea-wrp">
+        <textarea auto-focus="true" style="height: 3em;" placeholder="输入框" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">占位符颜色可调</view>
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="输入框"  placeholder-style="color:red;" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">disabled禁用输入框</view>
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="输入框" disabled />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">最大输入长度，设置为 -1 的时候不限制最大长度</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="最大输入5个字符" maxlength="5" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">固定位置，如果设置了 css 样式position:fixed，需要将改属性设置为 true </view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="固定位置" fixed />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">指定软键盘弹出时，与光标的距离是多少，单位是 px</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="指定键盘弹出时与光标距离" cursor-spacing="20px" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">指定 focus 时的光标位置</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="指定 focus 时的光标位置" cursor="20px" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">selection-start指定 focus 时选中片段的起始位置 selection-end指定 focus 时选中片段的结束位置 </view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="selection-start selection-end" selection-start="20px;" selection-end="20px;" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">输入框聚焦时触发</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="输入框聚焦时触发" bindfocus="handleFocus" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">失去焦点</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="输入框失去焦点时触发" bindblur="handleBlur" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">用户点击键盘的完成按钮时触发</view>
+      <view class="textarea-wrp">
+        <textarea auto-height placeholder="用户点击键盘的完成按钮时触发" bindconfirm="handleConfirm" />
+      </view>
+    </view>
+  </view>
+</view>

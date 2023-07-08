@@ -1,0 +1,6 @@
+.statsAttrList {
+  margin-top: 20rpx;
+}
+.statsAttrItem {
+  padding: 20rpx 0;
+}

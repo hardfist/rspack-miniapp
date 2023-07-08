@@ -1,0 +1,6 @@
+.box {
+  margin: 100rpx auto;
+  width: 100rpx;
+  height: 100rpx;
+  background: #999;
+}

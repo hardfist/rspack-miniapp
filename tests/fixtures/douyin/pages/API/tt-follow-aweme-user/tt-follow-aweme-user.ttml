@@ -1,0 +1,6 @@
+<view class="cont">
+  <button type="primary" bindtap="click">tt.followAwemeUser</button>
+  <text>注意：</text>
+  <text>1. 这个抖音号是小程序开发者在开发者平台绑定的抖音号</text>
+  <text>2. 只支持在抖音和抖音 Lite App 上使用</text>
+</view>

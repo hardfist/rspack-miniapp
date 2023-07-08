@@ -1,0 +1,18 @@
+
+<view class="container">
+  <form class="body" bindsubmit="setNaivgationBarTitle">
+    <view class="ttui-cells">
+      <view class="ttui-cell">
+        <view class="ttui-cell__hd">
+          <view class="ttui-label">页面标题</view>
+        </view>
+        <view class="ttui-cell__bd">
+          <input class="ttui-input" type="text" placeholder="请输入页面标题并点击设置即可" name="title"></input>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" formType="submit">设置</button>
+    </view>
+  </form>
+</view>

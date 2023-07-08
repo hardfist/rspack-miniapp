@@ -1,0 +1,6 @@
+<view class="body-space">
+  <view class="page-section-title page-section-title-space">
+    <text>广告示例</text>
+  </view>
+  <ad unit-id="b754ef8rp9f1bdd61a" bindload="adloadhandler" binderror="aderrorhandler" bindclose="adclosehandler"></ad>
+</view>

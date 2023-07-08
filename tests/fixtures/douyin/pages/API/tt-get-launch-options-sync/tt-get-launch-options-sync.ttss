@@ -1,0 +1,17 @@
+.content{
+    padding: 0 30rpx 50rpx 30rpx;
+}
+.title,.footer{
+    text-align: justify;
+    background-color: white;
+    padding: 20rpx 70rpx;
+    margin: 30rpx auto;
+}
+button{
+    margin-top: 30rpx;
+}
+.footer{
+    line-height: 60rpx;
+    min-height: 500rpx;
+    word-break:break-all;
+}

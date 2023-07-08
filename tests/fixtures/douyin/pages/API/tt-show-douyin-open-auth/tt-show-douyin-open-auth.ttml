@@ -1,0 +1,10 @@
+<view class="content">
+  <text class="title">获取的权限:</text>
+  <view class="attr-wrap">
+      <text tt:if="{{grantPermissions.length > 0}}" class="attr" tt:for="{{grantPermissions}}">{{permission[item]}}</text>
+      <text tt:if="{{errMsg}}" class="attr">获取权限失败，错误信息：{{errMsg}}</text>
+      <text tt:if="{{grantPermissions.length == 0 && !errMsg}}" class="attr">点击下方按钮获取抖音权限</text>
+  </view>
+  <text class="desc">注: 成功调用该方法获取临时票据 ticket ，通过临时票据调用 抖音开放平台 相关接口换取用户长期票据 access_token 。 该流程需开发者在服务端自行实现。</text>
+  <button type="primary" size="default" bindtap="showDouyinOpenAuth"> showDouyinOpenAuth </button>
+</view>

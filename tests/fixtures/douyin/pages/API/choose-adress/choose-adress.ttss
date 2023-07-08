@@ -1,0 +1,7 @@
+.page-section{
+    width: auto;
+    margin: 15px;
+    padding: 64rpx 15px;
+    text-align: center;
+    font-size: 28rpx;
+}

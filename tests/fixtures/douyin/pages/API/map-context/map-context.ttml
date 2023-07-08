@@ -1,0 +1,21 @@
+<map id="myMap" style="width: 100%; height: 300px;" markers="{{markers}}" circles="{{circles}}" show-location="{{true}}"></map>
+<view class="btn-area">
+  <button bindtap="authLocation" type="primary" size="mini">申请定位权限</button>
+  <button bindtap="moveToLocation" type="primary" size="mini">移动到当前定位点</button>
+  <button bindtap="getCenterLocation" type="primary" size="mini">获取当前地图中心位置</button>
+  <button bindtap="getScale" type="primary" size="mini">获取缩放级别</button>
+  <button bindtap="getRegion" type="primary" size="mini">获取地图视野</button>
+</view>
+<view class="page-section-title page-section-title-space" tt:if="{{latitude && longitude}}">
+  <view>地图中心经度：{{longitude}}</view>
+  <view>地图中心纬度：{{latitude}}</view>
+</view>
+<view class="page-section-title page-section-title-space" tt:if="{{scale}}">
+  <view>当前缩放级别：{{scale}}</view>
+</view>
+<view class="page-section-title page-section-title-space" tt:if="{{region}}">
+  <view>西南角-经度：{{region.southwest.longitude}}</view>
+  <view>西南角-纬度：{{region.southwest.latitude}}</view>
+  <view>东北角-经度：{{region.northeast.longitude}}</view>
+  <view>东北角-纬度：{{region.northeast.latitude}}</view>
+</view>

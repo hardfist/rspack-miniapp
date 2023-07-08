@@ -1,0 +1,25 @@
+<custom chineseName="文件管理系统" engName="fileSystem"></custom>
+<view class="wrap">
+  <view class="card-area">
+    <view class="display-area">
+      <image src="{{imageUrl+'tab_component_selected.png'}}" mode="" />
+    </view>
+    <scroll-view scroll-y class="card-area button-area">
+      <button type="primary" bindtap="access">临时文件是否存在</button>
+      <button type="primary" bindtap="getFileInfo">获取临时文件的相关信息</button>
+      <button type="primary" bindtap="mkdir">创建本地目录</button>
+      <button type="primary" bindtap="rmdir">删除目录</button>
+      <button type="primary" bindtap="copyFile">拷贝文件到mkdir目录下</button>
+      <button type="primary" bindtap="unlink">删除mkdir目录下的拷贝文件</button>
+      <button type="primary" bindtap="readdir">读取mkdir目录内的文件列表</button>
+      <button type="primary" bindtap="getSavedFileList">获取本地文件列表</button>
+      <button type="primary" bindtap="readFile">读取本地文件内容</button>
+      <button type="primary" bindtap="removeSavedFile">删除已保存的本地用户文件</button>
+      <button type="primary" bindtap="rename">重命名文件</button>
+      <button type="primary" bindtap="saveFile">保存临时文件到本地</button>
+      <button type="primary" bindtap="stat">获取文件 Stats 对象</button>
+      <button type="primary" bindtap="unzip">解压文件</button>
+      <button type="primary" bindtap="writeFile">写文件</button>
+    </scroll-view>
+  </view>
+</view>

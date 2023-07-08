@@ -1,0 +1,11 @@
+<view class="live-play">
+	<live-player class="my-live" id="myLivePlayer" src="{{src}}" muted="{{muted}}" orientation="{{orientation}}"
+			object-fit="{{objectFit}}" autoplay="{{autoplay}}" bindfullscreenchange="onFullScreenChange" binderror="onError">
+			<button type="primary" bindtap="fullScreen" class="full-screen">点击{{fullScreen ? '退出' : '进入'}}全屏</button>
+	</live-player>
+	<button type="primary" bindtap="livePlay">开始播放 play</button>
+	<button type="primary" bindtap="livePause">{{pause ? '继续播放 resume' : '暂停播放 pause'}}</button>
+	<button type="primary" bindtap="liveStop">停止播放 stop</button>
+	<button type="primary" bindtap="liveMute">{{muted ? '不' : ''}}静音</button>
+	<button type="primary" bindtap="setWaterMark">设置水印 waterMark</button>
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <button type="default" bindtap="short">短振动</button>
+    </view>
+  </view>
+</view>

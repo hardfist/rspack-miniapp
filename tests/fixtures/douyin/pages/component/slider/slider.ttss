@@ -1,0 +1,12 @@
+.page-section {
+    height: 180rpx;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+.page-section-title {
+    margin-left: 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: black;
+}

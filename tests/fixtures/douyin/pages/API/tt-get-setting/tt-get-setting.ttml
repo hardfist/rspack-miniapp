@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="body">
+    <view class="list-area">
+      <view class="list-item">用户信息</view>
+      <icon tt:if="{{setting['scope.userInfo']}}" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="list-area">
+      <view class="list-item">地理位置</view>
+      <icon tt:if="{{setting['scope.userLocation']}}" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="list-area">
+      <view class="list-item">通讯地址</view>
+      <icon tt:if="{{setting['scope.address']}}" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="list-area">
+      <view class="list-item">录音功能</view>
+      <icon tt:if="{{setting['scope.record']}}" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="list-area">
+      <view class="list-item">保存到相册</view>
+      <icon tt:if="{{setting['scope.album']}}" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="list-area">
+      <view class="list-item">摄像头</view>
+      <icon tt:if="{{setting['scope.camera']}}" type="success_no_circle" size="23"></icon>
+    </view>
+  </view>
+  <view class="page-section-title page-section-title-space">
+    只能获取小程序向用户请求过的权限设置
+  </view>
+  <view class="btn-area">
+    <button type="primary" bindtap="getSetting">获取用户已经授权过的配置</button>
+    <button type="primary" bindtap="openSetting">调起设置页面</button>
+  </view>
+  
+</view>

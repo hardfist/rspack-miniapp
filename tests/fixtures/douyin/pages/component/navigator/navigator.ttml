@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="body body-space">
+      <view class="page-section">
+      <view class="page-section-title">navigator 初始页</view>
+      </view>
+      <navigator url="feature" open-type="navigate" hover-class="navigator-hover" hover-start-time="50" hover-stay-time="400" hover-stop-propagation="{{false}}">
+      <button type="default">跳转到 navigator 功能页</button>
+      </navigator>
+  </view>
+</view>

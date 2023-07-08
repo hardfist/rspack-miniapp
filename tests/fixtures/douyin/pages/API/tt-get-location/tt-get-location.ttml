@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="page-body-info page-body-info-get-location">
+        <text class="page-body-text-small">当前位置经纬度</text>
+        <block tt:if="{{hasLocation === false}}">
+          <view class="page-body-text-location">
+            <text class="page-body-text">未获取</text>
+          </view>
+        </block>
+        <block tt:if="{{hasLocation === true}}">
+          <view class="page-body-text-location">
+            <text>{{location.latitude}}</text>
+            <text>{{location.longitude}}</text>
+          </view>
+        </block>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="getLocation_wgs84">获取位置</button>
+        <button bindtap="clear">清空</button>
+      </view>
+    </view>
+  </view>
+</view>

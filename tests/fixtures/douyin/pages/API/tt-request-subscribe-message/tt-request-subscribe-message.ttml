@@ -1,0 +1,81 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section-title page-section-title-space">调起客户端订阅消息界面，返回用户订阅消息的操作结果。当用户勾选了订阅面板中的 “总是保持以上选择，不再询问” 时，或是点击了订阅面板中 “拒绝，不再询问” 时，模板消息会被添加到用户的小程序设置页，用户可以在设置页面进行管理。
+    </view>
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="subscribeMessage">订阅消息
+        </button>
+      </view>
+    </view>
+    <view class="table-title">订阅失败的错误码及对应说明:</view>
+    <view class="page-section-title page-section-title-space">
+      <view class="table">
+        <view class="table-tr">
+          <view class="table-th">errCode</view>
+          <view class="table-th">说明</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">1001</view>
+          <view class="table-td">没有权限(白名单配置，暂无需关注)</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">1002</view>
+          <view class="table-td">参数不合法</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">1003</view>
+          <view class="table-td">模版消息个数超过限制(最多 3 个)</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">1004</view>
+          <view class="table-td">模版消息不存在或不合法</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">1005</view>
+          <view class="table-td">模版消息类型不一致</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">2001</view>
+          <view class="table-td">网络问题</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">2002</view>
+          <view class="table-td">服务错误</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">3001</view>
+          <view class="table-td">拒绝授权</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">3002</view>
+          <view class="table-td">拒绝登录</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">4001</view>
+          <view class="table-td">请求次数超过限制(二期弹窗频控取消，不会再出现)</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">4002</view>
+          <view class="table-td">设置页中订阅消息总开关关闭</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">4003</view>
+          <view class="table-td">设置页中请求模版消息开关均关闭</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">4004</view>
+          <view class="table-td">后台封禁</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">5001</view>
+          <view class="table-td">内部错误</view>
+        </view>
+        <view class="table-tr">
+          <view class="table-td">暂时未加</view>
+          <view class="table-td">宿主不支持(目前仅支持头条、抖音)</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

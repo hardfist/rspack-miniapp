@@ -1,0 +1,7 @@
+.indicator-class {
+    padding-top: 5px;
+}
+.text-style {
+    box-sizing: border-box;
+    padding-top: 6px;
+}

@@ -1,0 +1,26 @@
+<view class="container">
+  <block class="page-body">
+    <view class="ttui-cells">
+      <view class="ttui-cell">
+        <view class="ttui-cell__hd">
+          <view class="ttui-label">复制</view>
+        </view>
+        <view class="ttui-cell__bd">
+          <input class="ttui-input" type="text" placeholder="请输入想要复制的内容" bindinput='input'></input>
+        </view>
+      </view>
+      <view class="ttui-cell">
+        <view class="ttui-cell__hd">
+          <view class="ttui-label">粘贴</view>
+        </view>
+        <view class="ttui-cell__bd">
+          <text class="ttui-input">{{pasted}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="copy">复制已输入内容</button>
+      <button type="primary" bindtap="paste">粘贴</button>
+    </view>
+  </block>
+</view>

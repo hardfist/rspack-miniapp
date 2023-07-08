@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <canvas class="canvas-element" canvas-id="canvas"></canvas>
+      <scroll-view class="canvas-buttons" scroll-y="true">
+        <block tt:for="{{methods}}" tt:for-item="method">
+          <button class="canvas-button" bindtap="{{method}}">{{method}}</button>
+        </block>
+        <button class="canvas-button" bindtap="toTempFilePath" type="primary">toTempFilePath</button>
+      </scroll-view>
+    </view>
+  </view>
+</view>

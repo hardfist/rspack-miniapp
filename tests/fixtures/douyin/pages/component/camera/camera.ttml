@@ -1,0 +1,9 @@
+<camera class="camera" frame-size="medium" device-position="back" flash="off" bindstop="onStop" binderror="onError"></camera>
+<view class="page-body">
+    <button type="primary" bindtap="auth">相机授权</button>
+    <button type="primary" bindtap="setZoom">设置缩放级别</button>
+    <button type="primary" bindtap="startOnFrame">开始接收帧数据</button>
+    <button type="primary" bindtap="stopOnFrame">停止接收帧数据</button>
+    <view>第 {{counter}} 帧</view>
+    <view hidden="{{counter === 0}}">width：{{frameWidth}}; height:{{frameHeight}}</view>
+</view>

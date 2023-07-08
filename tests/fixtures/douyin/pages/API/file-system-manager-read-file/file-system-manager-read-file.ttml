@@ -1,0 +1,6 @@
+<view class="btn-area">
+  <button type="primary" bindtap="readFile" disabled="{{!tempFilePath}}">读取本地文件内容</button>
+</view>
+<view style="text-align: center; margin-top: 60px;">
+  <image src="{{src}}" mode="" style="width: 216px; height: 54px;" />
+</view>

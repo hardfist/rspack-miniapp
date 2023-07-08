@@ -1,0 +1,1 @@
+<web-view src="{{webview_url}}" bindload="bindload" binderror="binderror" bindmessage="bindmessage" progressbar-color="#000"></web-view>

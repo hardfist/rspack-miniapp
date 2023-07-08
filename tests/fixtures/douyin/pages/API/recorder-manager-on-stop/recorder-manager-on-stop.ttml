@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="body">
+      <text class="text-space">剩余录音时间 {{ cd }}ms</text>
+      <view class="btn-area">
+        <button type="primary" bindtap="start" disabled="{{ isStart }}">start</button>
+        <button type="primary" bindtap="pause" tt:if="{{ isPlay }}">pause</button>
+        <button type="primary" bindtap="resume" tt:if="{{ !isPlay }}" disabled="{{ !isStart }}">resume</button>
+        <button type="primary" bindtap="stop" disabled="{{ !isStart }}">stop</button>
+      </view>
+    </view>
+  </view>
+  

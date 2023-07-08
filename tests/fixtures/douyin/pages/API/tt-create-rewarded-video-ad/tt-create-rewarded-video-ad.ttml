@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="body">
+
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <view class="page-body-title">视频广告展示</view>
+        <block tt:if="{{isCreateFail}}">
+          <view>
+            创建videoAd实例失败: 需传入正确广告位ID
+          </view>
+          <view>
+            说明: 开发者可以在小程序中使用激励视频广告获得收入。激励视频广告是由客户端原生渲染，覆盖在整个小程序页面区域之上。激励视频广告展示的时候用户不能操作小程序。
+            激励视频广告目前支持竖屏展示。开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
+          </view>
+          <view>
+            注意: 目前只能在抖音使用该方法，今日头条等宿主暂不支持。
+          </view>
+        </block>
+      </view>
+    </view>
+    
+    <view class="page-section">
+      <view class="btn-area page-section-space">
+        <button type="primary" bindtap="showVideoAd">显示激励视频广告</button>
+        <button type="primary" bindtap="unBindListener">解绑所有事件监听</button>
+
+      </view>
+    </view>
+  </view>
+</view>

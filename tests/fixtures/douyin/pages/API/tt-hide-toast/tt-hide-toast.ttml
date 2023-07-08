@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <view class="body-view">
+        <button type="default" bindtap="hideToast">点击隐藏toast</button>
+      </view>
+    </view>
+  </view>
+</view>

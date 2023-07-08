@@ -1,0 +1,70 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">普通选择器</view>
+        <picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}" disabled="{{false}}" bindcancel="cancel" >
+          <view class="picker">
+            当前选择：{{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">普通Object选择器</view>
+        <picker bindchange="bindObjectPickerChange" value="{{objectIndex}}" range="{{objectArray}}" range-key="en">
+          <view class="picker">
+            当前选择：{{objectArray[objectIndex]['en']}}
+          </view>
+        </picker>
+      </view>     
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">多列选择器</view>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">时间选择器</view>
+        <picker mode="time" value="{{time}}" start="{{timeStart}}" end="{{timeEnd}}" bindchange="bindTimeChange">
+          <view class="picker">
+            当前选择: {{time}}
+          </view>
+        </picker>
+      </view>  
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">日期选择器</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" fields="year">
+          <view class="picker">
+            当前选择: {{date}}
+          </view>
+        </picker>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">日期选择器</view>
+        <picker mode="date" value="{{date1}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange1" fields="month">
+          <view class="picker">
+            当前选择: {{date1}}
+          </view>
+        </picker>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">日期选择器</view>
+        <picker mode="date" value="{{date2}}" start="2015-09-01" bindchange="bindDateChange2" fields="day">
+          <view class="picker">
+            当前选择: {{date2}}
+          </view>
+        </picker>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title page-section-title-space">省市区选择器</view>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="" >
+          <view class="picker">
+            当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>

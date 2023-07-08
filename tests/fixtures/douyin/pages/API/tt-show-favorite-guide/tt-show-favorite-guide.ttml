@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="btn-sets">
+    <button type="primary" size="mini" bindtap="showFavoriteGuide" data-type="bar">
+      展示bar浮层引导
+    </button>
+    <button type="primary" size="mini" bindtap="showFavoriteGuide" data-type="tip">
+      展示tip浮层引导
+    </button>
+  </view>
+</view>

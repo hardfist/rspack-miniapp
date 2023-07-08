@@ -1,0 +1,8 @@
+<view class="body body-space">
+  <view class="card-area">
+    <view class="display-area">
+      <view class="tip-week">当前设备内存信息监听中</view>
+      <view class="result-area-default">{{data}}</view>
+    </view>
+  </view>
+</view>

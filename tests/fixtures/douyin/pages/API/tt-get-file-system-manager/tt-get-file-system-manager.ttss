@@ -1,0 +1,49 @@
+.file-icon {
+    width: .62rem;
+}
+
+.save-success-icon {
+    width: .13rem;
+    height: .09rem;
+}
+
+.file-label {
+    margin-top: .14rem;
+    font-size: .13rem;
+    color: #666;
+    font-family: PingFangSC-Regular;
+}
+
+.file-save {
+    margin-top: .07rem;
+}
+
+.file-buttons {
+    height: 3.18rem;
+}
+
+.button-area {
+    height: 530px;
+    bottom: .03rem;
+    right: .1px;
+    padding-bottom: .5rem;
+}
+
+swan-scroll-view {
+    width: 92%;
+}
+.card-area{
+    height: calc(100vh - 160px);
+}
+
+button,
+.display-area {
+    margin: 20rpx;
+}
+
+.display-area>image {
+    width: 200rpx;
+    height: 200rpx;
+    display: block;
+    margin: 0 auto;
+}

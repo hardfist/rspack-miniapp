@@ -1,0 +1,4 @@
+{
+  "navigationBarTitleText": "停止当前页面下拉刷新",
+  "enablePullDownRefresh": true
+}

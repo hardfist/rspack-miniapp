@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <button type="primary" size="default" bindtap="backMiniProgram"> 点击返回到上一个小程序 </button> 
+    </view>
+    <view class="hint-area">{{result}}</view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="btn-area">
+    <button type="primary" bindtap="toRoute">reLaunch跳转页面</button>
+  </view>
+</view>

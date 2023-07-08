@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <text class="time-big">{{formatedCurrentTime}}</text>
+        <slider class="slider" min="0" max="{{duration}}" step="1" value="{{currentTime}}" bindchange="seek"
+          bindchanging="seeking"></slider>
+        <view class="play-time">
+          <text>已缓冲 {{buffered}}</text>
+          <text>总时长 {{formatedDuration}}</text>
+        </view>
+      </view>
+      <view class="page-body-buttons">
+        <block tt:if="{{playing === true}}">
+          <view class="page-body-button" bindtap="stop">
+            <image src="{{imageUrl+'stop.png'}}"></image>
+          </view>
+          <view class="page-body-button" bindtap="pause">
+            <image src="{{imageUrl+'pause.png'}}"></image>
+          </view>
+        </block>
+        <block tt:if="{{playing === false}}">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="play">
+            <image src="{{imageUrl+'play.png'}}"></image>
+          </view>
+        </block>
+        <view class="page-body-button"></view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">控制参数</view>
+      <view class="ttui-cells ttui-cells_after-title">
+        <view class="ttui-cell ttui-cell_switch">
+          <view class="ttui-cell__bd">是否循环</view>
+          <view class="ttui-cell__ft">
+            <switch bindchange="setloop"></switch>
+          </view>
+        </view>
+        <view class="ttui-cell ttui-cell_switch">
+          <view class="ttui-cell__bd">是否遵循系统静音</view>
+          <view class="ttui-cell__ft">
+            <switch bindchange="setmute"></switch>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

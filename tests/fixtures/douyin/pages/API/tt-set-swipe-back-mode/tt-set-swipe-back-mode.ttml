@@ -1,0 +1,36 @@
+<view class="container">
+	<view class="body-space">
+		<view class="page-section">
+			<view class="section-title">使用方式</view>
+			<view class="btn-area">
+				<button type="primary" size="default" bindtap="disableSwipe">
+          禁止所有滑动返回方式
+          <view class="mode-tip">mode = 0</view>
+        </button>
+        <button type="primary" size="default" bindtap="enableSwipe">
+          允许边缘、全屏滑动返回
+          <view class="mode-tip">mode = 1</view>
+        </button>
+        <button type="primary" size="default" bindtap="enableEdgeSwipe">
+          仅允许边缘滑动返回
+          <view class="mode-tip">mode = 2</view>
+        </button>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="section-title">实践场景</view>
+			<view class="desc">除满足一般的业务需求外，可以用来修复组件的手势冲突问题。在 Android 系统运行时，对于组件的拖动可能和边缘退出检测发生冲突。</view>
+      <view class="desc">下面以 slider 组件为例，通过在 touchstart 时机关闭滑动返回，在 touchend 时机启用滑动返回来解决问题：</view>
+      <slider 
+        bindtouchstart="disableSwipe" 
+        bindtouchend="enableSwipe" 
+        value="10" 
+      />
+    </view>
+    <view class="page-section">
+      <view class="section-title">效果提示</view>
+			<view class="desc">1. 由于 Android 不支持全屏手势返回，因此在 Android 中设置 mode = 1，在效果上与设置 mode = 2 相同。</view>
+      <view class="desc">2. API 设置的优先级高于页面 disableSwipeBack 配置。</view>
+    </view>
+  </view>
+</view>

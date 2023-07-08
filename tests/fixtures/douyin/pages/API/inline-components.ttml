@@ -1,0 +1,27 @@
+<template name="tabbar-setting">
+  <tabbar-setting bind:unmount="switchBack"></tabbar-setting>
+</template>
+<template name="tabbar-show-red-dot">
+  <tabbar-show-red-dot bind:unmount="switchBack"></tabbar-show-red-dot>
+</template>
+<template name="tabbar-hide-red-dot">
+  <tabbar-hide-red-dot bind:unmount="switchBack"></tabbar-hide-red-dot>
+</template>
+<template name="show-tabbar">
+  <show-tabbar bind:unmount="switchBack"></show-tabbar>
+</template>
+<template name="hide-tabbar">
+  <hide-tabbar bind:unmount="switchBack"></hide-tabbar>
+</template>
+<template name="tabbar-set-style">
+  <tabbar-set-style bind:unmount="switchBack"></tabbar-set-style>
+</template>
+<template name="tabbar-set-item">
+  <tabbar-set-item bind:unmount="switchBack"></tabbar-set-item>
+</template>
+<template name="tabbar-set-badge">
+  <tabbar-set-badge bind:unmount="switchBack"></tabbar-set-badge>
+</template>
+<template name="tabbar-remove-badge">
+  <tabbar-remove-badge bind:unmount="switchBack"></tabbar-remove-badge>
+</template>

@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <button type="primary" bindtap="chooseLocation">tt.chooseLocation</button>
+      <!-- <button bindtap="clear">清空</button> -->
+    </view>
+    <view class="page-section-title page-section-title-space">点击打开地图显示当前位置（需用户授权位置信息），并可在地图中搜索位置</view>
+  </view>
+</view>

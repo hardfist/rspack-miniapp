@@ -1,0 +1,56 @@
+.frame_wrap {
+  width: var(--width);
+  height: var(--height);
+  background-position: 0 0;
+  background-size: calc(var(--width) * var(--count)) var(--height);
+}
+
+.left {
+  animation: frames-anticlockwise calc(var(--duration) * 1s) steps(var(--count), start);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation: frames-anticlockwise calc(var(--duration) * 1s) steps(var(--count), start);
+}
+
+.right {
+  animation: frames-clockwise calc(var(--duration) * 1s) steps(var(--count), end);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation: frames-clockwise calc(var(--duration) * 1s) steps(var(--count), end);
+}
+
+@-webkit-keyframes frames-clockwise {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: calc(var(--width) * var(--count));
+  }
+}
+
+@keyframes frames-clockwise {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: calc(var(--width) * var(--count));
+  }
+}
+
+@-webkit-keyframes frames-anticlockwise {
+  from {
+    background-position-x: calc(var(--width) * var(--count));
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+@keyframes frames-anticlockwise {
+  from {
+    background-position-x: calc(var(--width) * var(--count));
+  }
+  to {
+    background-position-x: 0;
+  }
+}

@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="btn-area">
+        <button type="primary" bindtap="scrollToBottom">滚动到页面底部</button>
+        <button type="primary" bindtap="scrollToRed">滚动到页面Blue</button>
+        <button type="primary" bindtap="scrollToGreen">滚动到页面Red</button>
+      </view>
+      <view class="filling-area"></view>
+      <view class="one" ></view>
+      <view class="two" ></view>
+      <view class="btn-area">
+        <button type="primary" bindtap="scrollToTop">返回顶部</button>
+      </view>
+    </view>
+  </view>
+</view>

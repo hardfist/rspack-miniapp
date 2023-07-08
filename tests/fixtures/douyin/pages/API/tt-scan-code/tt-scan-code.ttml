@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section-title page-section-title-space">扫码结果</view>
+    <view class="ttui-cells ">
+      <view class="ttui-cell">
+        <view class="ttui-cell__bd">{{result}}</view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="scanCode">扫一扫</button>
+    </view>
+  </view>
+</view>

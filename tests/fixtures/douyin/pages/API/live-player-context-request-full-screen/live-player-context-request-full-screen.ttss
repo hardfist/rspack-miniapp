@@ -1,0 +1,18 @@
+.live-play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.my-live {
+  margin: 0 auto;
+}
+button {
+  margin: 5px auto;
+  width: 80%;
+}
+.full-screen {
+  position: fixed;
+  z-index: 9;
+  bottom: 8%;
+  left: 10%;
+}

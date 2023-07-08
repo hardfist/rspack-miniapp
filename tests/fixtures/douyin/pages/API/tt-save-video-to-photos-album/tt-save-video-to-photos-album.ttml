@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">视频来源</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <picker range="{{sourceType}}" bindchange="sourceTypeChange" value="{{sourceTypeIndex}}">
+              <view class="ttui-input">{{sourceType[sourceTypeIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">摄像头</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <picker range="{{camera}}" bindchange="cameraChange" value="{{cameraIndex}}">
+              <view class="ttui-input">{{camera[cameraIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">拍摄长度</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <picker range="{{duration}}" bindchange="durationChange" value="{{durationIndex}}">
+              <view class="ttui-input">{{duration[durationIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class="page-body-info">
+        <block tt:if="{{src === ''}}">
+          <view class="image-plus image-plus-nb" bindtap="chooseVideo">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+          </view>
+          <view class="image-plus-text" bindtap="authAction">添加视频</view>
+        </block>
+        <block tt:if="{{src != ''}}">
+          <video src="{{src}}" class="video"></video>
+        </block>
+      </view>
+    </view>
+    <button type="default" size="default" bindtap="saveVideoToAlbum"> 保存临时视频到相册 </button>
+  </view>
+</view>

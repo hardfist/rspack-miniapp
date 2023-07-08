@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="btn-area">
+        <button bindtap="stopPullDownRefresh">停止刷新</button>
+      </view>
+    </view>
+  </view>
+</view>

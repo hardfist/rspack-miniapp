@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-call">
+      <view class="desc">请在下方输入电话号码</view>
+      <input class="input" type="number" name="input" bindinput="bindInput" auto-focus="true" />
+      <view class="btn-area">
+        <button type="primary" bindtap="makePhoneCall" disabled="{{disabled}}">拨打</button>
+      </view>
+    </view>
+  </view>
+</view>

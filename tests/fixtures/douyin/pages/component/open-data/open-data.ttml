@@ -1,0 +1,67 @@
+<view class="page">
+  <button type="default" size="default" bindtap="login">login</button>
+
+  <!-- type 必传 -->
+  <open-data binderror="handleError" />
+
+
+  <!-- avatarUrl -->
+  <open-data
+    type="userAvatarUrl"
+    use-empty-value
+    class="avatar"
+    binderror="handleError"
+  />
+
+
+  <!-- nickName -->
+  <view>
+    nickName:
+    <open-data
+      type="userNickName"
+      default-text="自定义用户名"
+      binderror="handleError"
+    />
+  </view>
+
+  <!-- gender -->
+  <view>
+    gender:
+    <open-data
+      type="userGender"
+      use-empty-value
+      binderror="handleError"
+    />
+  </view>
+
+  <!-- city -->
+  <view>
+    city:
+    <open-data
+      type="userCity"
+      use-empty-value
+      binderror="handleError"
+    />
+  </view>
+  
+
+  <!-- province -->
+  <view>
+    province:
+    <open-data
+      type="userProvince"
+      binderror="handleError"
+    />
+  </view>
+  
+
+  <!-- country -->
+  <view>
+    country:
+    <open-data
+      type="userCountry"
+      use-empty-value
+      binderror="handleError"
+    />
+  </view>
+</view>

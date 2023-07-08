@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="body">
+		<camera
+      class="camera"
+      frame-size="medium"
+      device-position="back"
+      binderror="onError"
+      style="height: 360px"
+    ></camera>
+    <view class="page-body">
+      <view class="btn-area">
+        <button type="primary" bindtap="createContext">授权并创建 cameraContext</button>
+        <button type="primary" bindtap="startOnFrame">创建监听器并开始接收帧数据</button>
+        <button type="default" bindtap="stopOnFrame">停止接收帧数据</button>
+      </view>
+      <view>第 {{counter}} 帧</view>
+      <view hidden="{{counter === 0}}"
+        >frameWidth: {{frameWidth}}; frameHeight: {{frameHeight}}</view
+      >
+    </view>
+  </view>
+</view>

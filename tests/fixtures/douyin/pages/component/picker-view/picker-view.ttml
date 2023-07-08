@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="page-section">
+      <view>
+        <view style="text-align: center;">{{year}}年{{month}}月{{day}}日</view>
+        <picker-view
+          indicator-class="indicator-class"
+          indicator-style=""
+          immediate-change="{{immediateChange}}"
+          mask-style=""
+          mask-class="mask-class"
+          style="height: 750rpx"
+          value="{{value}}"
+          bindchange="bindChange"
+          bindpickstart="bindStart"
+          bindpickend="bindEnd"
+        >
+          <picker-view-column style="text-align: center;">
+            <view tt:for="{{years}}" class="text-style">{{item}}年</view>
+          </picker-view-column>
+          <picker-view-column style="text-align: center;">
+            <view tt:for="{{months}}" class="text-style">{{item}}月</view>
+          </picker-view-column>
+          <picker-view-column style="text-align: center;">
+            <view tt:for="{{days}}" class="text-style">{{item}}日</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="toggleImmed">immediate-change：{{immediateChange}}</button>
+<view> bindpickstart 的 e.detail.value: [{{startValue}}] </view>
+<view> bindchange 的 e.detail.value: [{{changeValue}}] </view>
+<view> bindpickend 的 e.detail.value: [{{endValue}}] </view>

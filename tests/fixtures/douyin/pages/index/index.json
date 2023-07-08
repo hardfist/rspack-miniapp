@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "frame-animation": "/pages/index/frame-animation/frame-animation"
+  },
+  "disableSwipeBack": true
+}

@@ -1,0 +1,4 @@
+<view class="cont">
+  <button type="primary" bindtap="click">followOfficialAccounts</button>
+  <text>注：用于关注小程序绑定的头条号</text>
+</view>

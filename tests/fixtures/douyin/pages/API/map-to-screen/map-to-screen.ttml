@@ -1,0 +1,11 @@
+<map id="myMap" style="width: 100%; height: 400px;" markers="{{markers}}" longitude="{{longitude}}" latitude="{{latitude}}"></map>
+<view class="page-section-title page-section-title-space">
+  描述: 调用 mapContext.mapToScreen 方法, 用于将地图经纬度坐标系转换成屏幕坐标系
+</view>
+<view class="btn-area">
+  <button bindtap="mapToScreen" type="primary">转换为屏幕坐标</button>
+</view>
+<view class="page-section-title page-section-title-space">
+  <view>地图经度: {{longitude}}, 地图纬度: {{latitude}}</view>
+  <view>屏幕坐标 x: {{x}}, 屏幕坐标 y: {{y}}</view> 
+</view>

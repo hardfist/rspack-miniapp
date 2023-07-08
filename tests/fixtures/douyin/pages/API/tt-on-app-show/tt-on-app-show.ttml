@@ -1,0 +1,11 @@
+<view class="content">
+    <text class="title">切前台参数:</text>
+    <view class="attr-wrap">
+        <text class="attr">scene: {{showQuery.scene}}</text>
+        <text class="attr">path: {{showQuery.path}}</text>
+        <text class="attr">query: {{showQuery.query}}</text>
+        <text class="attr">referrerInfo: {{showQuery.referrerInfo}}</text>
+        <text class="attr">showFrom: {{showQuery.showFrom}}</text>
+    </view>
+    <button size="default" class="clear-btn" bindtap="clearAllAttr" disabled="{{!showQuery.path}}"> 清空上面参数 </button>
+</view>

@@ -1,0 +1,13 @@
+
+<view class="container">
+  <view class="page-body-title header-center">获取组件中的节点信息</view>
+  <my-component id='myComponent'></my-component>
+  <view class="body">
+    <view class="title">width: {{nodes.width}}</view>
+    <view class="title">height: {{nodes.height}}</view>
+    <view class="title">top: {{nodes.top}}</view>
+    <view class="title">bottom: {{nodes.bottom}}</view>
+    <view class="title">left: {{nodes.left}}</view>
+    <view class="title">right: {{nodes.right}}</view>
+  </view>
+</view>

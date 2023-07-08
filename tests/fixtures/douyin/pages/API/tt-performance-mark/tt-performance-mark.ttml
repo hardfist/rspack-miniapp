@@ -1,0 +1,36 @@
+<view class="container">
+	<view class="body">
+    <view class="page-section-title page-section-title-space">在性能缓冲区中使用给定名称添加一个 name 为 [bytedance] 的性能数据</view>
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="mark" >tt.performance.mark</button>
+      </view>
+    </view>
+    <view class="page-section-title page-section-title-space">性能数据的属性包括: </view>
+    <view class="page-section-title page-section-title-space">
+      <view>
+        name: 该 performance entry 的名字
+      </view>
+      <view>
+        entryType: 所上报的 performance metric 的类型
+      </view>
+      <view>
+        startTime: metric 的上报时间
+      </view>
+      <view>
+        duration: 持续时间
+      </view>
+    </view>
+    <view style="padding-left: 30rpx;">添加的性能数据: </view>
+    <view class="page-section-space" tt:if="{{entries}}">
+      <view class="content-area">
+        <view class="statsAttrList">
+          <view class="statsAttrItem">name: {{entries.name}}</view>
+          <view class="statsAttrItem">entryType: {{entries.entryType}}</view>
+          <view class="statsAttrItem">startTime: {{entries.startTime}}</view>
+          <view class="statsAttrItem">duration: {{entries.duration}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

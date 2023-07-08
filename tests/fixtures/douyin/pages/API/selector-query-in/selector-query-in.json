@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "SelectorQuery.in",
+  "usingComponents": {
+    "my-component": "selector-component"
+  }
+}

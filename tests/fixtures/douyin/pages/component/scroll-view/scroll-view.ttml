@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="body body-space-l">
+    <view class="page-section page-section-scroll-view">
+      <view class="page-section-title page-section-title-space">
+        <text>Vertical Scroll\n纵向滚动</text>
+      </view>
+      <view class="scroll-view-space">
+        <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" style="height: 300rpx;" upper-threshold="{{50}}" lower-threshold="{{50}}" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <view id="demo1" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2" class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" class="scroll-view-item demo-text-3"></view>
+        </scroll-view>
+        <button class="tapbtn" bindtap="tap">Scroll into</button>
+        <button class="tapbtn" bindtap="tapMove">Move</button>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">
+        <text>Horizontal Scroll\n横向滚动</text>
+      </view>
+      <view class="scroll-view-space">
+        <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%" scroll-left="{{0}}" bindscrolltoupper="toLeft" bindscrolltolower="toRight">
+          <view id="demo1" class="scroll-view-item_H demo-text-1"></view>
+          <view id="demo2" class="scroll-view-item_H demo-text-2"></view>
+          <view id="demo3" class="scroll-view-item_H demo-text-3"></view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

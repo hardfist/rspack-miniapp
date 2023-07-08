@@ -1,0 +1,89 @@
+<view class="container">
+  <view class="body">
+    <form>
+      <view class="page-section">
+        <view class="ttui-cells">
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">媒体类型</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <picker range="{{mediaType}}" bindchange="mediaTypeChange" value="{{mediaTypeIndex}}" mode="selector">
+                <view class="ttui-input">{{mediaType[mediaTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="ttui-cell" tt:if="{{mediaTypeIndex == 0}}">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">图片质量</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <picker range="{{sizeType}}" bindchange="sizeTypeChange" value="{{sizeTypeIndex}}" mode="selector">
+                <view class="ttui-input">{{sizeType[sizeTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">媒体来源</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <picker range="{{sourceType}}" bindchange="sourceTypeChange" value="{{sourceTypeIndex}}" mode="selector">
+                <view class="ttui-input">{{sourceType[sourceTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="ttui-cell" tt:if="{{sourceTypeIndex == 0}}">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">摄像头</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <picker range="{{cameraType}}" bindchange="cameraTypeChange" value="{{cameraTypeIndex}}" mode="selector">
+                <view class="ttui-input">{{cameraType[cameraTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">数量限制</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <picker range="{{count}}" bindchange="countChange" value="{{countIndex}}" mode="selector">
+                <view class="ttui-input">{{count[countIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+        <!-- <view tt:if="{{sourceTypeIndex != 1}}">
+          此时数量限制不生效
+        </view> -->
+        <view class="ttui-cells choose-image">
+          <view class="ttui-cell ttui-cell-image">
+            <view class="ttui-cell__bd">
+              <view class="ttui-uploader">
+                <view class="ttui-uploader__hd">
+                  <view class="ttui-uploader__title">点击可预览选好的媒体文件</view>
+                  <view class="ttui-uploader__info">{{mediaLlist.length}}/{{count[countIndex]}}</view>
+                </view>
+                <view class="ttui-uploader__bd">
+                  <view class="ttui-uploader__files">
+                    <block tt:for="{{mediaLlist}}" >
+                      <view class="ttui-uploader__file">
+                        <image class="ttui-uploader__img" tt:if="{{item.mediaType === 'image'}}" src="{{item.tempFilePath}}" data-src="{{item.tempFilePath}}" mode="aspectFill" bindtap="previewImage"></image>
+                        <video class="ttui-uploader__video" tt:elif="{{item.mediaType === 'video'}}" src="{{item.tempFilePath}}"></video>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="ttui-uploader__input-box">
+                    <view class="ttui-uploader__input" bindtap="chooseMedia"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </form>
+    <button disabled="{{mediaLlist.length === 0}}" bindtap="clearImage">清空媒体文件</button>
+  </view>
+</view>

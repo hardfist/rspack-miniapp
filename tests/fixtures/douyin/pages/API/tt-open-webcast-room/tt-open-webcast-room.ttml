@@ -1,0 +1,6 @@
+<input
+    value="{{awemeId}}"
+    bindinput="changeAwemeId"
+    placeholder="请输入主播抖音号">
+</input>
+<button type="default" size="default" bindtap="openWebcastRoom">跳转直播间</button>

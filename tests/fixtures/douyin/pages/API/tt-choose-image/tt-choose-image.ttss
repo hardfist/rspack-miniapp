@@ -1,0 +1,11 @@
+.ttui-cell-image {
+  height: auto;
+}
+
+.choose-image {
+  margin-top: 40rpx;
+}
+
+.image-action {
+  margin: 20px 0;
+}

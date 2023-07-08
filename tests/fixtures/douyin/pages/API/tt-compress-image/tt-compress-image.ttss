@@ -1,0 +1,13 @@
+page {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+button {
+  margin-bottom: 50rpx;
+}
+
+.beforCompress>text {
+  display: inline-block;
+  margin-bottom: 10rpx;
+}

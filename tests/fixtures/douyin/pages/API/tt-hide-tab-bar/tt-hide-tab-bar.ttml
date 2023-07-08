@@ -1,0 +1,8 @@
+<view class="control-area">
+  <view class="btn-area">
+    <button bindtap="hideTabBar">{{showTabBar?"隐藏 TabBar":"显示 TabBar"}}</button>
+  </view>
+  <view class="btn-area">
+    <button type="primary" class="back-btn" bindtap="navigateBack">返回上一级</button>
+  </view>
+</view>

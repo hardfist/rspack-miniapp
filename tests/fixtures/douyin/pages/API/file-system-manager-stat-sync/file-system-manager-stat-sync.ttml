@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="getStats">获取文件 Stats 对象(同步)</button>
+      </view>
+    </view>
+    <view>stats对象所包含属性: </view>
+    <view class="page-section-space">
+      <view class="content-area">
+        <view tt:if="{{stats}}" class="statsAttrList">
+          <view class="statsAttrItem">mode(文件的类型和存取的权限): {{mode}}</view>
+          <view class="statsAttrItem">size(文件大小): {{size}}B</view>
+          <view class="statsAttrItem">lastAccessedTime(文件最近一次被存取或被执行的时间戳): {{accessedTime}}</view>
+          <view class="statsAttrItem">lastModifiedTime(文件最后一次被修改的时间戳): {{modifiedTime}}</view>
+          <view class="btn-area">
+            <view class="body-view page-section">
+              <button type="primary" bindtap="isDirectory">判断当前文件是否为一个目录</button>
+              <button type="primary" bindtap="isFile">判断当前文件是否为一个普通文件</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

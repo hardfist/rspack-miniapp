@@ -1,0 +1,24 @@
+<custom chineseName="实时视频播放器" engName="live-player"></custom>
+<view class="live-play">
+    <live-player 
+        class="my-live" 
+        id="myLive" 
+        src="{{src}}" 
+        muted="{{muted}}" 
+        orientation="{{orientation}}" 
+        object-fit="{{objectFit}}" 
+        autoplay="{{autoplay}}"
+        signature="{{signature}}"
+        binderror="onError"
+        bindstatechange="stateChange"
+        bindfullscreenchange="fullScreenChange"
+        >
+        <button type="primary" bindtap="fullScreen" class="full-screen">点击{{fullScreen ? '退出' : '进入'}}全屏</button>
+    </live-player>
+    <view class="section">
+        <button type="primary" bind:tap="livePlay">开始播放 play</button>
+        <button type="primary" bind:tap="liveStop">停止播放 stop</button>
+        <button type="primary" bind:tap="liveMute">{{muted ? '不' : ''}}静音</button>
+        <button type="primary" bind:tap="changeObjectFit">object-fit改变为{{objectFit === 'contain' ? 'fillCrop' : 'contain'}}</button>
+    </view>
+</view>

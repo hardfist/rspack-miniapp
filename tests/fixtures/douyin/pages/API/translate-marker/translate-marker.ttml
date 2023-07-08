@@ -1,0 +1,9 @@
+<map id="myMap" style="width: 100%; height: 300px;" markers="{{markers}}" polyline="{{polyline}}" include-points="{{includePoints}}"></map>
+<view class="page-section-title page-section-title-space">
+  描述: 调用 mapContext.translateMarker 方法, 平移 marker 到指定位置
+</view>
+<view class="btn-area">
+  <button bindtap="translateMarker" type="primary" data-longitude="{{116.397493}}" data-latitude="{{39.907957}}">平移 marker 到位置 1</button>
+  <button bindtap="translateMarker" type="primary" data-longitude="{{116.39394}}" data-latitude="{{39.90503}}">平移 marker 到位置 2</button>
+  <button bindtap="translateMarker" type="primary" data-longitude="{{116.40159}}" data-latitude="{{39.90511}}">平移 marker 到位置 3</button>
+</view>

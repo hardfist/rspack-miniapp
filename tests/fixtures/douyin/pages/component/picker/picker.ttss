@@ -1,0 +1,7 @@
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}
+.page-section {
+  margin-bottom: 32rpx;
+}

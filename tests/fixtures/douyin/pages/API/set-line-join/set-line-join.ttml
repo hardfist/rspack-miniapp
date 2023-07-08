@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <canvas class="canvas-element" canvas-id="myCanvas"></canvas>
+      <view class="content">
+        下列线段端点样式分别为：
+        <block tt:for="{{lineGaps}}">
+          <view>{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

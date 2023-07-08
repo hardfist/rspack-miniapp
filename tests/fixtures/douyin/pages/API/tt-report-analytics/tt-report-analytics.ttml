@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="body">
+    <view class="page-section-title page-section-title-space">
+      使用前，需要在小程序管理后台自定义分析中新建事件，配置好事件名与字段。
+    </view>
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <button type="primary" bindtap="chooseAdress">自定义分析数据上报接口</button>
+      </view>
+    </view>
+  </view>
+</view>

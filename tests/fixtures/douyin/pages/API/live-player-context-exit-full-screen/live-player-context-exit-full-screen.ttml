@@ -1,0 +1,5 @@
+<view class="live-play">
+  <live-player class="my-live" src="https://sf3-ttcdn-tos.pstatp.com/obj/developer/bytdance.flv" id="livePlayer" autoplay="{{true}}" bindstatechange="onStateChange" bindfullscreenchange="onFullScreenChange">
+    <button type="primary" bindtap="screenHander" class="full-screen">点击{{fullScreen ? '退出' : '进入'}}全屏</button>
+  </live-player>
+</view>

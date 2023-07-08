@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="btn-area">
+    <button type="primary" bindtap="toIndexTab">switchTab跳转至tab首页</button>
+  </view>
+</view>

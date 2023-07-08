@@ -1,0 +1,5 @@
+<view class="content">
+    <view class="title">获取小程序启动时的参数。如果当前是冷启动，则返回值与 App.onLaunch 的回调参数一致；如果当前是热启动，则返回值与 App.onShow 一致。</view>
+    <button type="primary" size="default" bindtap="getEnter"> 点击获取小程序本次启动的参数 </button>
+    <view class="footer">{{options}}</view>
+</view>

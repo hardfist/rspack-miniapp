@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="page-section">
+      <view class="page-section-title">通过HTML String渲染</view>
+      <view class="page-content">
+        <view class="show-code">
+          <text>{{htmlSnip}}</text>
+        </view>
+        <button type="primary" bindtap="renderHtml">渲染HTML</button>
+        <block tt:if="{{renderedByHtml}}">
+          <rich-text nodes="{{htmlSnip}}"></rich-text>
+        </block>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">通过节点渲染</view>
+      <view class="page-content">
+        <view class="show-code">{{nodeSnip}}</view>
+        <button type="primary" bindtap="renderNode">渲染Node</button>
+        <block tt:if="{{renderedByNode}}">
+          <rich-text nodes="{{nodes}}"></rich-text>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+.container {
+  margin: 30rpx;
+  border-radius: 10rpx;
+  background: #ffffff;
+}
+
+text {
+  display: block;
+  font-size: 28rpx;
+  color: gray;
+  text-align: center;
+}
+
+image {
+  display: block;
+  margin: 0 auto;
+}

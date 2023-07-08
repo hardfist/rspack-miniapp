@@ -1,0 +1,7 @@
+<view class="wrap"> 
+    <video id="myVideo" enable-danmu="true" src="https://sf1-ttcdn-tos.pstatp.com/obj/developer/sdk/1534422848153.mp4">
+      <view class="button" bindtap="exitFullScreen">ExitFullScreen</view>
+    </video>
+    <button  type="primary" bindtap="play">Play</button>
+    <button  type="primary" bindtap="requestFullScreen">RequestFullScreen</button>
+  </view>

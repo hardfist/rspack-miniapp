@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="body">
+        <view class="btn-area">
+            <view class="body-view page-section">
+                <button type="primary" bindtap="requestEffectCamera">申请相机资源</button>
+            </view>
+             <view class="body-view page-section">
+                <button type="primary" bindtap="play">打开相机</button>
+            </view>
+        </view>
+        <view class="page-section-space">
+            <view>相机状态：{{stateArr[state]}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="page-section page-section-space">
+      <view class="progress-box">
+        <progress percent="20" stroke-width="3" active-color="red" background-color="gray" active="{{true}}" />
+      </view>
+      <view class="progress-box">
+        <progress percent="40" active stroke-width="6" />
+      </view>
+      <view class="progress-box">
+        <progress percent="60" active stroke-width="3" active-mode="forwards" />
+      </view>
+      <view class="progress-box">
+        <progress percent="80" active-color="#10AEFF" active stroke-width="3" />
+      </view>
+    </view>
+  </view>
+</view>

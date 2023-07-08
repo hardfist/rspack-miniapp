@@ -1,0 +1,7 @@
+<map id="myMap" style="width: 100%; height: 300px;" polyline="{{polyline}}" markers="{{markers}}"></map>
+<view class="page-section-title page-section-title-space">
+  描述: 调用 mapContext.moveAlong 方法, 沿指定路径移动 marker
+</view>
+<view class="btn-area">
+  <button bindtap="moveAlong" type="primary">moveAlong</button>
+</view>

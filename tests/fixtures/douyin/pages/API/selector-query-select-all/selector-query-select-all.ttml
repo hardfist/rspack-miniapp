@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="page-body-title header-center">获取所有类名为btn的示例按钮节点信息</view>
+  <view class="btn-area">
+    <button class="btn" type="primary">示例按钮1</button>
+    <button class="btn" type="primary">示例按钮2</button>
+  </view>
+  <view class="body" tt:for="{{list}}" tt:for-item="nodes" tt:for-index="index">
+    <view>示例按钮{{index+1}} 信息</view>
+    <view>width: {{nodes.width}}</view>
+    <view>height: {{nodes.height}}</view>
+    <view>top: {{nodes.top}}</view>
+    <view>bottom: {{nodes.bottom}}</view>
+    <view>left: {{nodes.left}}</view>
+    <view>right: {{nodes.right}}</view>
+  </view>
+</view>

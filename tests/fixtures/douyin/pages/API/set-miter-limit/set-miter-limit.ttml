@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <canvas class="canvas-element" canvas-id="myCanvas"></canvas>
+      <view class="content">
+        下列斜接面限制比例分别为：
+        <block tt:for="{{miterLimits}}">
+          <view>{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

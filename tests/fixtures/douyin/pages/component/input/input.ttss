@@ -1,0 +1,14 @@
+.page-section {
+  margin-bottom: 32rpx;
+  margin:0 auto 32rpx auto ;
+  width: 95%;
+}
+.ttui-input {
+  height: 96rpx;
+  min-height: 96rpx;
+  line-height: 96rpx;
+}
+.input-block {
+  border-radius: 8px;
+  margin-bottom:25rpx;
+}

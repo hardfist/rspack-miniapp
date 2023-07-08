@@ -1,0 +1,11 @@
+<map id="myMap" style="width: 100%; height: 300px;"></map>
+<view class="page-section-title page-section-title-space">
+  描述: 调用 mapContext.getRegion 方法, 获取当前地图视野范围
+</view>
+<view class="btn-area">
+  <button type="primary" bindtap="getRegion">mapContext.getRegion</button>
+</view>
+<view class="page-section-title page-section-title-space">
+  <view tt:if="{{southwest}}">地图西南角 经度: {{southwest.longitude}}; 纬度: {{southwest.latitude}}</view>
+  <view tt:if="{{northeast}}">地图东北角 经度	: {{northeast.longitude}}; 纬度: {{northeast.latitude}}</view>
+</view>

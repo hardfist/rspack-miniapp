@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+			<view class="ttui-cells">
+				<view class="ttui-cell">
+					<view class="ttui-cell__hd">
+						<view class="ttui-label">key</view>
+					</view>
+					<view class="weui-cell__bd">
+							<input class="ttui-input" value="{{key}}" bindinput="keyChange" auto-focus placeholder="请输入key" />
+					</view>
+				</view>
+				<view class="ttui-cell">
+						<view class="ttui-cell__hd">
+							<view class="ttui-label">value</view>
+						</view>
+						<view class="weui-cell__bd">
+								<input class="ttui-input" value="{{value}}" bindinput="valueChange" placeholder="请输入value" />
+						</view>
+					</view>
+			</view>
+			<view class="btn-area">
+					<button type="primary" bindtap="setStorage">保存数据</button>
+			</view> 
+    </view>
+  </view>
+</view>

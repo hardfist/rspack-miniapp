@@ -1,0 +1,3 @@
+<view class="btn-area">
+  <button type="primary" bindtap="mkDir">创建目录</button>
+</view>

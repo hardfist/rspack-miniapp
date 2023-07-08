@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="body">
+
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <view class="page-body-title">插屏广告组件展示</view>
+        <block tt:if="{{isCreateFail}}">
+          <view>
+            创建interstitialAd实例失败: 需开发者申请成为流量主后,创建广告位,并传入正确广告位ID
+          </view>
+          <view>
+            说明: 创建插屏广告组件，开发者可以在小程序中使用插屏广告获得收入。插屏广告是由客户端原生渲染，由开发者控制广告组件的显示。
+          </view>
+          <view>
+            注意: 目前只能在抖音使用该方法，今日头条等宿主暂不支持。
+          </view>
+        </block>
+      </view>
+    </view>
+    
+    <view class="page-section">
+      <view class="btn-area page-section-space">
+        <button type="primary" bindtap="creatInterstitialAd">创建插屏视频广告</button>
+        <button bindtap="clear">清空</button>
+      </view>
+    </view>
+  </view>
+</view>

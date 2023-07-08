@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="body">
+    <view class="btn-area">
+      <view>当前页面标识{{ now }}</view>
+      <button bindtap="navigateTo">navigateTo（可以多次跳到相同页面但生命周期不同）</button>
+      <button bindtap="navigateBack">navigateBack</button>
+      <button bindtap="redirectTo">redirectTo</button>
+      <button bindtap="reLaunch">reLaunch</button>
+      <button bindtap="switchTab">switchTab</button>
+    </view>
+  </view>
+</view>

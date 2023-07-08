@@ -1,0 +1,6 @@
+.content{
+    padding: 0 50rpx 50rpx 50rpx;
+}
+.btn{
+    margin-top: 30rpx;
+}

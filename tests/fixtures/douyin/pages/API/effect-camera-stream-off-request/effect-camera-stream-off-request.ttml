@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="body">
+        <view class="page-section-title page-section-title-space">提示：点击「取消监听」后，再打开相机时不会出现弹窗提示。
+        相机开启后已经占用相机资源，无法再次打开相机。</view>
+        <view class="btn-area">
+            <view class="body-view page-section">
+                <button type="primary" bindtap="requestEffectCamera">打开相机</button>
+                <button type="primary" bindtap="offRequest">取消监听</button>
+            </view>
+        </view>
+        <view class="page-section-space">
+        </view>
+        <view class="page-section page-section-space">
+            <view class="page-body-info">
+                <view>相机状态：{{state}}</view>
+            </view>
+        </view>
+    </view>
+</view>

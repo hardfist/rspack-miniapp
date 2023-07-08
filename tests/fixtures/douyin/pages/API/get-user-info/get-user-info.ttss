@@ -1,0 +1,36 @@
+.page-body-info {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  height: 260px;
+}
+
+.page-body-info text {
+  display: block;
+
+}
+
+.userinfo-avatar {
+  border-radius: 128rpx;
+  display: inline-block;
+  width: 128rpx;
+  height: 128rpx;
+}
+.userinfo-nickname {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+  line-height: 1;
+}
+
+.page-body-text {
+  padding: 0 15px;
+}
+.long-word {
+  word-break: break-all;
+  padding-left: 6px;
+}
+.ttui-autoheight {
+  height: auto;
+  min-height: 24px;
+}

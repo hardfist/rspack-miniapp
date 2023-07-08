@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  height: 100vh;
+}
+.btn-sets {
+  margin-top: 100rpx;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+}
+.btn-sets button {
+  height: 80rpx;
+  line-height: 80rpx;
+}

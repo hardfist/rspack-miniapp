@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="show-guide">
+    <view class="bar-guide {{guideShow}}">
+      <view class="bar-guide-container">
+        <image src="/image/demo/favorite.png" class="bar-guide-close" mode bindtap="closeGuide" />
+        <view class="content">
+          <image src="/image/demo/app-icon.png" class="guide-app-avatar" mode />
+          <text class="content-text">一键添加到我的小程序</text>
+        </view>
+        <view class="guide-add-btn" bindtap="addToFavor">添加</view>
+      </view>
+    </view>
+    <view class="bar-guide-tips {{guideTipsShow}}" bindtap="closeTipsGuide">
+      <view class="bar-guide-tips-container">
+        <text class="content-text">一键添加到我的小程序</text>
+        <image src="/image/demo/favorite.png" class="bar-guide-close" mode />
+        <view class="tip-arrow"></view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-sets">
+    <button type="primary" size="mini" bindtap="switchGuideImage" data-image="{{barLayerGuideImage}}">
+      展示bar浮层引导
+    </button>
+
+    <button type="primary" size="mini" bindtap="switchGuideTips" data-image="{{tipsLayerGuideImage}}">
+      展示tips气泡引导
+    </button>
+
+  </view>
+</view>

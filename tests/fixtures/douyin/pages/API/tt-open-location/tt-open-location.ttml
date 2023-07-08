@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <form bindsubmit="openLocation">
+        <view class="ttui-cells">
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">经度</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <input class="ttui-input" type="text" value="116.329639" name="longitude"></input>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">纬度</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <input class="ttui-input" type="text" value="39.972016" name="latitude"></input>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">缩放比例</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <input class="ttui-input" type="text" value="18" name="scale"></input>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">位置名称</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <input class="ttui-input" type="text" value="今日头条总部" name="name"></input>
+            </view>
+          </view>
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">详细位置</view>
+            </view>
+            <view class="ttui-cell__bd">
+              <input class="ttui-input" type="text" value="北三环西路43号中航广场1号楼" name="address"></input>
+            </view>
+          </view>
+        </view>
+        <view class="btn-area">
+          <button type="primary" formType="submit">查看表格指定位置</button>
+          <button type="primary" bindtap='getLocation'>查看当前位置</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

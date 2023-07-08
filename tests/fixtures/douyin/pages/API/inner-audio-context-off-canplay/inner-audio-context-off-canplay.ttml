@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-body-buttons">
+        <block tt:if="{{playing === true}}">
+          <view class="page-body-button" bindtap="stop">
+            <image src="{{imageUrl+'stop.png'}}"></image>
+          </view>
+          <view class="page-body-button" bindtap="pause">
+            <image src="{{imageUrl+'pause.png'}}"></image>
+          </view>
+        </block>
+        <block tt:if="{{playing === false}}">
+          <view class="page-body-button"></view>
+          <view class="page-body-button" bindtap="play">
+            <image src="{{imageUrl+'play.png'}}"></image>
+          </view>
+        </block>
+        <view class="page-body-button"></view>
+      </view>
+      <view class="page-section-title page-section-title-space" tt:if="{{canPlay}}">
+        音频进入可以播放状态，但不保证后面可以流畅播放。
+      </view>
+      <view class="page-section-title page-section-title-space" tt:if="{{!canPlay}}">
+        已取消监听 Canplay 事件。
+      </view>
+      <view class="btn-area">
+        <button type="default" bindtap="offCanplay" disabled="{{!canPlay }}"> 取消监听 Canplay 事件 </button>
+      </view>
+    </view>
+  </view>
+</view>

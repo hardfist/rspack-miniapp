@@ -1,0 +1,5 @@
+<view class="btn-area">
+  <button type="primary" data-item="temp" bindtap="checkFile" disabled="{{!tempFilePath}}"> 判断临时目录路径否存在 </button>
+  <button type="primary" data-item="user" bindtap="checkFile" disabled="{{!tempFilePath}}"> 判断用户目录下路径是否存在 </button>
+  <button type="primary" data-item="page" bindtap="checkFile" disabled="{{!tempFilePath}}"> 判断包内路径是否存在 </button>
+</view>

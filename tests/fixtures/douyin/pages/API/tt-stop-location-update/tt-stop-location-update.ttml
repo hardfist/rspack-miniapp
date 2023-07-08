@@ -1,0 +1,4 @@
+<view class="btn-area">
+  <button type="primary" bindtap="startListen">开始接收位置信息</button>
+  <button type="primary" bindtap="stopListen">停止接收位置信息</button>
+</view>

@@ -1,0 +1,9 @@
+.cont {
+    font-size: 25rpx;
+    margin: 30rpx;
+  }
+text {
+    display: block;
+    text-align: left;
+    margin-top: 20rpx;
+  }

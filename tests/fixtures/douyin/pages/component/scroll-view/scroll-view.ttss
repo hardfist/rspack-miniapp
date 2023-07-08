@@ -1,0 +1,24 @@
+.page-section-title {
+  text-align: center;
+  margin-bottom: 0;
+}
+.page-section-scroll-view {
+  margin-bottom: 60rpx;
+}
+.scroll-view-space {
+  margin-top: 48rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+.tapbtn {
+  margin-top: 16rpx;
+}

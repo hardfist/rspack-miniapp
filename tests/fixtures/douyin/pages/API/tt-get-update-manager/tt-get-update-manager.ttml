@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-section-title page-section-title-space">提示：该方法最好在app.js的onLaunch()中调用，保证在小程序启动的时候调用就可以监听到是否有新版本，如果在其他页面调用，可能会出现小程序启动加载不到而不能触发事件。</view>
+  <view class="btn-area">
+    <button type="primary" bindtap="updateManager">监听版本更新</button>
+  </view>
+</view>

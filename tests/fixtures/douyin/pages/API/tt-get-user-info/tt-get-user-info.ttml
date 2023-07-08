@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="body">
+
+    <view class="page-section page-section-space">
+      <view class="page-body-info">
+        <view class="body-title">用户信息</view>
+        <view tt:if="{{hasUserInfo === false}}" class="info-wrap">
+          <text class="page-body-text">未获取</text>
+        </view>
+        <view tt:if="{{hasUserInfo === true}}" class="info-wrap">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="userinfo-nickname">
+            性别： {{ userInfo.gender === 0 ? '未知' : (userInfo.gender === 1 ? '男' : '女') }}
+          </text>
+          <text class="userinfo-nickname">
+            地区： {{userInfo.city || '--市'}}/{{userInfo.province || '--省'}}/{{userInfo.country || '--国'}}
+          </text>
+        </view>
+      </view>
+    </view>
+    
+    <view class="page-section">
+      <view class="btn-area page-section-space">
+        <button type="primary" bindtap="getUserInfo">获取用户信息</button>
+        <button bindtap="clear">清空</button>
+      </view>
+    </view>
+    <view class="page-body-text" tt:if={{tip}}>调用 getUserInfo 失败，检查是否需要登录。 如已登录，点击右上角菜单 -> 设置，检查用户信息权限是否开启</view>
+  </view>
+</view>

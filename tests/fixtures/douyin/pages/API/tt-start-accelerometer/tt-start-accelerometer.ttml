@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">x</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{acc.x}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">y</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{acc.y}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">z</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{acc.z}}"></input>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+          <button type="primary" bindtap="start" disabled="{{!stop}}">开始监听加速度变化</button>
+      </view>
+    </view>
+  </view>
+</view>

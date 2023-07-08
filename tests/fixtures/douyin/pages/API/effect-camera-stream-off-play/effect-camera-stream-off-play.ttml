@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="body">
+        <view class="page-section-title page-section-title-space">提示：点击「打开相机」canvas 区域将绘制相机画面。点击「取消监听相机打开事件」，暂停相机后再次打开相机将没有弹窗提示。</view>
+        <view class="btn-area">
+            <view class="body-view page-section">
+                <canvas type="webgl" id="myCanvas"></canvas>
+                <button type="primary" bindtap="requestEffectCamera">创建相机</button>
+                <button type="primary" bindtap="play">打开相机</button>
+                <button type="primary" bindtap="stop">暂停相机</button>
+                <button type="primary" bindtap="addOnPlay">监听相机打开事件</button>
+                <button type="primary" bindtap="offPlay">取消监听相机打开事件</button>
+                <button type="primary" bindtap="disposeEffectCamera">释放相机资源</button>
+            </view>
+        </view>
+        <view class="page-section-space">
+        </view>
+    </view>
+</view>

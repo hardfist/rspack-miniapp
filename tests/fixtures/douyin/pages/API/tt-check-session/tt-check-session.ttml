@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section-title page-section-title-space">
+      只有成功调用 tt.login 才会生成 session，tt.checkSession 也会因此进入 success 回调，当用户退出登录会清除 session
+    </view>
+    <view class="page-section">
+      <view class="btn-area page-section-space">
+        <button type="primary" bindtap="checkSession">检查当前 session 状态</button>
+      </view>
+    </view>
+    <view class="page-body-text">{{result}}</view>
+  </view>
+</view>

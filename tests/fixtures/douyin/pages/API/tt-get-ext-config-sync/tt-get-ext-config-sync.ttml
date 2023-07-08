@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="body" tt:if="{{extConfig}}">
+    <text class="title">获取的数据：{{extConfig}}</text>
+  </view>
+  <view class="btn-area">
+    <button type="primary" size="default" bindtap="getExtConfigSync">同步获取第三方平台自定义的字段</button>
+  </view>
+</view>

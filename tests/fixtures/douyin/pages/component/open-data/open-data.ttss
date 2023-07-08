@@ -1,0 +1,15 @@
+.page {
+  margin: 30px;
+  text-align: center;
+}
+
+button {
+  margin-bottom: 30rpx;
+}
+  
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}

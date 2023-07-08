@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="body body-space">
+    <view class="page-section page-section-spacing">
+      <view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text selectable="{{false}}" decode="{{false}}">{{text}}</text>
+      </view>
+      <button disabled="{{!canAdd}}" bindtap="add">添加一行文字</button>
+      <button disabled="{{!canRemove}}" bindtap="remove">删除一行文字</button>
+    </view>
+  </view>
+</view>
+
+

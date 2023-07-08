@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section page-section-space">
+      <view class="page-section-title">默认样式</view>
+      <label class="radio"> <radio value="cb" checked="true" disabled="{{false}}" color="#F85959" />选中 </label>
+      <label class="radio"> <radio value="cb" disabled="{{false}}" color="#F85959" />未选中 </label>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">推荐展示样式</view>
+      <view class="ttui-cells">
+        <radio-group bindchange="checkboxChange">
+          <label class="ttui-cell" tt:for="{{items}}" tt:key="{{item.value}}">
+            <view class="ttui-cell__hd">
+              <radio value="{{item.value}}" checked="{{item.checked}}" disabled="{{false}}" color="#F85959" />
+            </view>
+            <view class="ttui-cell__bd">{{item.name}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+<view class="container">
+  <view class="body" style="padding-bottom: 10px;">
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">可以自动聚焦的input</view>
+      <view class="input-block">
+          <input class="ttui-input" value="" cursor="{{-1}}" selection-start="{{-1}}" selection-end="{{-1}}" disabled="{{false}}" auto-focus focus placeholder="将会获取焦点" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">控制最大输入长度的input</view>
+      <view class="input-block">
+          <input class="ttui-input" maxlength="10" placeholder="最大输入长度为10" cursor-spacing="{{0}}"  bindfocus="getFocus" bindblur="onBlur" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">实时获取输入值：{{inputValue}}</view>
+      <view class="input-block">
+          <input class="ttui-input" maxlength="10" bindinput="bindKeyInput" placeholder="输入同步到view中" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">控制输入的input</view>
+      <view class="input-block">
+          <input class="ttui-input" bindinput="bindReplaceInput" value="{{value}}" placeholder="金额输入框" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">控制键盘的input</view>
+      <view class="input-block">
+          <input class="ttui-input" bindinput="bindHideKeyboard" placeholder="输入123自动收起键盘" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">禁用的input</view>
+      <view class="input-block">
+          <input class="ttui-input" disabled="false" placeholder="禁用的input" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">数字输入的input</view>
+      <view class="input-block">
+          <input class="ttui-input" type="number" placeholder="这是一个数字输入框" bindconfirm="onConfirm" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">密码输入的input</view>
+      <view class="input-block">
+          <input class="ttui-input" password type="text" placeholder="这是一个密码输入框" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">带小数点的input</view>
+      <view class="input-block">
+          <input class="ttui-input" type="digit" placeholder="带小数点的数字键盘" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">身份证输入的input</view>
+      <view class="input-block">
+          <input class="ttui-input" type="idcard" placeholder="身份证输入键盘"  bindconfirm="onConfirmId" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">控制占位符颜色的input</view>
+      <view class="input-block">
+          <input class="ttui-input" placeholder-style="color:rgb(9, 133, 91);" placeholder="占位符字体是墨绿色的" />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">点击获取用户输入的值</view>
+      <view class="input-block">
+        <input class="ttui-input" type="text" placeholder="获取输入框内容" bindinput="handleInput" value="{{value}}"/>
+      </view>
+      <button type="default" size="mini" bindtap="getInputValue" style="margin-left:20px ;">点击获取</button>
+      <button type="default" size="mini" bindtap="clear" style="margin-left: 40px;">点击清除</button>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title page-section-title-space">每输入四个数字会额外输出一个空格符</view>
+      <view class="input-block">
+        <input class="ttui-input" type="number" placeholder="控制输出input" bindinput="handleInputNmb" value="{{_value}}" />
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

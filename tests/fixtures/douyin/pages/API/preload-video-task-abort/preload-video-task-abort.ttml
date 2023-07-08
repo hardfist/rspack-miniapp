@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="body">
+      <view class="btn-area">
+        <button type="primary" size="default" bindtap="preload">开始预加载</button>
+          <button type="primary" size="default" bindtap="abort">中断预加载</button>
+          <video tt:if="{{show}}" autoplay="{{true}}" src="{{src}}"></video>
+      </view>
+    </view>
+  </view>
+  

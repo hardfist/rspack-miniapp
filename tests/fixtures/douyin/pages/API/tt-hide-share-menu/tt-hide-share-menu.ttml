@@ -1,0 +1,19 @@
+<view class="container">
+	<view class="body">
+    <view class="btn-area">
+      <view class="body-view page-section">
+        <view>默认 “分享” 和 “拍抖音” 全部展示</view>
+        <button type="primary" bindtap="showShareMenu" disabled="{{isHide}}" >展示 “分享” 和 “拍抖音”</button>
+        <view>menus取值: ["share"]</view>
+        <button type="primary" data-menus="share" bindtap="hideShareMenu" disabled="{{!isHide}}">隐藏 “分享” 和 “拍抖音”</button>
+        <view>menus取值: ["record", "share"]</view>
+        <button type="primary" data-menus="share,record" bindtap="hideShareMenu" disabled="{{!isHide}}">隐藏 “分享” 和 “拍抖音”</button>
+        <view>menus取值: ["record"]</view>
+        <button type="primary" data-menus="record" bindtap="hideShareMenu" disabled="{{!isHide}}">隐藏“拍抖音”，只展示 “分享”</button>
+      </view>
+    </view>
+    <view class="page-section-title page-section-title-space">
+      分享按钮位于小程序页面右上角的“...(更多)”中。
+    </view>
+  </view>
+</view>

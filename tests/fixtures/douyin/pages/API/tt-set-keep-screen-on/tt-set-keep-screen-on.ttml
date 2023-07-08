@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">屏幕状态</view>
+          </view>
+          <view class="ttui-cell__bd">{{screenOn}}</view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="keepScreenOn" data-status="{{true}}">打开屏幕常亮</button>
+        <button type="primary" bindtap="keepScreenOn" data-status="{{false}}">关闭屏幕常亮</button>
+      </view>
+    </view>
+  </view>
+</view>

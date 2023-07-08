@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <image src="{{imageUrl}}{{IsremoveASaveFile?'tab_component_selected':'tab_component'}}.png"></image>
+      <view class="btn-area">
+        <button type="primary" disabled="{{hasFile}}" bindtap="saveFile">保存网络文件</button>
+        <block tt:if="{{saveFile}}">
+          <button type="primary" tt:if="{{getFileInfo}}" disabled="{{!hasFile}}" bindtap="getFileInfo">获取文件信息</button>
+          <button type="primary" tt:elif="{{getSaveFileList}}" disabled="{{!hasFile}}" bindtap="getSavedFileList">获取已保存文件列表信息</button>
+          <button type="primary" tt:elif="{{removeASaveFile}}" disabled="{{!hasFile}}" bindtap="deleteFile">删除已保存文件</button>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

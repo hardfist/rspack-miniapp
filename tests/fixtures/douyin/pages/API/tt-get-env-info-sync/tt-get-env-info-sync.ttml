@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="ttui-cells">
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">用户数据存储路径</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{envInfo.common.USER_DATA_PATH}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">小程序版本号</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{envInfo.microapp.mpVersion}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">小程序环境</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{envInfo.microapp.envType}}"></input>
+          </view>
+        </view>
+        <view class="ttui-cell">
+          <view class="ttui-cell__hd">
+            <view class="ttui-label">小程序appId</view>
+          </view>
+          <view class="ttui-cell__bd">
+            <input class="ttui-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{envInfo.microapp.appId}}"></input>
+          </view>
+        </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="getEnvInfo">获取环境信息</button>
+        <button bindtap="clear">清空</button>
+      </view>
+    </view>
+  </view>
+</view>

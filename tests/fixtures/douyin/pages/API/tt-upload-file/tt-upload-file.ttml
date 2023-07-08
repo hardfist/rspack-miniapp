@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <block tt:if="{{localImagePath}}">
+          <image src="{{localImagePath}}" class="image" mode="aspectFit"></image>
+        </block>
+        <block tt:else>
+          <view class="image-plus image-plus-nb" bindtap="chooseImage">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+          </view>
+          <view class="image-plus-text">选择图片</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

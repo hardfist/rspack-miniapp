@@ -1,0 +1,27 @@
+.body-bg {
+  /* margin: 20rpx; */
+  border-radius: 18rpx;
+  background: #8c8c8c;
+  overflow: hidden;
+}
+
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.page-body-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50rpx 0;
+}
+
+.page-body-button {
+  width: 250rpx;
+  text-align: center;
+}
+
+.page-section {
+  overflow: hidden;
+  margin-bottom: 0;
+}

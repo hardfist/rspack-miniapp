@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="body">
+    <view class="page-section">
+			<view class="ttui-cells">
+				<view class="ttui-cell">
+					<view class="ttui-cell__hd">
+						<view class="ttui-label">key</view>
+					</view>
+					<view class="weui-cell__bd">
+							<input class="ttui-input" value="{{key}}" bindinput="keyChange" auto-focus placeholder="请输入key" />
+					</view>
+				</view>
+				<view class="ttui-cell">
+						<view class="ttui-cell__hd">
+							<view class="ttui-label">value</view>
+						</view>
+						<view class="weui-cell__bd">
+								<input class="ttui-input" value="{{value}}" bindinput="valueChange" placeholder="请输入value" />
+						</view>
+					</view>
+			</view>
+			<view class="btn-area">
+					<button type="primary" bindtap="setStorage">保存数据</button>
+					<button bindtap="getStorage">读取数据</button>
+					<button bindtap="clearStorage">清空数据</button>
+			</view>
+      <view class="container">
+
+      <view class="page-section">
+        <view class="ttui-cells">
+          <view class="ttui-cell">
+            <view class="ttui-cell__hd">
+              <view class="ttui-label">key列表</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="ttui-input" disabled="{{true}}" value="{{storageKeys}}" bindinput="keyChange" placeholder="key列表" />
+            </view>
+          </view>
+          <view class="ttui-cell">
+              <view class="ttui-cell__hd">
+                <view class="ttui-label">已用空间</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <input class="ttui-input" value="{{limitSize}}" bindinput="valueChange" placeholder="已用空间" />
+              </view>
+          </view>
+          <view class="ttui-cell">
+              <view class="ttui-cell__hd">
+                <view class="ttui-label">总体容量</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <input class="ttui-input" value="{{currentSize}}" bindinput="valueChange" placeholder="总体容量" />
+              </view>
+          </view>
+        </view>
+        <view class="btn-area">
+            <button type="primary" bindtap="updateStorageInfo">更新本地存储信息</button>
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,1 @@
+<view class="frame_wrap {{direction}}" style="background-image: url({{url}});--width:{{width}}rpx;--height:{{height}}rpx;--count:{{count}};--duration:{{duration}};--playNumber:{{playNumber}};"></view>

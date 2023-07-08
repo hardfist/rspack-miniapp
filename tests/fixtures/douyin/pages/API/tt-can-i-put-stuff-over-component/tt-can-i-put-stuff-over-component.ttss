@@ -1,0 +1,12 @@
+.content{
+    padding: 0 50rpx 50rpx 50rpx;
+}
+.title{
+    text-align: center;
+    background-color: white;
+    padding: 20rpx 70rpx;
+    margin: 30rpx auto;
+}
+button{
+    margin-top: 30rpx;
+}

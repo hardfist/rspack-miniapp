@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <canvas class="canvas-element" canvas-id="myCanvas"></canvas>
+      <view class="btn-area">
+        <button type="primary" size="default" bindtap="draw">开始绘制</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="page-body">
+    <canvas id="myCanvas" type="2d" style="width: 100%; height: 240px"></canvas>
+    <view class="btn-area">
+      <button type="primary" bindtap="requestAnimationFrame">Canvas.requestAnimationFrame</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+	<view class="body">
+    <view class="page-section-space">
+      <view class="content-area">
+        <view tt:if="{{stats}}" class="statsAttrList">
+          <view class="btn-area">
+            <view class="body-view page-section">
+              <button type="primary" bindtap="isFile">判断当前文件是否为一个普通文件</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="cont">
+  <button type="primary" bindtap="checkFollowAwemeState">
+    是否关注抖音号
+  </button>
+  <text>注：注意这个抖音号是小程序开发者在开发者平台绑定的抖音号(每个小程序仅支持绑定一个抖音号，且暂不支持解绑和换绑)，不能使用该 api 获取用户是否关注了另一个用户</text>
+</view>

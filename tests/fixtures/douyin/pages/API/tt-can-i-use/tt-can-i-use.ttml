@@ -1,0 +1,17 @@
+<view class="content" bindtap="canIUse">
+    <view class="title">点击判断小程序的 API，回调，参数，组件等是否在当前版本可用。</view>
+    <view class="type">对象的属性或方法</view>
+    <button type="primary" size="default" data-data="UpdateManager"> UpdateManager </button>
+    <button type="primary" size="default" data-data="Stats.isDirectory"> Stats.isDirectory </button>
+    <view class="type">tt接口参数、回调或者返回值</view>
+    <button type="primary" size="default" data-data="exitMiniProgram"> exitMiniProgram </button>
+    <button type="primary" size="default" data-data="getLaunchOptionsSync.return.path"> getLaunchOptionsSync.return.path </button>
+    <button type="primary" size="default" data-data="getSystemInfo.success.screenWidth"> getSystemInfo.success.screenWidth </button>
+    <button type="primary" size="default" data-data="showToast.object.title"> showToast.object.title </button>
+    <button type="primary" size="default" data-data="onCompassChange.callback.direction"> onCompassChange.callback.direction </button>
+    <button type="primary" size="default" data-data="request.object.method.GET"> request.object.method.GET </button>
+    <view class="type">组件的属性</view>
+    <button type="primary" size="default" data-data="swiper"> swiper </button>
+    <button type="primary" size="default" data-data="text.selectable"> text.selectable </button>
+    <button type="primary" size="default" data-data="button.open-type.contact"> button.open-type.contact </button>
+</view>

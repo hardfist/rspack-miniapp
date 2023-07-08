@@ -1,0 +1,12 @@
+.container {
+  padding: 50rpx 30rpx;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+#myVideo {
+  margin-top: 40rpx; 
+}

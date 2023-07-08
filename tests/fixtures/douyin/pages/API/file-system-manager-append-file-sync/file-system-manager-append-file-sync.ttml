@@ -1,0 +1,5 @@
+<view class="btn-area">
+    <button type="primary" bindtap="writeFile">写文件(同步)后，append + read</button>
+  </view>
+  <view tt:if="{{content}}" class="page-section-title-space page-section-title">文件内容:{{content}}</view>
+  

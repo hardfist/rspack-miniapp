@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="body">
+    <view class="title">
+      <view class="titleTip">最下方查看 请求参数 和 返回值</view>
+    </view>
+    <view class="btn-area">
+      <view class="titleTip">1. post 请求返回 dataType 为 json 类型的数据</view>
+      <button bindtap="request" data-datatype="json" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">2. post 请求返回 dataType 为 string 类型的数据</view>
+      <button bindtap="request" data-datatype="string" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">3. post 请求返回 responseType 为 arraybuffer 类型的数据</view>
+      <button bindtap="request" data-responsetype="arraybuffer" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">4. post 请求 header['content-type'] 为 application/x-www-form-urlencoded。</view>
+      <button bindtap="request" data-header="application/x-www-form-urlencoded" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">5. post 请求携带 cookie。</view>
+      <button bindtap="request" data-cookie="TOUTIAOID" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">6. put 请求。</view>
+      <button bindtap="request" data-method="PUT" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">7. timeout 使用, 这里配置的10ms</view>
+      <button bindtap="request" data-timeout="10" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+      <view class="titleTip">8. 中断请求，这里配置条件 20ms后 请求中断</view>
+      <button bindtap="request" data-abort="20" type="primary" disabled="{{buttonDisabled}}">发送请求</button>
+    </view>
+    <view tt:if="{{!requestData || !responseData}}" class="page-section-title page-section-title-space">
+    请先发送请求
+    </view>
+    <view tt:else class="page-section-title page-section-title-space">
+      <view>
+        请求参数: 
+        <view> {{requestData}} </view>
+      </view>
+      <view>
+        返回数据:
+        <view> {{responseData}} </view>
+      </view>
+    </view>
+  </view>
+</view>

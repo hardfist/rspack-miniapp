@@ -1,0 +1,30 @@
+<map
+  id="myMap"
+  show-location
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  circles="{{circles}}"
+  markers="{{markers}}"
+  polyline="{{polyline}}"
+  scale="{{scale}}"
+  rotate="{{rotate}}"
+  skew="{{skew}}"
+  polygons="{{polygons}}"
+  show-compass
+  enable-overlooking
+  enable-rotate
+  bindtap="mapTap"
+  bindmarkertap="markerTap"
+  bindcallouttap="calloutTap"
+  bindregionchange="regionChange"
+  style="width:100%; height: 300px;"
+></map>
+<view class="container">
+  <view class="btn-area">
+    <button bindtap="authLocation" type="primary" size="mini">申请定位权限</button>
+    <button bindtap="moveToLocation" type="primary" size="mini">移动到当前定位点</button>
+    <button bindtap="getCenterLocation" type="primary" size="mini">获取当前地图中心位置</button>
+    <button bindtap="getScale" type="primary" size="mini">获取缩放级别</button>
+    <button bindtap="getRegion" type="primary" size="mini">获取地图视野</button>
+  </view>
+</view>

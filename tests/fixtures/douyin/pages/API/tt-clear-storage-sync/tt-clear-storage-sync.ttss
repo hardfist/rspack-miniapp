@@ -1,0 +1,5 @@
+.storage-title {
+  text-align: center;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,12 @@
+<view class="container" tt:if="{{!useComponent}}">
+  <view tt:if="{{scroll}}" style="height: 600px;"></view>
+  <view class="box"></view>
+  <view class="body">
+    <view class="title">scrollLeft: {{nodes.scrollLeft}}</view>
+    <view class="title">scrollTop: {{nodes.scrollTop}}</view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" bindtap="getScroll">{{!scroll?'获取滚动位置':'清除'}}</button>
+  </view>
+</view>
+<view class="footer"></view>

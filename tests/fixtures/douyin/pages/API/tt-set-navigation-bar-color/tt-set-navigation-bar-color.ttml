@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area">
+      <button type="primary" bindtap="setNavigationBarColor" data-front-color="#ffffff" data-background-color="#3E3E3E">设置标题栏颜色1</button>
+      <button type="primary" bindtap="setNavigationBarColor" data-front-color="#000000" data-background-color="#F85959">设置标题栏颜色2</button>
+    </view>
+  </view>
+</view>
