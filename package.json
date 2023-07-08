@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "node src/index.mjs --project ./fixtures/basic",
+    "start": "node src/index.mjs",
     "build": "node src/index.js --project fixtures"
   },
   "keywords": [],
@@ -12,6 +14,7 @@
   "devDependencies": {
     "@rspack/core": "0.2.5",
     "webpack": "5.88.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "@types/node": "20.4.1"
   }
 }
