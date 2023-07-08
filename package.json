@@ -1,0 +1,17 @@
+{
+  "name": "rspack-miniapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/index.js --project fixtures"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/core": "0.2.5",
+    "webpack": "5.88.1",
+    "typescript": "^5.1.6"
+  }
+}
