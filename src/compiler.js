@@ -62,10 +62,14 @@ class MiniAppCompiler {
           rules: [
             {
               test: /.ttml/,
-              issuerLayer: 'main',
+              issuerLayer: 'worker',
               use: ['null-loader'],
             },
-
+            {
+              test: /\.ttml$/,
+              issuerLayer: 'main',
+              use: [path.resolve(__dirname, './loaders/ttmlLoader.js')],
+            },
             {
               test: /\.ts$/,
               issuerLayer: 'worker',
@@ -110,10 +114,6 @@ class MiniAppCompiler {
               resolve: {
                 preferRelative: true,
               },
-            },
-            {
-              test: /\.ttml$/,
-              use: [path.resolve(__dirname, './loaders/ttmlLoader.js')],
             },
           ],
         },

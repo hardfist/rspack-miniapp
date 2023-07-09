@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js --project ./fixtures/basic",
-    "test": "node --test --watch ./tests/basic/basic.test.js"
+    "test": "node --test-only --watch ./tests/basic/basic.test.js"
   },
   "keywords": [],
   "author": "",
