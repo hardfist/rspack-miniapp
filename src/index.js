@@ -8,6 +8,7 @@ function run() {
       },
     },
   });
+
   const compiler = new MiniAppCompiler(args.project);
   compiler.run(() => {
     console.log('build finished');

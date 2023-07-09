@@ -5,18 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js --project ./fixtures/basic",
-    "test": "node --test"
+    "test": "node --test --watch ./tests/basic/basic.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mini-ali-ui": "^1.4.1"
-  },
-  "devDependencies": {
+    "mini-ali-ui": "^1.4.1",
+    "htmlparser2": "9.0.0",
+    "css-loader": "6.8.1",
+    "mini-css-extract-plugin": "2.7.6",
     "@rspack/core": "0.2.5",
     "webpack": "5.88.1",
     "typescript": "^5.1.6",
     "@types/node": "20.4.1"
-  }
+  },
+  "devDependencies": {}
 }
