@@ -1,0 +1,38 @@
+<view class="flex flex-col items-center justify-center w-full h-full">
+    <text class="text-3xl">Todo MVC</text>
+    <view style="height:30px;width: 300px" class="items-center">
+        <input
+                lynx-test-tag="input-url"
+                class="h-full flex-grow border-gray-600 bg-white"
+                type="text"
+                bindinput="onInput"
+                bindblur="onInput"
+                bindconfirm="onAdd"
+                value="{{ message }}"
+                placeholder="试试输入你喜爱的框架"
+        />
+        <text class="btn btn-rounded" bindtap="onAdd">Add</text>
+    </view>
+    <todo-item
+            onToggle="{{onToggle}}"
+            class="mt-5"
+            tt:for="{{ filterTodos }}"
+            tt:for-item="item"
+            key={{item.id}}
+    todo="{{item}}"
+    >
+</todo-item>
+<view tt:if="{{todo.status == 'loading'}}">
+    <text class="text-3xl text-red-300 mt-3 mb-3"> loading...</text>
+</view>
+<view class="flex flex-col items-center justify-center ">
+    <view class="items-center flex mt-5 ">
+        <text>{{remainingCount}} items Left </text>
+        <text tt:for="{{filters}}" tt:for-item="item"
+              class="btn ml-3 {{ filter === item ? 'text-red-300 border-red-300 border' : ''}}" bindtap="setFilter"
+              data-key={{item}}>{{item}}
+    </text>
+</view>
+        </view>
+        </view>
+

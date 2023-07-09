@@ -1,0 +1,8 @@
+<view class="flex-col items-center justify-center h-full">
+    <text tt:if="seen" class="flex text-3xl">现在你看到我了</text>
+    <view class="flex flex-col mt-5">
+        <text class="text-xl" tt:for="{{todos}}" tt:for-index="idx" tt:for-item="item">
+            {{idx}}: {{ item.text }}
+        </text>
+    </view>
+</view>

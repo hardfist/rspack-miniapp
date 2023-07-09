@@ -1,0 +1,17 @@
+@import '../../build/tailwind.ttss';
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-xl {
+    font-size: 1.25em;
+}
+
+.text-red-400 {
+    color: #fc8181
+}

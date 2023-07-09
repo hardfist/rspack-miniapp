@@ -1,0 +1,8 @@
+@import '../../../build/tailwind.ttss';
+
+.delete-icon {
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: none;
+    background-image: url('https://example.png') no-repeat center center / contain;
+}

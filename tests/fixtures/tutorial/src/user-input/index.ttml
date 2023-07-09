@@ -1,0 +1,17 @@
+<view class="flex flex-col items-start justify-center h-full items-center">
+    <text style="height: 40px; width:300px" class="flex-shrink-0">
+        输入的内容: {{ message }}
+    </text>
+    <view style="height:30px;width: 300px" class="items-center">
+        <text class="flex-shrink-0">请输入内容:</text>
+        <input
+                lynx-test-tag="input-url"
+                class="h-full flex-grow border-gray-600 bg-white"
+                type="text"
+                bindinput="onInput"
+                bindblur="onInput"
+                value="{{ message }}"
+                placeholder="试试输入一些东西吧"
+        />
+    </view>
+</view>

@@ -1,5 +1,5 @@
 const path = require('path');
-
+const minicssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 class MiniAppCompiler {
   /**
@@ -31,16 +31,40 @@ class MiniAppCompiler {
       {
         mode: 'development',
         devtool: false,
-        entry: options.entry,
+        entry: {
+          'app.worker': options.entry,
+        },
         context: options.context,
         output: {
           path: path.resolve(options.context, 'dist'),
         },
-        experiments: {
-          css: true,
+        externals: ['vue'],
+
+        resolve: {
+          extensions: ['.ts', '...'],
         },
+        plugins: [
+          new minicssExtractPlugin({
+            filename: 'app.css',
+          }),
+        ],
         module: {
           rules: [
+            {
+              test: /\.ts$/,
+              use: [
+                {
+                  loader: require.resolve('swc-loader'),
+                  options: {
+                    jsc: {
+                      parser: {
+                        syntax: 'typescript',
+                      },
+                    },
+                  },
+                },
+              ],
+            },
             {
               resourceQuery: /\?appJson$/,
               use: [path.resolve(__dirname, './loaders/appJsonLoader.js')],
@@ -55,8 +79,12 @@ class MiniAppCompiler {
             },
             {
               test: /\.ttss$/,
-              use: [path.resolve(__dirname, './loaders/ttssLoader.js')],
-              type: 'css',
+              use: [
+                minicssExtractPlugin.loader,
+                require.resolve('css-loader'),
+                path.resolve(__dirname, './loaders/ttssLoader.js'),
+              ],
+              // type: 'css',
               resolve: {
                 preferRelative: true,
               },

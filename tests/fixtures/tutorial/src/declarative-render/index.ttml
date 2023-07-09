@@ -1,0 +1,9 @@
+<view class="flex justify-center h-full items-center flex-col">
+    <text class="text-6xl text-red-400">
+        hello {{ name }}
+    </text>
+    <image class="mt-5" style="width:200;height:200" src={{url}}>
+</image>
+        </view>
+
+

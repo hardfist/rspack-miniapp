@@ -1,0 +1,24 @@
+{
+  "appType": "card",
+  "cards": [
+    {
+      "entry": "src/component-compose/todo-list/index"
+    },
+    {
+      "entry": "src/user-input/index"
+    },
+    {
+      "entry": "src/conditional_loops/index"
+    },
+    {
+      "entry": "src/declarative-render/index"
+    },
+    {
+      "entry": "src/user-event/index"
+    },
+    {
+      "name": "todo-list",
+      "entry": "src/TodoMVC/todo-list/index"
+    }
+  ]
+}

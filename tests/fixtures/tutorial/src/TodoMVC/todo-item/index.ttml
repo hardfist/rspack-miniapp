@@ -1,0 +1,14 @@
+<view class="flex items-center justify-start" style="min-width: 300px">
+    <text class="mr-5">
+        {{todo.done ? "✅" : "❎"}}
+    </text>
+    <view class="flex items-center">
+        <text class="text-3xl text-left {{ todo.done ? 'line-through' : ''}}" bindtap="onClick">
+            {{ todo.text }}
+        </text>
+        <image style="width:20px;height:20px" src="https://example.png"
+               bindtap="onDelete" class="ml-3 ">
+
+        </image>
+    </view>
+</view>

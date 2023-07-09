@@ -1,0 +1,3 @@
+<view>
+    <text class="text-blue"> hello : {{name}}</text>
+</view>

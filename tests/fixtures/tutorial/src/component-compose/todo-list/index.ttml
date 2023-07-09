@@ -1,0 +1,12 @@
+<view class="flex flex-col items-center justify-center w-full h-full">
+    <text class="text-3xl">Todo MVC</text>
+    <todo-item
+            class="mt-5"
+            tt:for="{{ todoList }}"
+            tt:for-index="idx"
+            tt:for-item="item"
+            idx="{{idx}}"
+            data-key="{{ idx }}"
+            todo="{{item}}"
+    ></todo-item>
+</view>
