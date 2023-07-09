@@ -32,7 +32,14 @@ class MiniAppCompiler {
         mode: 'development',
         devtool: false,
         entry: {
-          'app.worker': options.entry,
+          'app.worker': {
+            import: options.entry,
+            layer: 'worker',
+          },
+          app: {
+            import: options.entry,
+            layer: 'main',
+          },
         },
         context: options.context,
         output: {
@@ -43,6 +50,9 @@ class MiniAppCompiler {
         resolve: {
           extensions: ['.ts', '...'],
         },
+        experiments: {
+          layers: true,
+        },
         plugins: [
           new minicssExtractPlugin({
             filename: 'app.css',
@@ -51,7 +61,14 @@ class MiniAppCompiler {
         module: {
           rules: [
             {
+              test: /.ttml/,
+              issuerLayer: 'main',
+              use: ['null-loader'],
+            },
+
+            {
               test: /\.ts$/,
+              issuerLayer: 'worker',
               use: [
                 {
                   loader: require.resolve('swc-loader'),
@@ -64,6 +81,11 @@ class MiniAppCompiler {
                   },
                 },
               ],
+            },
+            {
+              test: /\.ts$/,
+              issuerLayer: 'main',
+              use: ['null-loader'],
             },
             {
               resourceQuery: /\?appJson$/,
