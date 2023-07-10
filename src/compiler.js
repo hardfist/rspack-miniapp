@@ -94,6 +94,7 @@ class MiniAppCompiler {
             {
               resourceQuery: /\?appJson$/,
               use: [path.resolve(__dirname, './loaders/appJsonLoader.js')],
+              type: 'javascript/auto',
             },
             {
               resourceQuery: /\?folder$/,
@@ -102,6 +103,7 @@ class MiniAppCompiler {
             {
               resourceQuery: /\?folderJson$/,
               use: [path.resolve(__dirname, './loaders/folderJsonLoader.js')],
+              type: 'javascript/auto',
             },
             {
               test: /\.ttss$/,
