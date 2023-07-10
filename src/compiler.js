@@ -112,11 +112,17 @@ class MiniAppCompiler {
                 require.resolve('css-loader'),
                 path.resolve(__dirname, './loaders/ttssLoader.js'),
               ],
-              // type: 'css',
               resolve: {
                 preferRelative: true,
               },
             },
+            // {
+            //   test: /\.ttss$/,
+            //   use: [path.resolve(__dirname, './loaders/ttssLoader.js')],
+            //   resolve: {
+            //     preferRelative: true,
+            //   },
+            // },
           ],
         },
       },
