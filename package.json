@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js --project ./tests/fixtures/tutorial --watch",
+    "start:webpack": "node src/index.js --project ./tests/fixtures/tutorial --watch",
     "start:rspack": "Rspack=true node src/index.js --project ./tests/fixtures/tutorial --watch",
     "test": "node --test-only --watch ./tests/basic/basic.test.js"
   },
