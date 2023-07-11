@@ -16,6 +16,7 @@ class MiniAppCompiler {
     this.compile({
       entry,
       context: this.context,
+      watch: this.watch,
     });
   }
   getWebpackInstance() {
@@ -37,6 +38,7 @@ class MiniAppCompiler {
     webpack(
       {
         mode: 'development',
+        watch: this.watch,
         devtool: false,
         entry: {
           'app.worker': {
@@ -58,6 +60,18 @@ class MiniAppCompiler {
         experiments: {
           css: true,
         },
+        plugins: [
+          {
+            apply(compiler) {
+              compiler.hooks.invalid.tap('rebuild', (file, timestamp) => {
+                console.log('file changed', file);
+              });
+              compiler.hooks.done.tap('done', () => {
+                console.log('build finished');
+              });
+            },
+          },
+        ],
         module: {
           rules: [
             {
