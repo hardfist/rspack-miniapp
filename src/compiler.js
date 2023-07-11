@@ -19,6 +19,12 @@ class MiniAppCompiler {
     });
   }
   getWebpackInstance() {
+    if (process.env.Rspack) {
+      console.info('using rspack');
+      const rspack = require('@rspack/core').rspack;
+      return rspack;
+    }
+    console.info('using webpack');
     const webpack = require('webpack');
     return webpack;
   }
@@ -35,11 +41,9 @@ class MiniAppCompiler {
         entry: {
           'app.worker': {
             import: options.entry,
-            layer: 'worker',
           },
           app: {
             import: options.entry,
-            layer: 'main',
           },
         },
         context: options.context,
@@ -52,28 +56,16 @@ class MiniAppCompiler {
           extensions: ['.ts', '...'],
         },
         experiments: {
-          layers: true,
+          css: true,
         },
-        plugins: [
-          new minicssExtractPlugin({
-            filename: 'app.css',
-          }),
-        ],
         module: {
           rules: [
             {
-              test: /.ttml/,
-              issuerLayer: 'worker',
-              use: ['null-loader'],
-            },
-            {
               test: /\.ttml$/,
-              issuerLayer: 'main',
               use: [path.resolve(__dirname, './loaders/ttmlLoader.js')],
             },
             {
               test: /\.ts$/,
-              issuerLayer: 'worker',
               use: [
                 {
                   loader: require.resolve('swc-loader'),
@@ -86,11 +78,6 @@ class MiniAppCompiler {
                   },
                 },
               ],
-            },
-            {
-              test: /\.ts$/,
-              issuerLayer: 'main',
-              use: ['null-loader'],
             },
             {
               resourceQuery: /\?appJson$/,
@@ -108,14 +95,11 @@ class MiniAppCompiler {
             },
             {
               test: /\.ttss$/,
-              use: [
-                minicssExtractPlugin.loader,
-                require.resolve('css-loader'),
-                path.resolve(__dirname, './loaders/ttssLoader.js'),
-              ],
+              use: [path.resolve(__dirname, './loaders/ttssLoader.js')],
               resolve: {
                 preferRelative: true,
               },
+              type: 'css',
             },
             // {
             //   test: /\.ttss$/,
