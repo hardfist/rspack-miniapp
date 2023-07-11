@@ -5,9 +5,11 @@ class MiniAppCompiler {
   /**
    *
    * @param {string} context
+   * @param {boolean} watch
    */
-  constructor(context) {
+  constructor(context, watch) {
     this.context = context;
+    this.watch = watch;
   }
   run() {
     const entry = this.getEntry();
@@ -25,7 +27,6 @@ class MiniAppCompiler {
    * @param {{context: string, entry:string}} options
    */
   compile(options) {
-    console.log('options:', options);
     const webpack = this.getWebpackInstance();
     webpack(
       {
@@ -147,6 +148,7 @@ class MiniAppCompiler {
   getEntry() {
     let entry = [];
     ['app.less', 'app.json', 'app.ts', 'app.js', 'app.css'].forEach((x) => {
+      console.log('context:', this.context);
       let absPath = path.resolve(this.context, x);
       if (fs.existsSync(absPath)) {
         if (x === 'app.json') {

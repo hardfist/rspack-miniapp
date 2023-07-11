@@ -1,4 +1,5 @@
 const utils = require('util');
+const path = require('path');
 const { MiniAppCompiler } = require('./compiler');
 function run() {
   const args = utils.parseArgs({
@@ -6,10 +7,13 @@ function run() {
       project: {
         type: 'string',
       },
+      watch: {
+        type: 'boolean',
+      },
     },
   });
-
-  const compiler = new MiniAppCompiler(args.project);
+  let project = path.resolve(process.cwd(), args.values.project);
+  const compiler = new MiniAppCompiler(project, args.values.watch);
   compiler.run(() => {
     console.log('build finished');
   });
